@@ -8,6 +8,7 @@ class controllers_ControllerBase extends Zend_Controller_Action
 	{
 		$oZendSession = Zend_Registry::getInstance()->get('Zend_Session_Namespace');
 	
+                
 		$this->layout = Zend_Layout::getMvcInstance();
 		$this->view->addBasePath(APPLICATION_PATH.'/views');
 		$this->view->addBasePath(APPLICATION_PATH.'/layouts');
