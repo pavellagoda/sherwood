@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <?php
+//echo (isset($this->title)?'<title>'.$this->title.'</title>':'');
+        echo $this->headTitle();
+        echo $this->headMeta();
+
+        echo $this->headLink();
+
+        echo $this->headScript();
+        ?>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+            </div>
+            <div class="main-body">
+                <?php
+                    echo $this->render("includes/mainmenu.phtml");
+                    echo $this->layout()->content;
+                ?>
+            </div>
+            <?php
+            echo $this->render("includes/footer.phtml");
+            ?>
+    </body>
+</div>
+
+</html>

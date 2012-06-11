@@ -1,0 +1,16 @@
+<div id="flashcontent">
+
+</div>
+<script type="text/javascript">
+        var so = new SWFObject("/swf/start.swf", "start", "900px", "540px", "10", "#fff");
+        so.addVariable('object', "<?php echo $this->object ?>" );
+        so.addParam("menu", "false"); 
+        so.addParam('allowscriptaccess','always');
+        so.allowFullScreen=true;
+        so.write("flashcontent");
+        function setHash(value)
+        {
+                window.location.hash = value;
+        }
+    // ]]>
+</script>

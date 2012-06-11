@@ -1,0 +1,689 @@
+[23-Jul-2010 12:36:50] PHP Fatal error:  Undefined class constant 'SITE_TIME' in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 71
+[23-Jul-2010 12:37:04] PHP Fatal error:  Undefined class constant 'SITE_TIME' in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 71
+[23-Jul-2010 12:37:14] PHP Fatal error:  Undefined class constant 'SITE_TIME' in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 71
+[23-Jul-2010 12:37:20] PHP Fatal error:  Undefined class constant 'SITE_TIME' in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 37
+[23-Jul-2010 12:41:11] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/polls/index.phtml on line 9
+[23-Jul-2010 12:46:55] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/polls/index.phtml on line 9
+[23-Jul-2010 12:47:18] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/polls/index.phtml on line 9
+[23-Jul-2010 12:55:24] PHP Warning:  include_once(modules/admin/forms/PollVariantEditForm.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/public_html/zf/Zend/Loader.php on line 146
+[23-Jul-2010 12:55:24] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'modules/admin/forms/PollVariantEditForm.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/public_html/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/public_html/zf/Zend/Loader.php on line 146
+[23-Jul-2010 12:55:24] PHP Fatal error:  Class 'modules_admin_forms_PollVariantEditForm' not found in /home/pavella/public_html/mfk/application/modules/admin/controllers/VariantsController.php on line 78
+[23-Jul-2010 13:41:53] PHP Parse error:  syntax error, unexpected $end in /home/pavella/public_html/mfk/application/models/GameMapper.php on line 96
+[23-Jul-2010 13:44:23] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 13:44:23] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 28
+[23-Jul-2010 13:45:59] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 13:45:59] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 28
+[23-Jul-2010 13:46:13] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 13:46:13] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 28
+[23-Jul-2010 13:46:16] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 13:46:16] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 28
+[23-Jul-2010 13:46:59] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 13:46:59] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 28
+[23-Jul-2010 13:49:18] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 13:49:18] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 28
+[23-Jul-2010 13:50:33] PHP Fatal error:  Call to a member function toArray() on a non-object in /home/pavella/public_html/mfk/application/models/TeamMapper.php on line 116
+[23-Jul-2010 13:51:15] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 14:10:54] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 14:12:53] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 14:13:02] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 5
+[23-Jul-2010 14:26:26] PHP Parse error:  syntax error, unexpected '[', expecting T_STRING or T_VARIABLE or '{' or '$' in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 37
+[23-Jul-2010 14:29:25] PHP Parse error:  syntax error, unexpected $end in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 45
+[23-Jul-2010 14:29:28] PHP Parse error:  syntax error, unexpected $end in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 45
+[23-Jul-2010 14:29:30] PHP Parse error:  syntax error, unexpected $end in /home/pavella/public_html/mfk/application/modules/default/views/scripts/tables/index.phtml on line 45
+[28-Jul-2010 21:01:28] PHP Catchable fatal error:  Object of class models_News could not be converted to string in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 34
+[28-Jul-2010 21:02:38] PHP Parse error:  syntax error, unexpected T_LNUMBER, expecting T_STRING or T_VARIABLE or '{' or '$' in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 34
+[28-Jul-2010 21:02:53] PHP Parse error:  syntax error, unexpected T_LNUMBER, expecting T_STRING or T_VARIABLE or '{' or '$' in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 34
+[28-Jul-2010 21:03:00] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '{' or '$' in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 34
+[28-Jul-2010 21:03:09] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '{' or '$' in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 34
+[28-Jul-2010 21:03:11] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '{' or '$' in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 34
+[28-Jul-2010 21:03:14] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING or T_VARIABLE or '{' or '$' in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 34
+[04-Aug-2010 09:27:14] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/pavella/public_html/mfk/application/models/NewsMapper.php on line 93
+[04-Aug-2010 09:27:24] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/pavella/public_html/mfk/application/models/NewsMapper.php on line 93
+[04-Aug-2010 10:03:51] PHP Warning:  include_once(Imagick.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:03:51] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'Imagick.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:03:51] PHP Fatal error:  Class 'Imagick' not found in /home/pavella/public_html/mfk/application/models/ChatMapper.php on line 20
+[04-Aug-2010 10:03:54] PHP Warning:  include_once(Imagick.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:03:54] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'Imagick.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:03:54] PHP Fatal error:  Class 'Imagick' not found in /home/pavella/public_html/mfk/application/models/ChatMapper.php on line 20
+[04-Aug-2010 10:04:12] PHP Warning:  include_once(Imagick.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:04:12] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'Imagick.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:04:12] PHP Fatal error:  Class 'Imagick' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 17
+[04-Aug-2010 10:04:36] PHP Warning:  include_once(ImagickDraw.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:04:36] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'ImagickDraw.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[04-Aug-2010 10:04:36] PHP Fatal error:  Class 'ImagickDraw' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 17
+[04-Aug-2010 11:05:11] PHP Fatal error:  Call to undefined method models_NewsCategoryMapper::getAllPaginator() in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewscategoryController.php on line 25
+[04-Aug-2010 11:07:22] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/newscategory/index.phtml on line 8
+[05-Aug-2010 00:43:10] PHP Fatal error:  Uncaught exception 'Zend_Db_Adapter_Mysqli_Exception' with message 'Table 'pavella_mfk.сountries' doesn't exist' in /home/pavella/zf/Zend/Db/Adapter/Mysqli.php:204
+Stack trace:
+#0 /home/pavella/zf/Zend/Db/Table/Abstract.php(823): Zend_Db_Adapter_Mysqli->describeTable('??ountries', NULL)
+#1 /home/pavella/zf/Zend/Db/Table/Abstract.php(845): Zend_Db_Table_Abstract->_setupMetadata()
+#2 /home/pavella/zf/Zend/Db/Table/Abstract.php(885): Zend_Db_Table_Abstract->_getCols()
+#3 /home/pavella/zf/Zend/Db/Table/Abstract.php(969): Zend_Db_Table_Abstract->_setupPrimaryKey()
+#4 /home/pavella/zf/Zend/Db/Table/Select.php(100): Zend_Db_Table_Abstract->info()
+#5 /home/pavella/zf/Zend/Db/Table/Select.php(78): Zend_Db_Table_Select->setTable(Object(models_DbTable_Countries))
+#6 /home/pavella/zf/Zend/Db/Table/Abstract.php(1005): Zend_Db_Table_Select->__construct(Object(models_DbTable_Countries))
+#7 /home/pavella/public_html/mfk/application/models/CountriesMapper.php(57): Zend_Db_Table_Abstract->select()
+#8 /home/pavella/public_html in /home/pavella/zf/Zend/Db/Adapter/Mysqli.php on line 204
+[05-Aug-2010 00:44:38] PHP Fatal error:  Uncaught exception 'Zend_Db_Adapter_Mysqli_Exception' with message 'Table 'pavella_mfk.сountries' doesn't exist' in /home/pavella/zf/Zend/Db/Adapter/Mysqli.php:204
+Stack trace:
+#0 /home/pavella/zf/Zend/Db/Table/Abstract.php(823): Zend_Db_Adapter_Mysqli->describeTable('??ountries', NULL)
+#1 /home/pavella/zf/Zend/Db/Table/Abstract.php(845): Zend_Db_Table_Abstract->_setupMetadata()
+#2 /home/pavella/zf/Zend/Db/Table/Abstract.php(885): Zend_Db_Table_Abstract->_getCols()
+#3 /home/pavella/zf/Zend/Db/Table/Abstract.php(969): Zend_Db_Table_Abstract->_setupPrimaryKey()
+#4 /home/pavella/zf/Zend/Db/Table/Select.php(100): Zend_Db_Table_Abstract->info()
+#5 /home/pavella/zf/Zend/Db/Table/Select.php(78): Zend_Db_Table_Select->setTable(Object(models_DbTable_Countries))
+#6 /home/pavella/zf/Zend/Db/Table/Abstract.php(1005): Zend_Db_Table_Select->__construct(Object(models_DbTable_Countries))
+#7 /home/pavella/public_html/mfk/application/models/CountriesMapper.php(57): Zend_Db_Table_Abstract->select()
+#8 /home/pavella/public_html in /home/pavella/zf/Zend/Db/Adapter/Mysqli.php on line 204
+[05-Aug-2010 00:46:58] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:46:58] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:46:58] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:00] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:00] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:00] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:05] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:05] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:05] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:06] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:06] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:06] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:08] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:08] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:08] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:10] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:10] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:10] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:15] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:15] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:15] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:15] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:15] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:15] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:18] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:18] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:18] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:20] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:20] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:20] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:25] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:25] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:25] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:25] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:25] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:25] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:29] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:29] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:29] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:30] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:30] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:30] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:35] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:35] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:35] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:35] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:35] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:35] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:38] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:38] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:38] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:40] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:40] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:40] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:45] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:45] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:45] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:45] PHP Warning:  include_once(models/ChatMapper.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:45] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'models/ChatMapper.php' for inclusion (include_path='/home/pavella/public_html/mfk/application/../library:/home/pavella/public_html/mfk/library:/home/pavella/zf:/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/zf/Zend/Loader.php on line 146
+[05-Aug-2010 00:47:45] PHP Fatal error:  Class 'models_ChatMapper' not found in /home/pavella/public_html/mfk/application/modules/default/controllers/ChatController.php on line 28
+[05-Aug-2010 00:47:48] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:47:50] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:47:55] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:47:55] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:47:58] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:00] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:05] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:05] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:08] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:10] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:15] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:15] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:18] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:20] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:25] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:26] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:28] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:30] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:48:35] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:35] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:39] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:40] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:44] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:44] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:48] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:49] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:54] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:55] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:58] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:48:59] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:04] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:04] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:08] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:09] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:14] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:15] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:18] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:19] PHP Fatal error:  Uncaught exception 'RuntimeException' with message 'DirectoryIterator::__construct(/home/pavella/public_html/mfk/application/modules) [<a href='directoryiterator.--construct'>directoryiterator.--construct</a>]: failed to open dir: No such file or directory' in /home/pavella/zf/Zend/Controller/Front.php:289
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(289): DirectoryIterator->__construct('/home/pavella/p...')
+#1 /home/pavella/public_html/mfk/application/Bootstrap.php(29): Zend_Controller_Front->addModuleDirectory('/home/pavella/p...')
+#2 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(666): Bootstrap->_initFrontController()
+#3 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(619): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('frontcontroller')
+#4 /home/pavella/zf/Zend/Application/Bootstrap/BootstrapAbstract.php(583): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#5 /home/pavella/zf/Zend/Application.php(355): Zend_Application_Bo in /home/pavella/zf/Zend/Controller/Front.php on line 292
+[05-Aug-2010 00:49:25] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:25] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:28] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:30] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:34] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:35] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:38] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:40] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:45] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:45] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:48] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:50] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:55] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:55] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:49:58] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:00] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:05] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:05] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:08] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:10] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:15] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:15] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:18] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:20] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:25] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 00:50:25] PHP Fatal error:  Uncaught exception 'Zend_Controller_Dispatcher_Exception' with message 'Invalid controller specified (error)' in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php:248
+Stack trace:
+#0 /home/pavella/zf/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/pavella/zf/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#2 /home/pavella/zf/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/pavella/public_html/mfk/public/index.php(28): Zend_Application->run()
+#4 {main}
+  thrown in /home/pavella/zf/Zend/Controller/Dispatcher/Standard.php on line 248
+[05-Aug-2010 10:05:25] PHP Parse error:  syntax error, unexpected T_STRING in /home/pavella/public_html/mfk/application/modules/default/views/scripts/news/newsitem.phtml on line 3
+[09-Aug-2010 12:34:16] PHP Warning:  require_once(Zend/Application.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/pavella/public_html/mfk/public/index.php on line 20
+[09-Aug-2010 12:34:16] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'Zend/Application.php' (include_path='/home/pavella/public_html/mfk/library::/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/public_html/mfk/public/index.php on line 20
+[09-Aug-2010 12:34:26] PHP Warning:  require_once(Zend/Application.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/pavella/public_html/mfk/public/index.php on line 20
+[09-Aug-2010 12:34:26] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'Zend/Application.php' (include_path='/home/pavella/public_html/mfk/library::/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/public_html/mfk/public/index.php on line 20
+[09-Aug-2010 12:34:35] PHP Warning:  require_once(Zend/Application.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/pavella/public_html/mfk/public/index.php on line 20
+[09-Aug-2010 12:34:35] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'Zend/Application.php' (include_path='/home/pavella/public_html/mfk/library::/home/pavella/public_html/mfk/application:.:/usr/lib/php:/usr/local/lib/php') in /home/pavella/public_html/mfk/public/index.php on line 20
+[19-Aug-2010 02:22:05] PHP Warning:  move_uploaded_file(/home/pavella/public_html/mfk/publicvideofiles/videopage/AWOL.flv) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory in /home/pavella/public_html/mfk/application/modules/admin/controllers/VideoController.php on line 70
+[19-Aug-2010 02:22:05] PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move '/tmp/phpDteydJ' to '/home/pavella/public_html/mfk/publicvideofiles/videopage/AWOL.flv' in /home/pavella/public_html/mfk/application/modules/admin/controllers/VideoController.php on line 70
+[19-Aug-2010 02:27:05] PHP Warning:  move_uploaded_file(/home/pavella/public_html/mfk/publicvideofiles/videopage/AWOL.flv) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory in /home/pavella/public_html/mfk/application/modules/admin/controllers/VideoController.php on line 70
+[19-Aug-2010 02:27:05] PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move '/tmp/phpcsJ03O' to '/home/pavella/public_html/mfk/publicvideofiles/videopage/AWOL.flv' in /home/pavella/public_html/mfk/application/modules/admin/controllers/VideoController.php on line 70
+[19-Aug-2010 02:28:40] PHP Warning:  move_uploaded_file(/home/pavella/public_html/mfk/publicvideofiles/videopage/awol.flv) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory in /home/pavella/public_html/mfk/application/modules/admin/controllers/VideoController.php on line 70
+[19-Aug-2010 02:28:40] PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move '/tmp/phpuRdOdt' to '/home/pavella/public_html/mfk/publicvideofiles/videopage/awol.flv' in /home/pavella/public_html/mfk/application/modules/admin/controllers/VideoController.php on line 70
+[07-Sep-2010 09:22:59] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open '/img/captcha/f76644fc8fe2152a31a4a00ebe0c8c75.png' for writing: No such file or directory in /home/pavella/zf/Zend/Captcha/Image.php on line 563
+[07-Sep-2010 09:52:40] PHP Warning:  Select query cannot join with another table in /home/pavella/zf/Zend/Db/Select.php on line 1345
+[07-Sep-2010 09:52:54] PHP Warning:  Select query cannot join with another table in /home/pavella/zf/Zend/Db/Select.php on line 1345
+[07-Sep-2010 09:53:17] PHP Warning:  Select query cannot join with another table in /home/pavella/zf/Zend/Db/Select.php on line 1345
+[08-Sep-2010 09:56:47] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/rules/show.phtml on line 3
+[08-Sep-2010 10:04:13] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/news/index.phtml on line 19
+[08-Sep-2010 10:16:22] PHP Fatal error:  Call to undefined method models_TourMapper::getLast() in /home/pavella/public_html/mfk/application/modules/default/controllers/NewsController.php on line 53
+[08-Sep-2010 10:26:35] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/news/index.phtml on line 19
+[09-Sep-2010 10:20:49] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/news/create.phtml on line 38
+[09-Sep-2010 10:21:12] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/news/create.phtml on line 37
+[09-Sep-2010 10:24:43] PHP Fatal error:  Class 'models_TagsMapper' not found in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 85
+[09-Sep-2010 10:48:59] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/zf/Zend/View/Helper/PartialLoop.php on line 89
+[09-Sep-2010 11:42:16] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/news/edit.phtml on line 36
+[09-Sep-2010 12:17:01] PHP Fatal error:  Class 'models_NewsTags' not found in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 77
+[09-Sep-2010 12:17:34] PHP Fatal error:  Class 'models_NewsTags' not found in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 77
+[10-Sep-2010 09:51:50] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/news/edit.phtml on line 25
+[10-Sep-2010 09:51:50] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/news/edit.phtml on line 25
+[10-Sep-2010 09:51:50] PHP Warning:  in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in /home/pavella/public_html/mfk/application/modules/admin/views/scripts/news/edit.phtml on line 25
+[10-Sep-2010 09:53:49] PHP Parse error:  syntax error, unexpected $end in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 127
+[10-Sep-2010 10:00:25] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 85
+[10-Sep-2010 10:03:17] PHP Warning:  unlink(/home/pavella/public_html/mfk/public) [<a href='function.unlink'>function.unlink</a>]: Is a directory in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 180
+[12-Sep-2010 10:13:43] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 145
+[12-Sep-2010 10:21:07] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 145
+[17-Sep-2010 09:49:44] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/news/view.phtml on line 12
+[17-Sep-2010 09:49:44] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/default/views/scripts/news/view.phtml on line 29
+[25-Sep-2010 12:34:17] PHP Warning:  unlink(/home/pavella/public_html/mfk/public) [<a href='function.unlink'>function.unlink</a>]: Is a directory in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 180
+[30-Sep-2010 17:36:40] PHP Warning:  Invalid argument supplied for foreach() in /home/pavella/public_html/mfk/application/modules/admin/controllers/NewsController.php on line 145

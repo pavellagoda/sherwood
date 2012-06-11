@@ -1,0 +1,8 @@
+<div>
+    <?php foreach ($this->news as $item): ?>
+    <div>
+        <a href="/news/view/url/<?php echo $item['seo_url'] ?>"><?php echo $item['title'] ?></a>
+    </div>
+    <?php endforeach; ?>
+</div>
+<?php echo $this->paginationControl($this->news, 'Sliding', 'pagination.phtml'); ?>

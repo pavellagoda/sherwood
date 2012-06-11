@@ -1,0 +1,19 @@
+<div id="smoothmenu1" class="ddsmoothmenu">
+    <ul style="margin-left:240px;">
+        <li><a href="/"><b>Главная</b></a></li>
+        <li><a href="/about"><b>О компании</b></a></li>
+        <li><a href="/news"><b>Новости</b></a></li>
+        <li><a href="/objects"><b>Заведения</b></a>
+            <ul>
+                <?php foreach ($this->objects as $object): ?>
+                    <li><a href="/objects/view/url/<?php echo $object->tourLink ?>"><?php echo $object->title ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </li>
+        <li><a href="/contacts"><b>Контакты</b></a></li>
+
+
+    </ul>
+    <div class="clear"></div>
+    <!--  <br style="clear: left" />-->
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <?php foreach ($this->objects as $item): ?>
+    <div>
+        <h3><a href="/objects/view/url/<?php echo $item->tourLink ?>"><?php echo $item->title ?></a></h3>
+    </div>
+    <div>
+        <?php echo $item->short ?>
+    </div>
+    <br/>
+    <?php endforeach; ?>
+</div>
