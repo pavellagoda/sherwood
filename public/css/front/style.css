@@ -116,6 +116,38 @@ body {
     vertical-align: middle;
 }
 
+.footer-info {
+    background-image: url('/i/footer-info-bg.png');
+    height: 81px;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.footer-info p {
+    font-size: 12px;
+}
+
+.footer-info p a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-info p a:hover{
+    text-decoration: underline;
+}
+
+.footer-info div.text {
+    margin: 29px 130px 0 0;
+}
+
+.footer-info .footer-logo {
+    margin:22px 25px 0 0;
+}
+
+.footer-info .visa-block {
+    margin:24px 0 0 0;
+}
+
 .paginator {
     cursor:default;
     font-size:12px;

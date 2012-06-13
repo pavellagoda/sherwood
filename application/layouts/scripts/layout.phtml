@@ -31,14 +31,13 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            
-            <div class="last-news-block">
-                <?php  echo $this->render("includes/last-menu-block.phtml"); ?>
-            </div>
 
-            <?php
-                echo $this->render("includes/footer.phtml");
-            ?>
+            <div class="last-news-block">
+                <?php echo $this->showLastMenuBlock ? $this->render("includes/last-menu-block.phtml") : ''; ?>
+            </div>
         </div>
+        <?php
+            echo $this->render("includes/footer.phtml");
+        ?>
     </body>
 </html>
