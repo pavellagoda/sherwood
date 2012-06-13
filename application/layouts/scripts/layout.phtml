@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <?php
-//echo (isset($this->title)?'<title>'.$this->title.'</title>':'');
         echo $this->headTitle();
         echo $this->headMeta();
 
@@ -14,17 +13,32 @@
     <body>
         <div class="container">
             <div class="header">
+                <?php echo $this->render("includes/mainmenu_static.phtml"); ?>
+                <div class="logo">
+                    <a href="/"><img src="/i/logo.png" alt="logo"/></a>
+                </div>
+                <div class="promo">
+                    <img src="/i/promo.png" alt="promo"/>
+                </div>
             </div>
-            <div class="main-body">
-                <?php
-                    echo $this->render("includes/mainmenu.phtml");
-                    echo $this->layout()->content;
-                ?>
+            <div class="main-page">
+                <div class="left-menu lineelement"><?php echo $this->render("includes/left-menu/" . $this->leftMenuPart); ?></div>
+                <div class="content lineelement">
+                    <?php echo $this->layout()->content; ?>
+                </div>
+                <div class="right-menu lineelement right">
+                    <img src="/i/tel.png" alt="telephone"/>
+                </div>
+                <div class="clear"></div>
             </div>
-            <?php
-            echo $this->render("includes/footer.phtml");
-            ?>
-    </body>
-</div>
+            
+            <div class="last-news-block">
+                <?php  echo $this->render("includes/last-menu-block.phtml"); ?>
+            </div>
 
+            <?php
+                echo $this->render("includes/footer.phtml");
+            ?>
+        </div>
+    </body>
 </html>

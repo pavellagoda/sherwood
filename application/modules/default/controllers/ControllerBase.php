@@ -8,6 +8,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 	 */
 	public $_contentLayout = 'full';
 	protected $_bForLoggedUsersOnly = false;
+        protected $leftMenuPart = 'inner.phtml';
 
 
 	public function init()
@@ -22,6 +23,8 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 
 		$oZendSession = Zend_Registry::getInstance()->get('Zend_Session_Namespace');
 
+                $this->view->headMeta()->appendHttpEquiv('Content-Type', 'text/html; charset=utf-8');
+                
 		$this->view->headLink()->appendStylesheet('/css/common/reset.css');
 		$this->view->headLink()->appendStylesheet('/css/common/960.css');
 		$this->view->headLink()->appendStylesheet('/css/front/style.css');
@@ -33,6 +36,10 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headTitle()->setSeparator(' / ');
                 
                 $this->view->objects = models_ObjectMapper::getAll();
+                
+                $this->view->leftMenuPart = $this->leftMenuPart;
+                
+                $this->view->lastNews = models_NewsMapper::getLast(3);
                 
 		$frontController 			= Zend_Controller_Front::getInstance();
 		$this->view->controllerName             = $frontController->getRequest()->getControllerName();
