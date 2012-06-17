@@ -2,3 +2,5 @@ application/configs*
 logs*
 
 nbproject*
+access.log
+error.log
