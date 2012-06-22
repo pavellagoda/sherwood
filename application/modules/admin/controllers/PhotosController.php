@@ -21,26 +21,20 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
 
     public function editAction() {
         $request = $this->getRequest();
-
-        $id = (int) $request->getParam('id', 0);
-        $item = models_StaticpageMapper::findById($id);
-        $form = new modules_admin_forms_StaticpageEditForm();
-        if ($request->isPost()) {
-            if ($form->isValid($request->getPost())) {
-                $item->title = $form->getValue('title');
-                $item->content = $form->getValue('content');
-                $item->headDescription = $form->getValue('head_description');
-                $item->headTitle = $form->getValue('head_title');
-                $item->headMeta = $form->getValue('head_meta');
-                models_StaticpageMapper::update($item->id, $item->toArray(), models_StaticpageMapper::$_dbTable);
-                $this->_redirect($this->_helper->url('index'));
-            }
+        $id = $request->getParam('id');
+        
+        $photo = models_PhotoMapper::findById($id);
+        $photos_pages = models_PhotoPageMapper::findByPhotoId($id);
+        $page_list = array();
+        
+        foreach($photos_pages as $item) {
+            $page_list[] = $item->page;
         }
-        $form->populate($item->toArray());
-        $this->view->form = $form;
-        $this->view->headScript()->appendFile('/js/tiny_mce/tiny_mce.js');
-        $this->view->headScript()->appendFile('/js/texteditor.js');
+        
+        $this->view->item = $photo;
+        $this->view->page_list = $page_list;
     }
+    
     public function addAction() {
         $request = $this->getRequest();
         if ($request->isPost()) {

@@ -52,9 +52,9 @@ class models_PhotoPageMapper extends models_MapperBase
 
             $select->where('photo_id = ?', $id);
 
-            $result = $db->fetchRow($select);
+            $resultSet = $db->fetchAll($select);
 
-            return self::_initItem($result);
+            return self::_createArrayFromResultSet($resultSet, array(__CLASS__, '_initItem'));
 	}
 
 	public static function getAll ()
