@@ -1,0 +1,20 @@
+<form method="post" action="#" enctype="multipart/form-data">
+    <div class="files">
+        <div id="div-for-clone">
+            <input type="file" name="photo[]"/>
+            <label for="contacts[]">Контакты
+                <input name="contacts[]" type="checkbox" value ="1"/>
+            </label>
+            <label for="contacts[]">Главная
+                <input name="main[]" type="checkbox" value ="1"/>
+            </label>
+            <label for="contacts[]">О компании
+                <input name="about[]" type="checkbox" value ="1"/>
+            </label>
+            <label for="contacts[]">Заведения
+                <input name="objects[]" type="checkbox" value ="1"/>
+            </label>
+        </div>
+    </div>
+    <input type="submit" name="submit" value="Сохранить"/>
+</form>
