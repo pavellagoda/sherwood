@@ -22,13 +22,17 @@
                 </div>
             </div>
             <div class="main-page">
+                <?php if($this->leftMenuPart): ?>
                 <div class="left-menu lineelement"><?php echo $this->render("includes/left-menu/" . $this->leftMenuPart); ?></div>
+                <?php endif; ?>
                 <div class="content lineelement">
                     <?php echo $this->layout()->content; ?>
                 </div>
+                <?php if($this->showRightPart): ?>
                 <div class="right-menu lineelement right">
                     <img src="/i/tel.png" alt="telephone"/>
                 </div>
+                <?php endif; ?>
                 <div class="clear"></div>
             </div>
 

@@ -10,6 +10,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 	protected $_bForLoggedUsersOnly = false;
         protected $leftMenuPart = 'inner.phtml';
         protected $showLastMenuBlock = true;
+        protected $showRightPart = true;
 
 
 	public function init()
@@ -42,6 +43,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
                 
                 $this->view->lastNews = models_NewsMapper::getLast(3);
                 $this->view->showLastMenuBlock = $this->showLastMenuBlock;
+                $this->view->showRightPart = $this->showRightPart;
                 
 		$frontController 			= Zend_Controller_Front::getInstance();
 		$this->view->controllerName             = $frontController->getRequest()->getControllerName();

@@ -1,9 +1,10 @@
+<a href="/objects/view/url/<?php echo $this->object->tourLink ?>"><?php echo $this->object->title ?></a>
 <div id="flashcontent">
 
 </div>
 <script type="text/javascript">
         var so = new SWFObject("/swf/start.swf", "start", "900px", "540px", "10", "#fff");
-        so.addVariable('object', "<?php echo $this->object ?>" );
+        so.addVariable('object', "<?php echo $this->object->tourLink ?>" );
         so.addParam("menu", "false"); 
         so.addParam('allowscriptaccess','always');
         so.allowFullScreen=true;

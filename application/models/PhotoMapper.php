@@ -78,5 +78,15 @@ class models_PhotoMapper extends models_MapperBase
 	{
             return self::saveArray($model->toArray(), self::$_dbTable);
 	}
+        public static function update($id, $data)
+	{
+		$db = self::_getDbTable(self::$_dbTable);
+
+		$where['id = ?'] =  (int) $id;
+		$update = $db->update($data, $where);
+						
+		return $update;
+	}
+        
 
 }
