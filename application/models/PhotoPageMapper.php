@@ -22,22 +22,27 @@ class models_PhotoPageMapper extends models_MapperBase {
 
         if (isset($row->photo_id))
             $item->photo_id = $row->photo_id;
+        if (isset($row->extention))
+            $item->extention = $row->extention;
         if (isset($row->page))
             $item->page = $row->page;
 
         return $item;
     }
 
-    public static function findByPage($page) {
+    public static function findAllByPage($page) {
         $db = self::_getDbTable(self::$_dbTable);
 
-        $select = $db->select();
+        $select = $db->select('*');
+        $select->setIntegrityCheck(false);
 
-        $select->where('page = ?', $page);
+        $select->joinInner('photos', 'photos.id = photos_pages.photo_id', array('extention'=>'extention'));
+        
+        $select->where('photos_pages.page = ?', $page);
+        $select->group('photos_pages.photo_id');
+        $resultSet = $db->fetchAll($select);
 
-        $result = $db->fetchRow($select);
-
-        return self::_initItem($result);
+        return self::_createArrayFromResultSet($resultSet, array(__CLASS__, '_initItem'));
     }
 
     public static function findByPhotoId($id) {

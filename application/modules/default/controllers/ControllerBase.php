@@ -11,6 +11,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
         protected $leftMenuPart = 'inner.phtml';
         protected $showLastMenuBlock = true;
         protected $showRightPart = true;
+        protected $photoidenter = 'main';
 
 
 	public function init()
@@ -38,7 +39,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headTitle()->setSeparator(' / ');
                 
                 $this->view->objects = models_ObjectMapper::getAll();
-                
+                $this->view->photos = models_PhotoPageMapper::findAllByPage($this->photoidenter);
                 $this->view->leftMenuPart = $this->leftMenuPart;
                 
                 $this->view->lastNews = models_NewsMapper::getLast(3);
