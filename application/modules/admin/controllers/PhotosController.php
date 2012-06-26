@@ -60,14 +60,14 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
                 models_PhotoPageMapper::save($model);
             }
             if ($_FILES['photo']['size']) {
-                $path = $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/' . $photo_id . '.' . $photo->extention;
+                $path = $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/images/' . $photo_id . '.' . $photo->extention;
                 if (is_file($path))
                     unlink($path);
-                $name_parts = explode('.', $_FILES['photo']['name']);
+                $name_parts = explode('.', $_FILES['photo']['namef']);
                 $ext = $name_parts[count($name_parts) - 1];
                 $photo->extention = $ext;
                 models_PhotoMapper::update($id, $photo->toArray());
-                move_uploaded_file($_FILES['photo']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/' . $photo_id . '.' . $ext);
+                move_uploaded_file($_FILES['photo']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/images/' . $photo_id . '.' . $ext);
             }
         }
 
@@ -110,7 +110,8 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
                         $model->page = 'about';
                         models_PhotoPageMapper::save($model);
                     }
-                    move_uploaded_file($_FILES['photo']['tmp_name'][$id], $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/' . $photo_id . '.' . $ext);
+                    move_uploaded_file($_FILES['photo']['tmp_name'][$id], $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/images/' . $photo_id . '.' . $ext);
+                    move_uploaded_file($_FILES['preview']['tmp_name'][$id], $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/previews/' . $photo_id . '.' . $ext);
                 }
             }
 

@@ -10,7 +10,7 @@
         ?>
         <tr>
             <td><?php echo $id + 1; ?></td>
-            <td><img width="150px" height="150px" src="/i/galleries/<?php echo $item['id'].'.'.$item['extention'] ?>"/></td>
+            <td><img width="150px" height="150px" src="/i/galleries/previews/<?php echo $item['id'].'.'.$item['extention'] ?>"/></td>
             <td>
                 <div class="table_actions">
                     <a href="<?php echo $this->url(array('action' => 'edit', 'id' => $item['id']), null); ?>" class="sexybutton sexysimple"><span class="edit">Править</span></a>

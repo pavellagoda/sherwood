@@ -111,6 +111,7 @@ class FW_Strings {
             'Ч' => 'Ch',  'Ш' => 'Sh',  'Щ' => 'Sch',
             'Ь' => "'",  'Ы' => 'Y',   'Ъ' => "'",
             'Э' => 'E',   'Ю' => 'Yu',  'Я' => 'Ya',
+            '"' => '', 'quot' => ''
         );
         return strtr($str, $converter);
     }

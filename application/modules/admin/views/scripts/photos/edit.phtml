@@ -1,21 +1,31 @@
 <form method="post" action="#" enctype="multipart/form-data">
     <div>
         <div>
-            <img width="150px" height="150px" src="/i/galleries/<?php echo $this->item->id.'.'.$this->item->extention ?>"/>
+            <img width="150px" height="150px" src="/i/galleries/previews/<?php echo $this->item->id . '.' . $this->item->extention ?>"/>
         </div>
-        <input type="file" name="photo"/>
-        <label for="contacts">Контакты
-            <input id="contacts" <?php if(in_array('contacts', $this->page_list)) echo 'checked="checked"' ?> name="contacts" type="checkbox" value ="1"/>
-        </label>
-        <label for="main">Главная
-            <input id="main" name="main" <?php if(in_array('main', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
-        </label>
-        <label for="about">О компании
-            <input id="about" name="about" <?php if(in_array('about', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
-        </label>
-        <label for="objects">Заведения
-            <input id="objects" name="objects" <?php if(in_array('objects', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
-        </label>
+        <div class="lineelement">
+            <label> Выберте фотографию:
+                <input type="file" name="photo"/>
+            </label>
+            <br/>
+            <label> Выберте превью:
+                <input type="file" name="preview"/>
+            </label>
+        </div>
+        <div class="lineelement">
+            <label for="contacts">Контакты
+                <input id="contacts" <?php if (in_array('contacts', $this->page_list)) echo 'checked="checked"' ?> name="contacts" type="checkbox" value ="1"/>
+            </label>
+            <label for="main">Главная
+                <input id="main" name="main" <?php if (in_array('main', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
+            </label>
+            <label for="about">О компании
+                <input id="about" name="about" <?php if (in_array('about', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
+            </label>
+            <label for="objects">Заведения
+                <input id="objects" name="objects" <?php if (in_array('objects', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
+            </label>
+        </div>
     </div>
     <input type="submit" name="submit" value="Сохранить"/>
 </form>
