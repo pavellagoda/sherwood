@@ -1,5 +1,6 @@
 application/configs*
 logs*
+public/i/galleries*
 
 nbproject*
 access.log
