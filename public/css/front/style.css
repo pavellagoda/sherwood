@@ -45,7 +45,13 @@ body {
     
 .promo {
     margin-top: 30px;
+    text-align: center;
 }
+
+.promo img {
+    margin: 0 10px;
+}
+
 .main-page {
     margin-top: 45px;
 }

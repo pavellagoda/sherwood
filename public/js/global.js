@@ -18,7 +18,7 @@ $(function(){
         }
         if(addfile) {
             var html_to_add = $('div.files #div-for-clone').html();
-            $('div.files').append('<div>'+html_to_add+'</div>');
+            $('div.files').append('<div class="div-for-clone">'+html_to_add+'</div>');
         }
     })
 });
