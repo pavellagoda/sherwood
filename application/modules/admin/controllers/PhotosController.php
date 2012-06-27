@@ -13,6 +13,9 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
         'main' => 'Главная',
         'about' => 'О компании',
         'objects' => 'Заведения',
+        'vacancies' => 'Вакансии',
+        'programs' => 'Программы лояльности',
+        'news' => 'Новости',
         'alleya-grand' => 'Аллея Гранд',
         'bochka' => 'Бочка',
         'lotos' => 'Лотос',
@@ -20,6 +23,7 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
         'poseidon' => 'Посейдон',
         'kazachka' => 'Казачка',
         'kasht-alleya' => 'Каштановая Аллея',
+        'raffinato' => 'Раффинато',
     );
 
     public function init() {

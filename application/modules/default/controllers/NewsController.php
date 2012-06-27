@@ -13,6 +13,7 @@ class NewsController extends modules_default_controllers_ControllerBase {
     );
 
     public function _init() {
+        $this->photoidenter = 'news';
         if (!$this->getRequest()->isXmlHttpRequest()) {
             parent::init();
         }

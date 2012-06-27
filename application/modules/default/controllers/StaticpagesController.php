@@ -13,6 +13,9 @@ class StaticpagesController extends modules_default_controllers_ControllerBase {
     );
 
     public function init() {
+        
+        $this->photoidenter = $this->getRequest()->getParam('page');
+        
         if (!$this->getRequest()->isXmlHttpRequest()) {
             parent::init();
         }

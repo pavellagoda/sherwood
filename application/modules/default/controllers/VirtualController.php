@@ -15,6 +15,21 @@ class VirtualController extends modules_default_controllers_ControllerBase {
     public function init() {
         $this->leftMenuPart = false;
         $this->showRightPart = false;
+        $pagelist = array(
+            'gostinica-aleya-grand'=>'alleya-grand',
+            'kafe-bar-bochka'=>'bochka',
+            'spa-salon-lotos'=>'lotos',
+            'kafe-bar-evropa'=>'evropa',
+            'restoran-bar-poseydon'=>'poseidon',
+            'restoran-kazachka'=>'kazachka',
+            'restorannyy-kompleks-kashtanova-aleya'=>'kasht-alleya',
+            'restoran-raffinato' => 'raffinato'
+        );
+
+        $params = $this->getRequest()->getParams();
+        
+        if(isset($params['object']))
+            $this->photoidenter = $pagelist[$params['object']];
         if (!$this->getRequest()->isXmlHttpRequest()) {
             parent::init();
         }
