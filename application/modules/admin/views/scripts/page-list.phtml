@@ -1,0 +1,10 @@
+<div class="lineelement pagelist">
+    <?php foreach ($this->pagelist as $key=>$name): ?>
+    <label for="<?php echo $key ?>">
+        <input id="<?php echo $key ?>" <?php if (in_array($key, $this->page_list)) echo 'checked="checked"' ?> name="<?php echo $key; ?>[]" type="checkbox" value ="1"/>
+        <?php echo $name ?>
+    </label>
+    <?php endforeach; ?>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
