@@ -71,6 +71,7 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
                 $item->headDescription = $form->getValue('head_description');
                 $item->headTitle = $form->getValue('head_title');
                 $item->headMeta = $form->getValue('head_meta');
+                $item->order = 1;
                 $id = models_ObjectMapper::save($item);
                 $this->_redirect($this->_helper->url('index'));
             }
