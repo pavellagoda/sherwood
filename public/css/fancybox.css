@@ -222,7 +222,7 @@
 	width: 35%;
 	cursor: pointer;
 	outline: none;
-	background-image: url('blank.gif');
+	background-image: url('/i/blank.gif');
 	z-index: 1102;
 	display: none;
 }
