@@ -1,5 +1,19 @@
+.lineelement {
+    display: inline;
+    float: left;
+}
 .div-for-clone {
     padding: 10px 0;
     margin-top: 10px;
     border-top: 1px solid black;
+}
+
+.pagelist {
+    width: 500px;
+}
+
+.pagelist label {
+    display: block;
+    float: left;
+    width: 200px;
 }

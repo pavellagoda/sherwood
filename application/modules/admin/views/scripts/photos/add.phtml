@@ -10,20 +10,8 @@
                     <input type="file" name="preview[]"/>
                 </label>
             </div>
-            <div class="lineelement">
-                <label for="contacts[]">Контакты
-                    <input name="contacts[]" type="checkbox" value ="1"/>
-                </label>
-                <label for="contacts[]">Главная
-                    <input name="main[]" type="checkbox" value ="1"/>
-                </label>
-                <label for="contacts[]">О компании
-                    <input name="about[]" type="checkbox" value ="1"/>
-                </label>
-                <label for="contacts[]">Заведения
-                    <input name="objects[]" type="checkbox" value ="1"/>
-                </label>
-            </div>
+            
+            <?php echo $this->render('page-list.phtml') ?>
             
         </div>
     </div>

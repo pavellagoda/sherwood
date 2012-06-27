@@ -1,4 +1,16 @@
 $(function(){
+    
+    $("a[rel=photo]").fancybox({
+            'transitionIn'		: 'none',
+            'transitionOut'		: 'none',
+            'titlePosition' 	: 'over',
+            'autoScale'			: true,
+            'opacity'			: false,
+            'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+            }
+    });
+    
     $('a.delete-button').click(function(){
         if(confirm('Вы действительно хотите удалить эту запись?')) {
             return true

@@ -12,20 +12,7 @@
                 <input type="file" name="preview"/>
             </label>
         </div>
-        <div class="lineelement">
-            <label for="contacts">Контакты
-                <input id="contacts" <?php if (in_array('contacts', $this->page_list)) echo 'checked="checked"' ?> name="contacts" type="checkbox" value ="1"/>
-            </label>
-            <label for="main">Главная
-                <input id="main" name="main" <?php if (in_array('main', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
-            </label>
-            <label for="about">О компании
-                <input id="about" name="about" <?php if (in_array('about', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
-            </label>
-            <label for="objects">Заведения
-                <input id="objects" name="objects" <?php if (in_array('objects', $this->page_list)) echo 'checked="checked"' ?> type="checkbox" value ="1"/>
-            </label>
-        </div>
+        <?php echo $this->render('page-list.phtml') ?>
     </div>
     <input type="submit" name="submit" value="Сохранить"/>
 </form>

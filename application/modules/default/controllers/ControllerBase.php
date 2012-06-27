@@ -33,9 +33,14 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headLink()->appendStylesheet('/css/front/style.css');
 		$this->view->headLink()->appendStylesheet('/css/front/menu.css');
 		$this->view->headLink()->appendStylesheet('/css/common/sexybuttons.css');
+		$this->view->headLink()->appendStylesheet('/css/fancybox.css');
+		$this->view->headLink()->appendStylesheet('/css/slider.css');
 
 		$this->view->headScript()->appendFile('/js/global.js');
 		$this->view->headScript()->appendFile('/js/menu.js');
+		$this->view->headScript()->appendFile('/js/slider.js');
+		$this->view->headScript()->appendFile('/js/lib/funcybox/jquery.fancybox-1.3.1.js');
+		$this->view->headScript()->appendFile('/js/lib/funcybox/jquery.mousewheel-3.0.2.pack.js');
 		$this->view->headTitle()->setSeparator(' / ');
                 
                 $this->view->objects = models_ObjectMapper::getAll();
