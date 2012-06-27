@@ -17,6 +17,15 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
         $request = $this->getRequest();
 
         $page = (int) $request->getParam('page', 1);
+        
+        if($request->isPost()) {
+            $post = $request->getPost(); 
+            foreach($post['order'] as $id=>$order) {
+                $model = models_ObjectMapper::findById($id);
+                $model->order = $order;
+                models_ObjectMapper::update($id, $model->toArray(), models_ObjectMapper::$_dbTable);
+            }
+        }
 
         $objects = models_ObjectMapper::getAllPaginator($page);
 

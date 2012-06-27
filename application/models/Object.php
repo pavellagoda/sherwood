@@ -17,6 +17,7 @@ class models_Object {
 	public $headMeta;
 	public $headDescription;
 	public $headTitle;
+        public $order;
 	
 	public function toArray()
 	{
@@ -30,6 +31,7 @@ class models_Object {
 			'head_meta'		=> $this->headMeta,
 			'head_description'	=> $this->headDescription,
 			'head_title'		=> $this->headTitle,
+			'order' 		=> $this->order,
 		);
 	}
 	

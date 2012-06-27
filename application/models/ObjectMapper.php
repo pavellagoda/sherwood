@@ -42,6 +42,8 @@ class models_ObjectMapper extends models_MapperBase
 			$item->headDescription			= $row->head_description;
 		if (isset($row->head_title))
 			$item->headTitle			= $row->head_title;
+		if (isset($row->order))
+			$item->order            		= $row->order;
 
 		return $item;
 	}
@@ -90,6 +92,8 @@ class models_ObjectMapper extends models_MapperBase
 		$db = self::_getDbTable(self::$_dbTable);
 
 		$select = $db->select();
+                $select->order('order');
+                $select->order('id DESC');
 
 		$resultSet = $db->fetchAll($select);
 
@@ -103,7 +107,7 @@ class models_ObjectMapper extends models_MapperBase
 
 		$select = $db->select();
 
-		$select->order('id DESC');
+		$select->order('order');
 
 		$paginator = new Zend_Paginator(new Zend_Paginator_Adapter_DbSelect($select));
 		$paginator->setItemCountPerPage($count);
