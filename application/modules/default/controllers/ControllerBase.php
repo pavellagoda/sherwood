@@ -34,8 +34,8 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headLink()->appendStylesheet('/css/front/style.css');
 		$this->view->headLink()->appendStylesheet('/css/front/menu.css');
 		$this->view->headLink()->appendStylesheet('/css/common/sexybuttons.css');
-		$this->view->headLink()->appendStylesheet('/css/fancybox.css');
-		$this->view->headLink()->appendStylesheet('/css/slider.css');
+		$this->view->headLink()->appendStylesheet('/css/fancybox/fancybox.css');
+		$this->view->headLink()->appendStylesheet('/css//slider/slider.css');
 		
 		$this->view->headScript()->appendFile('/js/global.js');
 		$this->view->headScript()->appendFile('/js/menu.js');

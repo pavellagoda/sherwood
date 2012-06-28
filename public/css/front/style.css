@@ -64,7 +64,7 @@ body {
 
 
 .main-page.index-mainpage {
-    -margin-top: 380px;
+    margin-top: 0;
 }
 
 .left-menu {

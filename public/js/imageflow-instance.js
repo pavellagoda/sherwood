@@ -1,6 +1,6 @@
 $(function(){
-    var Instance3 = new ImageFlow();
-    Instance3.init({ 
+    var imageflow = new ImageFlow();
+    imageflow.init({ 
         ImageFlowID:'instance_imageflow', 
         captions:false, 
         slider:false, 
@@ -12,6 +12,11 @@ $(function(){
         startAnimation:true, 
         imageFocusM:1.5 ,
         circular:true,
-        onClick: function(){return false;}
+        slideshow:true,
+        
+        onClick: function(){
+//            imageflow.Slideshow.start();
+            return false;
+        }
     });
 })

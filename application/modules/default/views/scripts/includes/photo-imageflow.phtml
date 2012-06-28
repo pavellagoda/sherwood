@@ -1,6 +1,6 @@
 <div id="instance_imageflow" class="imageflow">  
   <?php foreach ($this->photos as $photo): ?>
-        <img src="/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"/>
+        <img longdesc="/i/galleries/images/<?php echo $photo->photo_id . '.' . $photo->extention; ?>" src="/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"/>
     <?php endforeach; ?>
 </div>
 <div class="clear"></div>
