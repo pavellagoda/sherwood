@@ -12,6 +12,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
         protected $showLastMenuBlock = true;
         protected $showRightPart = true;
         protected $photoidenter = 'main';
+        protected $slider_partial = 'photo-slider.phtml';
 
 
 	public function init()
@@ -35,10 +36,12 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headLink()->appendStylesheet('/css/common/sexybuttons.css');
 		$this->view->headLink()->appendStylesheet('/css/fancybox.css');
 		$this->view->headLink()->appendStylesheet('/css/slider.css');
+		$this->view->headLink()->appendStylesheet('/css/imageflow.packed.css');
 
 		$this->view->headScript()->appendFile('/js/global.js');
 		$this->view->headScript()->appendFile('/js/menu.js');
 		$this->view->headScript()->appendFile('/js/slider.js');
+		$this->view->headScript()->appendFile('/js/imageflow.packed.js');
 		$this->view->headScript()->appendFile('/js/lib/funcybox/jquery.fancybox-1.3.1.js');
 		$this->view->headScript()->appendFile('/js/lib/funcybox/jquery.mousewheel-3.0.2.pack.js');
 		$this->view->headTitle()->setSeparator(' / ');
@@ -50,6 +53,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
                 $this->view->lastNews = models_NewsMapper::getLast(3);
                 $this->view->showLastMenuBlock = $this->showLastMenuBlock;
                 $this->view->showRightPart = $this->showRightPart;
+                $this->view->slider_partial = $this->slider_partial;
                 
 		$frontController 			= Zend_Controller_Front::getInstance();
 		$this->view->controllerName             = $frontController->getRequest()->getControllerName();
