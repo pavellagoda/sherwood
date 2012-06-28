@@ -14,14 +14,14 @@ $(function(){
         imageFocusM:1.5 ,
         onClick: function(){return false;}
     }); 
-    
-    $('a.delete-button').click(function(){
-        if(confirm('Вы действительно хотите удалить эту запись?')) {
-            return true
-        } else {
-            return false;
-        }
-    })
+
+//    $('a.delete-button').click(function(){
+//        if(confirm('Вы действительно хотите удалить эту запись?')) {
+//            return true
+//        } else {
+//            return false;
+//        }
+//    })
 
     $('div.files input[type="file"]').live('change', function(){
         console.log('change')

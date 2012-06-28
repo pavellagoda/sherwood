@@ -52,9 +52,19 @@ body {
     margin: 0 15px;
 }
 
+.promo #instance_imageflow {
+    margin-top: -110px;
+}
+
 .main-page {
     margin-top: 45px;
 }
+
+
+.main-page.index-mainpage {
+    -margin-top: 380px;
+}
+
 .left-menu {
     width: 220px;
     padding-left: 25px; 

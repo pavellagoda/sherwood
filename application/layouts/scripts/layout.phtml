@@ -21,7 +21,7 @@
                     <?php echo $this->render("includes/".$this->slider_partial); ?>
                 </div>
             </div>
-            <div class="main-page">
+            <div class="main-page<?php if($this->controllerName=='index') echo ' index-mainpage' ?>">
                 <?php if($this->leftMenuPart): ?>
                 <div class="left-menu lineelement"><?php echo $this->render("includes/left-menu/" . $this->leftMenuPart); ?></div>
                 <?php endif; ?>
