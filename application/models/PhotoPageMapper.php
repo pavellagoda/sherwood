@@ -26,6 +26,8 @@ class models_PhotoPageMapper extends models_MapperBase {
             $item->extention = $row->extention;
         if (isset($row->page))
             $item->page = $row->page;
+        if (isset($row->title))
+            $item->title = $row->title;
 
         return $item;
     }
@@ -36,7 +38,7 @@ class models_PhotoPageMapper extends models_MapperBase {
         $select = $db->select('*');
         $select->setIntegrityCheck(false);
 
-        $select->joinInner('photos', 'photos.id = photos_pages.photo_id', array('extention'=>'extention'));
+        $select->joinInner('photos', 'photos.id = photos_pages.photo_id', array('extention'=>'extention', 'title'=>'title'));
         
         $select->where('photos_pages.page = ?', $page);
         $select->group('photos_pages.photo_id');

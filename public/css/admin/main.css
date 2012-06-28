@@ -17,3 +17,6 @@
     float: left;
     width: 200px;
 }
+input.photo-title {
+    width: 350px;
+}

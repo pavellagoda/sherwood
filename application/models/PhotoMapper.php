@@ -27,6 +27,8 @@ class models_PhotoMapper extends models_MapperBase
                 $item->id = $row->id;
             if (isset($row->extention))
                 $item->extention = $row->extention;
+            if (isset($row->title))
+                $item->title = $row->title;
 
             return $item;
 	}

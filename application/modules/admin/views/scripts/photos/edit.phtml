@@ -11,6 +11,10 @@
             <label> Выберте превью:
                 <input type="file" name="preview"/>
             </label>
+            <br/>
+            <label> Описание:
+                <input class="photo-title" type="text" name="title" value="<?php echo $this->item->title ?>"/>
+            </label>
         </div>
         <?php echo $this->render('page-list.phtml') ?>
     </div>
