@@ -11,7 +11,8 @@ $(function(){
         opacity:true, 
         startID:3, 
         startAnimation:true, 
-        imageFocusM:1.5 
+        imageFocusM:1.5 ,
+        onClick: function(){return false;}
     }); 
     
     $('a.delete-button').click(function(){
