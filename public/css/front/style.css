@@ -22,11 +22,13 @@ body {
     width: 223px;
     margin: 40px auto 0;
     position: relative;
+    z-index: 1001;
 }
 
 .mainmenu {
     position: relative;
     top: 93px;
+    z-index: 1000;
 }
 
 .mainmenu a, .left-menu a {

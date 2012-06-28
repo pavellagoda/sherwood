@@ -11,7 +11,7 @@ class IndexController extends modules_default_controllers_ControllerBase {
     public $ajaxable = array(
         'refresh-captcha' => array('json'),
     );
-    
+
     public function init() {
         $this->leftMenuPart = 'index.phtml';
         $this->slider_partial = 'photo-imageflow.phtml';
@@ -25,8 +25,9 @@ class IndexController extends modules_default_controllers_ControllerBase {
     public function indexAction() {
         $request = $this->getRequest();
         $this->view->headTitle('Главная');
-//        $this->view->headScript()->appendFile('/js/jquery.sliding-gallery-1.2.min.js');
-//        $this->view->headScript()->appendFile('/js/sliding.js');
+        $this->view->headLink()->appendStylesheet('/css/imageflow.packed.css');
+        $this->view->headScript()->appendFile('/js/imageflow.js');
+        $this->view->headScript()->appendFile('/js/imageflow-instance.js');
     }
 
 }
