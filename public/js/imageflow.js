@@ -817,6 +817,7 @@ function ImageFlow ()
 			
 			/* Interrupt the slideshow */
 			my.Slideshow.stop();
+                        window.setTimeout(my.Slideshow.start, my.slideshowSpeed);
 		},
 
 		addInterruptEvent: function()

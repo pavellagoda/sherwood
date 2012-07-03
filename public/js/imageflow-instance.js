@@ -13,6 +13,7 @@ $(function(){
         imageFocusM:1.5 ,
         circular:true,
         slideshow:true,
+        slideshowAutoplay:true,
         
         onClick: function(){
 //            imageflow.Slideshow.start();
