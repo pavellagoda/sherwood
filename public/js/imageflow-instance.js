@@ -14,6 +14,8 @@ $(function(){
         circular:true,
         slideshow:true,
         slideshowAutoplay:true,
+        animationSpeed:100,
+        slideshowSpeed:3000,
         
         onClick: function(){
 //            imageflow.Slideshow.start();

@@ -24,6 +24,7 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
         'kazachka' => 'Казачка',
         'kasht-alleya' => 'Каштановая Аллея',
         'raffinato' => 'Раффинато',
+        'nega-bar' => 'Нега Бар',
     );
 
     public function init() {

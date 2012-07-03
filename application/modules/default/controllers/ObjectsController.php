@@ -22,15 +22,16 @@ class ObjectsController extends modules_default_controllers_ControllerBase {
             'restoran-bar-poseydon'=>'poseidon',
             'restoran-kazachka'=>'kazachka',
             'restorannyy-kompleks-kashtanova-aleya'=>'kasht-alleya',
-            'restoran-raffinato' => 'raffinato'
+            'restoran-raffinato' => 'raffinato',
+            'nega-bar' => 'nega-bar'
         );
-
+        $this->slider_partial = 'photo-slider.phtml';
         $params = $this->getRequest()->getParams();
-        
         if(isset($params['url']))
             $this->photoidenter = $pagelist[$params['url']];
         else 
             $this->photoidenter = 'objects';
+        
         if (!$this->getRequest()->isXmlHttpRequest()) {
             parent::init();
         }

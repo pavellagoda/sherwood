@@ -23,11 +23,12 @@ class VirtualController extends modules_default_controllers_ControllerBase {
             'restoran-bar-poseydon'=>'poseidon',
             'restoran-kazachka'=>'kazachka',
             'restorannyy-kompleks-kashtanova-aleya'=>'kasht-alleya',
-            'restoran-raffinato' => 'raffinato'
+            'restoran-raffinato' => 'raffinato',
+            'nega-bar' => 'nega-bar'
         );
 
         $params = $this->getRequest()->getParams();
-        
+        $this->slider_partial = 'photo-slider.phtml';
         if(isset($params['object']))
             $this->photoidenter = $pagelist[$params['object']];
         if (!$this->getRequest()->isXmlHttpRequest()) {
