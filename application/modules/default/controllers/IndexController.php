@@ -23,6 +23,8 @@ class IndexController extends modules_default_controllers_ControllerBase {
 
     public function indexAction() {
         $request = $this->getRequest();
+        $page = models_StaticpageMapper::findByPage('index');
+        $this->view->item = $page;
         $this->view->headTitle('Главная');
     }
 
