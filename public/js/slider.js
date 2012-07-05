@@ -4,8 +4,9 @@ jQuery(document).ready(function() {
         'transitionIn'		: 'none',
         'transitionOut'		: 'none',
         'titlePosition' 	: 'over',
-        'autoScale'			: true,
-        'opacity'			: false,
+        'autoScale'		: true,
+        'opacity'		: false,
+        'cyclic'		: true,
         'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
             return '<span id="fancybox-title-over">' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
         },
