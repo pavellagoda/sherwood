@@ -43,7 +43,7 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
                 $item->title = $form->getValue('title');
                 $item->short = $form->getValue('short');
                 $item->full = $form->getValue('full');
-                $item->tourLink = FW_Strings::titleToSeo($item->title);
+//                $item->tourLink = FW_Strings::titleToSeo($item->title);
                 $item->isTour = $form->getValue('is_tour');
                 $item->headDescription = $form->getValue('head_description');
                 $item->headTitle = $form->getValue('head_title');
