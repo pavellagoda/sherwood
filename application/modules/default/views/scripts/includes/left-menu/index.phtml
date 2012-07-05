@@ -1,5 +1,21 @@
+<?php
+    $translate = array(
+        'ru' => array(
+            'Программа лояльности' => 'Программа лояльности', 
+            'Вакансии' => 'Вакансии', 
+        ),
+        'ua' => array(
+            'Программа лояльности' => 'Програма лояльності', 
+            'Вакансии' => 'Вакансії', 
+        ),
+        'en' => array(
+            'Программа лояльности' => 'Loyalty Program', 
+            'Вакансии' => 'Carrier', 
+        ),
+    )
+?>
 <div class="left-menu-separator"></div>
-<a href="/programs">Программа лояльности</a>
+<a href="/programs"><?php echo $translate[$this->lang]['Программа лояльности'] ?></a>
 <div class="left-menu-separator"></div>
-<a href="/vacancies">Вакансии</a>
+<a href="/vacancies"><?php echo $translate[$this->lang]['Вакансии'] ?></a>
 <div class="left-menu-separator"></div>

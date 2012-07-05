@@ -49,7 +49,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
                                         )
                         )
         );
-
+        $router->addRoute('language',
+                        new Zend_Controller_Router_Route_Regex(
+                                        'language/(ru|en|ua)$',
+                                        array(
+                                                        'controller' => 'language',
+                                                        'action' => 'index'
+                                        ),
+                                        array(
+                                                        1 => 'lang',
+                                        )
+                        )
+        );
         return $front;
     }
 

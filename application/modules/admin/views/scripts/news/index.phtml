@@ -11,7 +11,7 @@
 		?>
 		<tr>
 			<td><?php echo $id+1;?></td>
-			<td><?php echo $this->escape($item['title']);?></td>
+			<td><?php echo $this->escape($item['title_ru']);?></td>
 			<td><?php echo FW_Date::convert($item['created_ts'], FW_Date::MYSQL_DATETIME, FW_Date::SITE_DATE);?></td>
 			<td>
 				<div class="table_actions">

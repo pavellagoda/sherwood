@@ -39,7 +39,7 @@ class NewsController extends modules_default_controllers_ControllerBase {
             $this->_helper->redirector('index');
         }
 
-        $this->view->item = $item;
+        $this->view->item = $item->toArray();
     }
 
 }

@@ -1,11 +1,33 @@
+<?php
+    $translate = array(
+        'ru' => array(
+            'Новости' => 'Новости', 
+            'О компании' => 'О компании', 
+            'Заведения' => 'Заведения', 
+            'Контакты' => 'Контакты' 
+        ),
+        'ua' => array(
+            'Новости' => 'Новини', 
+            'О компании' => 'Про компанию', 
+            'Заведения' => 'Заклади', 
+            'Контакты' => 'Контакти' 
+        ),
+        'en' => array(
+            'Новости' => 'News', 
+            'О компании' => 'About', 
+            'Заведения' => 'Objects', 
+            'Контакты' => 'Contacts' 
+        ),
+    )
+?>
 <div class="mainmenu">
     <div class="lineelement">
-        <a href="/news">Новости</a>
-        <a href="/about">О компании</a>
+        <a href="/news"><?php echo $translate[$this->lang]['Новости'] ?></a>
+        <a href="/about"><?php echo $translate[$this->lang]['О компании'] ?></a>
     </div>
     <div class="lineelement right">
-        <a href="/objects">Заведения</a>
-        <a href="/contacts">Контакты</a>
+        <a href="/objects"><?php echo $translate[$this->lang]['Заведения'] ?></a>
+        <a href="/contacts"><?php echo $translate[$this->lang]['Контакты'] ?></a>
     </div>
     <div class="clear"></div>
 </div>

@@ -13,12 +13,19 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
         protected $showRightPart = true;
         protected $photoidenter = 'main';
         protected $slider_partial = 'photo-imageflow.phtml';
+        protected $language; 
 
 
 	public function init()
 	{
 		parent::init();
+                
+                $lang = new Zend_Session_Namespace('language');
+                
+                if(!isset($lang->language))
+                    $lang->language = 'ru';
 		
+                $this->language = $lang->language;
 		if (! FW_User::isLogged() && $this->_bForLoggedUsersOnly)
 		{
 			$this->_redirect('/login/');
@@ -62,6 +69,8 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 
 		$this->view->headTitle()->setDefaultAttachOrder('PREPEND');
 		$this->view->headTitle()->append('Аллея Гранд');
+                
+                $this->view->lang = $lang->language;
 
 		$this->view->loggedUser = FW_User::getLoggedUser(); 
 	}

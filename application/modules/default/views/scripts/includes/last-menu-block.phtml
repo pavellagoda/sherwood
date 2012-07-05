@@ -1,7 +1,12 @@
-<?php foreach ($this->lastNews as $news): ?>
+<?php foreach ($this->lastNews as $news): 
+    
+    $seo = 'seo_url_'.$this->lang;
+    $short = 'short_'.$this->lang;
+    
+    ?>
     <div class="last-news-block-item lineelement">
-        <a href="/news/view/url/<?php echo $news->seo_url ?>"><?php echo FW_Date::convert($news->created_ts, FW_Date::MYSQL_DATETIME, FW_Date::DATE) ?></a>
-        <div><?php echo $news->short ?></div>
+        <a href="/news/view/url/<?php echo $news->$seo ?>"><?php echo FW_Date::convert($news->created_ts, FW_Date::MYSQL_DATETIME, FW_Date::DATE) ?></a>
+        <div><?php echo $news->$short ?></div>
     </div>
 <?php endforeach; ?>
 <div class="clear"></div>

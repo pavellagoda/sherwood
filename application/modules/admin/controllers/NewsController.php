@@ -34,10 +34,15 @@ class Admin_NewsController extends modules_admin_controllers_ControllerBase {
 
         if ($request->isPost()) {
             if ($form->isValid($request->getPost())) {
-                $newsItem->title = $form->getValue('title');
-                $newsItem->short = $form->getValue('short');
-                $newsItem->full = $form->getValue('full');
-                $newsItem->seoUrl = FW_Strings::titleToSeo($newsItem->title);
+                $values = $form->getValues();
+                foreach ($values as $key=>$value) {
+                    $newsItem->$key = $value;
+                }
+                
+                $newsItem->seoUrlRu = FW_Strings::titleToSeo($newsItem->title_ru);
+                $newsItem->seoUrlEn = FW_Strings::titleToSeo($newsItem->title_en);
+                $newsItem->seoUrlUa = FW_Strings::titleToSeo($newsItem->title_ua);
+                
                 models_NewsMapper::update($newsItem->id, $newsItem->toArray(), models_NewsMapper::$_dbTable);
                 $this->_redirect($this->_helper->url('index'));
             }
@@ -56,11 +61,14 @@ class Admin_NewsController extends modules_admin_controllers_ControllerBase {
         $form = new modules_admin_forms_NewsEditForm();
         if ($request->isPost()) {
             if ($form->isValid($request->getPost())) {
-                $newsItem->title = $form->getValue('title');
-                $newsItem->short = $form->getValue('short');
-                $newsItem->full = $form->getValue('full');
-                $newsItem->viewsCount = 0;
-                $newsItem->seoUrl = FW_Strings::titleToSeo($newsItem->title);
+                $values = $form->getValues();
+                foreach ($values as $key=>$value) {
+                    $newsItem->$key = $value;
+                }
+                $newsItem->seoUrlRu = FW_Strings::titleToSeo($newsItem->title_ru);
+                $newsItem->seoUrlEn = FW_Strings::titleToSeo($newsItem->title_en);
+                $newsItem->seoUrlUa = FW_Strings::titleToSeo($newsItem->title_ua);
+                
                 $idNews = models_NewsMapper::save($newsItem);
                 $this->_redirect($this->_helper->url('index'));
             }
