@@ -25,13 +25,17 @@
     height:33px;
     margin:0;
     width:400px;
-    text-align:center;
+    text-align:right;
     background:#7F7F7F;
 }
 .menu li a{
     display:block;
-    color: #fff;
     text-decoration: none;
+}
+.menu li ul li a{
+    display:block;
+    text-decoration: none;
+    font-size: 15px;
 }
 .menu li:hover ul, .menu li.jshover ul{
     display:block;  

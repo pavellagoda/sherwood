@@ -8,9 +8,9 @@ body {
     background-position: center;
     background-color: #230310;
     background-attachment: scroll;
-    color: #ffffff;
-    font-style: italic;
-    font-size: 14px;
+    color: #FAC493;
+    font-family: 'Verdana';
+    font-size: 13px;
 }
 
 .container {
@@ -31,18 +31,22 @@ body {
     z-index: 1000;
 }
 
-.mainmenu a, .left-menu a {
-    font-family: 'Times';
-    font-size: 19px;
+.mainmenu a, .left-menu a, .last-news-block a {
+    font-family: 'Georgia';
+    font-size: 20px;
     font-style: italic;
     text-decoration: none;
-    color: #ffffff;
-    border-bottom: 1px dotted #515151;
+    color: #FBB03B;
+    border-bottom: 1px solid #FBB03B;
     margin: 0 23px;
 }
 
-.mainmenu a:hover {
+.mainmenu li:hover {
+}
+
+.mainmenu a:hover, .last-news-block a:hover {
     border-bottom: none;
+    text-decoration: none;
 }
     
 .promo {
@@ -112,7 +116,6 @@ body {
     text-decoration: none;
 }
 .last-news-block a:hover {
-    text-decoration: underline;
 }
 
 
