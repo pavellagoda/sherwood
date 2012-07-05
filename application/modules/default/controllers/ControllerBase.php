@@ -43,6 +43,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headLink()->appendStylesheet('/css/common/sexybuttons.css');
 		$this->view->headLink()->appendStylesheet('/css/fancybox/fancybox.css');
 		$this->view->headLink()->appendStylesheet('/css/slider/slider.css');
+		$this->view->headLink()->appendStylesheet('/css/front/menu_static.css');
 		
 		$this->view->headScript()->appendFile('/js/global.js');
 		$this->view->headScript()->appendFile('/js/menu.js');
@@ -71,7 +72,8 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headTitle()->append('Аллея Гранд');
                 
                 $this->view->lang = $lang->language;
-
+                
+                $this->view->objects = models_ObjectMapper::getAll();
 		$this->view->loggedUser = FW_User::getLoggedUser(); 
 	}
 

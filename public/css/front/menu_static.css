@@ -1,0 +1,40 @@
+.menu{
+    list-style:none;
+    padding:0;
+    margin:0;
+    font-size: 100%;
+    font-family: Georgia;
+}
+.menu li{
+    float:left;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+.menu li ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:400px;
+    display:none;
+    position:absolute;
+    left:-220px;
+}
+.menu li ul li{
+    float:none;
+    height:33px;
+    margin:0;
+    width:400px;
+    text-align:center;
+    background:#7F7F7F;
+}
+.menu li a{
+    display:block;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover ul, .menu li.jshover ul{
+    display:block;  
+}
+.menu li:hover, .menu li.jshover{
+}

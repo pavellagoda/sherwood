@@ -1,33 +1,44 @@
 <?php
-    $translate = array(
-        'ru' => array(
-            'Новости' => 'Новости', 
-            'О компании' => 'О компании', 
-            'Заведения' => 'Заведения', 
-            'Контакты' => 'Контакты' 
-        ),
-        'ua' => array(
-            'Новости' => 'Новини', 
-            'О компании' => 'Про компанию', 
-            'Заведения' => 'Заклади', 
-            'Контакты' => 'Контакти' 
-        ),
-        'en' => array(
-            'Новости' => 'News', 
-            'О компании' => 'About', 
-            'Заведения' => 'Objects', 
-            'Контакты' => 'Contacts' 
-        ),
-    )
+$translate = array(
+    'ru' => array(
+        'Новости' => 'Новости',
+        'О компании' => 'О компании',
+        'Заведения' => 'Заведения',
+        'Контакты' => 'Контакты'
+    ),
+    'ua' => array(
+        'Новости' => 'Новини',
+        'О компании' => 'Про компанию',
+        'Заведения' => 'Заклади',
+        'Контакты' => 'Контакти'
+    ),
+    'en' => array(
+        'Новости' => 'News',
+        'О компании' => 'About',
+        'Заведения' => 'Objects',
+        'Контакты' => 'Contacts'
+    ),
+        )
 ?>
 <div class="mainmenu">
     <div class="lineelement">
-        <a href="/news"><?php echo $translate[$this->lang]['Новости'] ?></a>
-        <a href="/about"><?php echo $translate[$this->lang]['О компании'] ?></a>
+        <ul class="menu">
+            <li><a href="/news"><?php echo $translate[$this->lang]['Новости'] ?></a></li>
+            <li><a href="/about"><?php echo $translate[$this->lang]['О компании'] ?></a></li>
+        </ul>
     </div>
     <div class="lineelement right">
-        <a href="/objects"><?php echo $translate[$this->lang]['Заведения'] ?></a>
-        <a href="/contacts"><?php echo $translate[$this->lang]['Контакты'] ?></a>
+        <ul class="menu">
+            <li>
+                <a href="#"><?php echo $translate[$this->lang]['Заведения'] ?></a>
+                <ul>
+                    <?php foreach ($this->objects as $object): ?>
+                        <li><a href="/objects/view/url/<?php echo $object->tourLink ?>"><?php echo $object->title ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </li>
+            <li><a href="/contacts"><?php echo $translate[$this->lang]['Контакты'] ?></a></li>
+        </ul>
     </div>
     <div class="clear"></div>
 </div>
