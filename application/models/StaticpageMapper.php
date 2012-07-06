@@ -26,10 +26,18 @@ class models_StaticpageMapper extends models_MapperBase
 
 		if (isset($row->id))
                         $item->id	= $row->id;
-		if (isset($row->title))
-			$item->title	= $row->title;
-		if (isset($row->content))
-			$item->content	= $row->content;
+		if (isset($row->title_ru))
+			$item->title_ru	= $row->title_ru;
+		if (isset($row->title_en))
+			$item->title_en	= $row->title_en;
+		if (isset($row->title_ua))
+			$item->title_ua	= $row->title_ua;
+		if (isset($row->content_ru))
+			$item->content_ru	= $row->content_ru;
+		if (isset($row->content_en))
+			$item->content_en	= $row->content_en;
+		if (isset($row->content_ua))
+			$item->content_ua	= $row->content_ua;
                 if (isset($row->name))
 			$item->name	= $row->name;
                 if (isset($row->head_meta))

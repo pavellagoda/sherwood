@@ -31,11 +31,16 @@ class Admin_StaticpagesController extends modules_admin_controllers_ControllerBa
         $form = new modules_admin_forms_StaticpageEditForm();
         if ($request->isPost()) {
             if ($form->isValid($request->getPost())) {
-                $item->title = $form->getValue('title');
-                $item->content = $form->getValue('content');
+                $item->title_ru = $form->getValue('title_ru');
+                $item->title_en = $form->getValue('title_en');
+                $item->title_ua = $form->getValue('title_ua');
+                $item->content_ru = $form->getValue('content_ru');
+                $item->content_ua = $form->getValue('content_ua');
+                $item->content_en = $form->getValue('content_en');
                 $item->headDescription = $form->getValue('head_description');
                 $item->headTitle = $form->getValue('head_title');
                 $item->headMeta = $form->getValue('head_meta');
+                
                 models_StaticpageMapper::update($item->id, $item->toArray(), models_StaticpageMapper::$_dbTable);
                 $this->_redirect($this->_helper->url('index'));
             }
