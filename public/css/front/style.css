@@ -12,7 +12,7 @@ body {
     background-repeat: repeat-y;
     background-position: center;
     background-color: #250314;
-    background-attachment: scroll;
+    background-attachment: fixed;
     color: #FAC493;
     font-family: 'Georgia';
     font-size: 13px;
