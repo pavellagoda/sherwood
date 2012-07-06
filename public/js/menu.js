@@ -55,12 +55,12 @@ buildmenu:function($, setting){
 		var $subul=$(this).find('ul:eq(0)').css({display:'block'})
 		this._dimensions={w:this.offsetWidth, h:this.offsetHeight, subulw:$subul.outerWidth(), subulh:$subul.outerHeight()}
 		this.istopheader=$curobj.parents("ul").length==1? true : false //is top level header?
-		$subul.css({top:this.istopheader? this._dimensions.h+"px" : 0})
-		$curobj.children("a:eq(0)").css(this.istopheader? {paddingRight: smoothmenu.arrowimages.down[2]} : {}).append( //add arrow images
-			'<img src="'+ (this.istopheader? smoothmenu.arrowimages.down[1] : smoothmenu.arrowimages.right[1])
-			+'" class="' + (this.istopheader? smoothmenu.arrowimages.down[0] : smoothmenu.arrowimages.right[0])
-			+ '" style="border:0;" />'
-		)
+		$subul.css({top:this.istopheader? this._dimensions.h-1+"px" : 0})
+//		$curobj.children("a:eq(0)").css(this.istopheader? {paddingRight: smoothmenu.arrowimages.down[2]} : {}).append( //add arrow images
+//			'<img src="'+ (this.istopheader? smoothmenu.arrowimages.down[1] : smoothmenu.arrowimages.right[1])
+//			+'" class="' + (this.istopheader? smoothmenu.arrowimages.down[0] : smoothmenu.arrowimages.right[0])
+//			+ '" style="border:0;" />'
+//		)
 		if (smoothmenu.shadow.enabled){
 			this._shadowoffset={x:(this.istopheader?$subul.offset().left+smoothmenu.shadow.offsetx : this._dimensions.w), y:(this.istopheader? $subul.offset().top+smoothmenu.shadow.offsety : $curobj.position().top)} //store this shadow's offsets
 			if (this.istopheader)
@@ -74,11 +74,11 @@ buildmenu:function($, setting){
 		$curobj.hover(
 			function(e){
 				var $targetul=$(this).children("ul:eq(0)")
-				this._offsets={left:$(this).offset().left, top:$(this).offset().top}
+				this._offsets={left:$(this).offset().left, top:$(this).offset().top-1}
 				var menuleft=this.istopheader? 0 : this._dimensions.w
 				menuleft=(this._offsets.left+menuleft+this._dimensions.subulw>$(window).width())? (this.istopheader? -this._dimensions.subulw+this._dimensions.w : -this._dimensions.w) : menuleft //calculate this sub menu's offsets from its parent
 				if ($targetul.queue().length<=1){ //if 1 or less queued animations
-					$targetul.css({left:menuleft+"px", width:this._dimensions.subulw+'px'}).animate({height:'show',opacity:'show'}, ddsmoothmenu.transition.overtime)
+					$targetul.css({right:"0px", width:this._dimensions.subulw+'px'}).animate({height:'show',opacity:'show'}, ddsmoothmenu.transition.overtime)
 					if (smoothmenu.shadow.enabled){
 						var shadowleft=this.istopheader? $targetul.offset().left+ddsmoothmenu.shadow.offsetx : menuleft
 						var shadowtop=this.istopheader?$targetul.offset().top+smoothmenu.shadow.offsety : this._shadowoffset.y
@@ -128,6 +128,6 @@ init:function(setting){
 
 ddsmoothmenu.init({
 	mainmenuid: "smoothmenu1", //menu DIV id
-	customtheme: ['#ff0000', '#ffff00'], //override default menu CSS background values? Uncomment: ["normal_background", "hover_background"]
+//	customtheme: ['#ff0000', '#ffff00'], //override default menu CSS background values? Uncomment: ["normal_background", "hover_background"]
 	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })

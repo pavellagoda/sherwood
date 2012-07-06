@@ -27,7 +27,7 @@ $translate = array(
             <li<?php if(in_array('about', $this->request)) echo ' class="active"' ?>><a href="/about"><?php echo $translate[$this->lang]['О компании'] ?></a></li>
         </ul>
     </div>
-    <div class="lineelement right">
+    <div class="lineelement right ddsmoothmenu" id="smoothmenu1">
         <ul class="menu">
             <li class="have-inner<?php if($this->controllerName=='objects') echo ' active' ?>">
                 <a href="#"><?php echo $translate[$this->lang]['Заведения'] ?></a>
