@@ -78,7 +78,7 @@ buildmenu:function($, setting){
 				var menuleft=this.istopheader? 0 : this._dimensions.w
 				menuleft=(this._offsets.left+menuleft+this._dimensions.subulw>$(window).width())? (this.istopheader? -this._dimensions.subulw+this._dimensions.w : -this._dimensions.w) : menuleft //calculate this sub menu's offsets from its parent
 				if ($targetul.queue().length<=1){ //if 1 or less queued animations
-					$targetul.css({right:"0px", width:this._dimensions.subulw+'px'}).animate({height:'show',opacity:'show'}, ddsmoothmenu.transition.overtime)
+					$targetul.css({left:"0px", width:this._dimensions.subulw+'px'}).animate({height:'show',opacity:'show'}, ddsmoothmenu.transition.overtime)
 					if (smoothmenu.shadow.enabled){
 						var shadowleft=this.istopheader? $targetul.offset().left+ddsmoothmenu.shadow.offsetx : menuleft
 						var shadowtop=this.istopheader?$targetul.offset().top+smoothmenu.shadow.offsety : this._shadowoffset.y

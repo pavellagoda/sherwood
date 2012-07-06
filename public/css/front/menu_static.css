@@ -27,7 +27,7 @@
     list-style:none;
     padding:0;
     margin:0;
-    width:400px;
+    width:450px;
     display:none;
     position:absolute;
     right:0;
@@ -41,8 +41,8 @@
     float:none;
     height:33px;
     margin:0;
-    width:400px;
-    text-align:right;
+    width:450px;
+    text-align:left;
     background:none;
     padding: 0;
 }
@@ -55,7 +55,7 @@
 .menu li ul li a{
     display:block;
     font-size: 15px;
-    float: right;
+    float: left;
     text-decoration: none;
     color: white;
     font-family: 'Georgia';
