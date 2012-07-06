@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Georgia; 
+    src: url(fonts/georgia.ttf);
+}
+
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 
 body {
@@ -9,7 +14,7 @@ body {
     background-color: #230310;
     background-attachment: scroll;
     color: #FAC493;
-    font-family: 'Verdana';
+    font-family: 'Georgia';
     font-size: 13px;
 }
 
@@ -138,7 +143,7 @@ body {
 }
 
 .logos-list img {
-    margin: 14px 12px;
+    margin: 14px 11px;
     vertical-align: middle;
 }
 
@@ -234,4 +239,17 @@ body {
 
 #photo-slider {
     margin-left: 30px;
+}
+
+.news-list a {
+    font-family: 'Georgia';
+    font-size: 20px;
+    color: #FAC493;
+}
+.news-list a:hover {
+    text-decoration: none;
+}
+
+.news-short-description {
+    margin-bottom: 10px;
 }

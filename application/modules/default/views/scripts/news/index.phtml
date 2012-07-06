@@ -1,7 +1,10 @@
-<div>
+<div class="news-list">
     <?php foreach ($this->news as $item): ?>
     <div>
         <a href="/news/view/url/<?php echo $item['seo_url_'.$this->lang] ?>"><?php echo $item['title_'.$this->lang] ?></a>
+    </div>
+    <div class="news-short-description">
+        <?php echo $item['short_'.$this->lang] ?>
     </div>
     <?php endforeach; ?>
 </div>

@@ -75,6 +75,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
                 
                 $this->view->objects = models_ObjectMapper::getAll();
 		$this->view->loggedUser = FW_User::getLoggedUser(); 
+                $this->view->request = $this->getRequest()->getParams();
 	}
 
 }

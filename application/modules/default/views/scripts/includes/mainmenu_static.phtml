@@ -23,13 +23,13 @@ $translate = array(
 <div class="mainmenu">
     <div class="lineelement">
         <ul class="menu">
-            <li><a href="/news"><?php echo $translate[$this->lang]['Новости'] ?></a></li>
-            <li><a href="/about"><?php echo $translate[$this->lang]['О компании'] ?></a></li>
+            <li<?php if($this->controllerName=='news') echo ' class="active"' ?>><a href="/news"><?php echo $translate[$this->lang]['Новости'] ?></a></li>
+            <li<?php if(in_array('about', $this->request)) echo ' class="active"' ?>><a href="/about"><?php echo $translate[$this->lang]['О компании'] ?></a></li>
         </ul>
     </div>
     <div class="lineelement right">
         <ul class="menu">
-            <li>
+            <li class="have-inner<?php if($this->controllerName=='objects') echo ' active' ?>">
                 <a href="#"><?php echo $translate[$this->lang]['Заведения'] ?></a>
                 <ul>
                     <?php foreach ($this->objects as $object): ?>
@@ -37,7 +37,7 @@ $translate = array(
                     <?php endforeach; ?>
                 </ul>
             </li>
-            <li><a href="/contacts"><?php echo $translate[$this->lang]['Контакты'] ?></a></li>
+            <li<?php if(in_array('contacts', $this->request)) echo ' class="active"' ?>><a href="/contacts"><?php echo $translate[$this->lang]['Контакты'] ?></a></li>
         </ul>
     </div>
     <div class="clear"></div>

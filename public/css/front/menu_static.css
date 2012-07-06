@@ -10,7 +10,18 @@
     padding:0;
     margin:0;
     position:relative;
+    padding: 8px 10px;
 }
+.menu li.active, .menu li:hover {
+    background:#65023a;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.menu li.have-inner:hover {
+    -moz-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
+}
+
 .menu li ul{
     list-style:none;
     padding:0;
@@ -18,7 +29,11 @@
     width:400px;
     display:none;
     position:absolute;
-    left:-220px;
+    left:-255px;
+    background:#65023a;
+    -moz-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+    padding: 10px 0;
 }
 .menu li ul li{
     float:none;
@@ -26,18 +41,26 @@
     margin:0;
     width:400px;
     text-align:right;
-    background:#7F7F7F;
+    background:none;
+    padding: 0;
 }
+
 .menu li a{
     display:block;
     text-decoration: none;
 }
+
 .menu li ul li a{
     display:block;
-    text-decoration: none;
     font-size: 15px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-family: 'Georgia';
+    border: none;
+    font-weight: bolder;
 }
-.menu li:hover ul, .menu li.jshover ul{
+.menu li:hover ul{
     display:block;  
 }
 .menu li:hover, .menu li.jshover{

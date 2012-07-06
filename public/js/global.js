@@ -1,5 +1,21 @@
 $(function(){
-    
+//    $('ul.menu ul').css('opacity', 0)
+//    $('ul.menu li').mouseover(function(){
+//        $('ul.menu ul').animate(
+//        {
+//            opacity:"1"
+//        }, 
+//        300
+//        );
+//    })
+//    $('ul.menu li').mouseout(function(){
+//        $('ul.menu ul').animate(
+//        {
+//            opacity:"0"
+//        }, 
+//        300
+//        );
+//    })
     $('a.delete-button').click(function(){
         if(confirm('Вы действительно хотите удалить эту запись?')) {
             return true
