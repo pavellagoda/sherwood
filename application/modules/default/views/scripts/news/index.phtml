@@ -1,11 +1,12 @@
 <div class="news-list">
     <?php foreach ($this->news as $item): ?>
-    <div>
-        <a href="/news/view/url/<?php echo $item['seo_url_'.$this->lang] ?>"><?php echo $item['title_'.$this->lang] ?></a>
-    </div>
-    <div class="news-short-description">
-        <?php echo $item['short_'.$this->lang] ?>
-    </div>
+        <div class="news-item">
+            <a href="/news/view/url/<?php echo $item['seo_url_' . $this->lang] ?>"><?php echo $item['title_' . $this->lang] ?></a>
+            <div class="news-short-description">
+                <?php echo $item['short_' . $this->lang] ?>
+            </div>
+            <span class="news-date"><?php echo FW_Date::convert($item['created_ts'], FW_Date::MYSQL_DATETIME, FW_Date::SITE_DATE) ?></span>
+        </div>
     <?php endforeach; ?>
 </div>
 <?php echo $this->paginationControl($this->news, 'Sliding', 'pagination.phtml'); ?>

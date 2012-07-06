@@ -111,6 +111,14 @@ body {
 
 .content {
     width: 500px;
+    font-family: Arial;
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.content a{
+    color:#FBB03B;
+    font-weight: bolder;
 }
 .last-news-block {
     margin-top: 40px;
@@ -244,12 +252,33 @@ body {
 .news-list a {
     font-family: 'Georgia';
     font-size: 20px;
-    color: #FAC493;
+    color: #FBB03B;
+    font-style: italic;
+    margin-bottom: 10px;
+    display: block;
 }
+
+.news-list span.news-date {
+    background: #fcaf39;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color:black;
+    padding: 3px 5px;
+    font-family: Verdana;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
 .news-list a:hover {
     text-decoration: none;
 }
 
 .news-short-description {
     margin-bottom: 10px;
+}
+
+.news-item {
+    margin-bottom: 30px;
 }
