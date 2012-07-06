@@ -40,9 +40,15 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
         $form = new modules_admin_forms_ObjectEditForm();
         if ($request->isPost()) {
             if ($form->isValid($request->getPost())) {
-                $item->title = $form->getValue('title');
-                $item->short = $form->getValue('short');
-                $item->full = $form->getValue('full');
+                $item->title_ru = $form->getValue('title_ru');
+                $item->title_en = $form->getValue('title_en');
+                $item->title_ua = $form->getValue('title_ua');
+                $item->short_ru = $form->getValue('short_ru');
+                $item->short_en = $form->getValue('short_en');
+                $item->short_ua = $form->getValue('short_ua');
+                $item->full_ru = $form->getValue('full_ru');
+                $item->full_en = $form->getValue('full_en');
+                $item->full_ua = $form->getValue('full_ua');
 //                $item->tourLink = FW_Strings::titleToSeo($item->title);
                 $item->isTour = $form->getValue('is_tour');
                 $item->headDescription = $form->getValue('head_description');
@@ -63,9 +69,15 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
         $form = new modules_admin_forms_ObjectEditForm();
         if ($request->isPost()) {
             if ($form->isValid($request->getPost())) {
-                $item->title = $form->getValue('title');
-                $item->short = $form->getValue('short');
-                $item->full = $form->getValue('full');
+                $item->title_ru = $form->getValue('title_ru');
+                $item->title_en = $form->getValue('title_en');
+                $item->title_ua = $form->getValue('title_ua');
+                $item->short_ru = $form->getValue('short_ru');
+                $item->short_en = $form->getValue('short_en');
+                $item->short_ua = $form->getValue('short_ua');
+                $item->full_ru = $form->getValue('full_ru');
+                $item->full_en = $form->getValue('full_en');
+                $item->full_ua = $form->getValue('full_ua');
                 $item->tourLink = FW_Strings::titleToSeo($item->title);
                 $item->isTour = $form->getValue('is_tour');
                 $item->headDescription = $form->getValue('head_description');

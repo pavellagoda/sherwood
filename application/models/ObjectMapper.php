@@ -26,12 +26,24 @@ class models_ObjectMapper extends models_MapperBase
 
 		if (isset($row->id))
 			$item->id				= $row->id;
-		if (isset($row->title))
-			$item->title				= $row->title;
-		if (isset($row->short))
-			$item->short				= $row->short;
-		if (isset($row->full))
-			$item->full				= $row->full;
+		if (isset($row->title_ru))
+			$item->title_ru				= $row->title_ru;
+		if (isset($row->title_en))
+			$item->title_en				= $row->title_en;
+		if (isset($row->title_ua))
+			$item->title_ua				= $row->title_ua;
+		if (isset($row->short_ru))
+			$item->short_ru				= $row->short_ru;
+		if (isset($row->short_ua))
+			$item->short_ua				= $row->short_ua;
+		if (isset($row->short_en))
+			$item->short_en				= $row->short_en;
+		if (isset($row->full_ru))
+			$item->full_ru				= $row->full_ru;
+		if (isset($row->full_en))
+			$item->full_en				= $row->full_en;
+		if (isset($row->full_ua))
+			$item->full_ua				= $row->full_ua;
 		if (isset($row->tour_link))
 			$item->tourLink				= $row->tour_link;
 		if (isset($row->is_tour))

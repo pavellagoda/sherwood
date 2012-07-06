@@ -61,7 +61,7 @@ class ObjectsController extends modules_default_controllers_ControllerBase {
             $this->view->headMeta()->appendName('description', $item->headDescription);
         if ($item->headMeta)
             $this->view->headMeta()->appendName('keywords', $item->headMeta);
-        $this->view->item = $item;
+        $this->view->item = $item->toArray();
     }
 
 }

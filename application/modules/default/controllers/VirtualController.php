@@ -44,7 +44,7 @@ class VirtualController extends modules_default_controllers_ControllerBase {
         if (0 === $object) {
             $this->_helper->redirector('index', 'index');
         }
-        $this->view->object = models_ObjectMapper::findByUrl($object);
+        $this->view->object = models_ObjectMapper::findByUrl($object)->toArray();
     }
 
 }

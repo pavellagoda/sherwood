@@ -32,8 +32,10 @@ $translate = array(
             <li class="have-inner<?php if($this->controllerName=='objects') echo ' active' ?>">
                 <a href="#"><?php echo $translate[$this->lang]['Заведения'] ?></a>
                 <ul>
-                    <?php foreach ($this->objects as $object): ?>
-                        <li><a href="/objects/view/url/<?php echo $object->tourLink ?>"><?php echo $object->title ?></a></li>
+                    <?php foreach ($this->objects as $object): 
+                        $title = 'title_'.$this->lang;
+                    ?>
+                        <li><a href="/objects/view/url/<?php echo $object->tourLink ?>"><?php echo $object->$title ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </li>

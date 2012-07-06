@@ -1,9 +1,9 @@
-<h3><?php echo $this->item->title ?></h3>
+<h3><?php echo $this->item['title_'.$this->lang] ?></h3>
 <div>
-    <?php echo $this->item->full ?>
+    <?php echo $this->item['full_'.$this->lang] ?>
 </div>
-<?php if($this->item->isTour) :?>
+<?php if($this->item['is_tour']) :?>
 <div>
-    <a href="/virtual/view/object/<?php echo $this->item->tourLink; ?>">Виртуальный тур</a> 
+    <a href="/virtual/view/object/<?php echo $this->item['tour_link']; ?>">Виртуальный тур</a> 
 </div>
 <?php endif; ?>
