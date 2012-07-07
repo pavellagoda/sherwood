@@ -67,6 +67,14 @@ body {
     box-shadow: 0px 0px 38px rgba(83, 44, 47, 1);
 }
 
+.promo .dg-wrapper img {
+    margin: 0;
+    border: none;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
 
 .promo #instance_imageflow {
     margin-top: -110px;
