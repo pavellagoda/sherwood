@@ -46,7 +46,9 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
             models_PhotoPageMapper::delete($id);
             $photo_id = $id;
             $this->createRecords($post, 0, $photo_id);
-            $photo->title = $post['title'];
+            $photo->title_ru = $post['title_ru'];
+            $photo->title_en = $post['title_en'];
+            $photo->title_ua = $post['title_ua'];
             if ($_FILES['photo']['size']) {
                 $path = $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/images/' . $photo_id . '.' . $photo->extention;
                 $path_preview = $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/previews/' . $photo_id . '.' . $photo->extention;
@@ -83,7 +85,9 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
                     $ext = $name_parts[count($name_parts) - 1];
                     $model = new models_Photo();
                     $model->extention = $ext;
-                    $model->title = $post['title'][$id];
+                    $model->title_ru = $post['title_ru'][$id];
+                    $model->title_en = $post['title_en'][$id];
+                    $model->title_ua = $post['title_ua'][$id];
                     $photo_id = models_PhotoMapper::save($model);
                     $this->createRecords($post, $id, $photo_id);
                     move_uploaded_file($_FILES['photo']['tmp_name'][$id], $_SERVER['DOCUMENT_ROOT'] . '/i/galleries/images/' . $photo_id . '.' . $ext);

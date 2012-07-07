@@ -1,7 +1,10 @@
 <section id="dg-container" class="dg-container">
     <div class="dg-wrapper">  
-        <?php foreach ($this->photos as $photo): ?>
-            <a title="<?php echo $photo->title; ?>" rel="photo" href="/i/galleries/images/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"><img src="/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"/></a>
+        <?php 
+            foreach ($this->photos as $photo): 
+                $title = 'title_'.$this->lang;
+        ?>
+            <a title="<?php echo $photo->$title; ?>" rel="photo" href="/i/galleries/images/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"><img src="/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"/></a>
         <?php endforeach; ?>
     </div>
     <div class="clear"></div>

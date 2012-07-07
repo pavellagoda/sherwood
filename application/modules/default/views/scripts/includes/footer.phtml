@@ -10,8 +10,9 @@ $translate = array(
     <?php
     foreach ($this->objects as $object):
         if (is_file($_SERVER['DOCUMENT_ROOT'] . '/i/logos/' . $object->id . '.png')):
+            $title = 'title_'.$this->lang;
             ?>
-            <a href="/objects/view/url/<?php echo $object->tourLink ?>"><img src="/i/logos/<?php echo $object->id ?>.png"/></a>
+            <a title='<?php echo $object->$title; ?>' href="/objects/view/url/<?php echo $object->tourLink ?>"><img src="/i/logos/<?php echo $object->id ?>.png"/></a>
             <?php
         endif;
     endforeach;

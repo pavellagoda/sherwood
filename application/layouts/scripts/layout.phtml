@@ -13,6 +13,11 @@
     <body>
         <div class="container">
             <div class="header">
+                <div class="languages-list">
+                    <a <?php if($this->lang=='ru') echo 'class="active"';?> href="/language/ru">рус</a>
+                    <a <?php if($this->lang=='en') echo 'class="active"';?> href="/language/en">eng</a>
+                    <a <?php if($this->lang=='ua') echo 'class="active"';?> href="/language/ua">укр</a>
+                </div>
                 <?php echo $this->render("includes/mainmenu_static.phtml"); ?>
                 <div class="logo">
                     <a href="/"><img src="/i/logo.png" alt="logo"/></a>
@@ -28,9 +33,19 @@
                 <div class="content lineelement">
                     <?php echo $this->layout()->content; ?>
                 </div>
-                <?php if($this->showRightPart): ?>
+                <?php 
+                
+                    if($this->showRightPart): 
+                        $translate = array(
+                            'ru' =>'<p>Абсолютно бесплатный телефон</p> по всей Украине',
+                            'en' =>'<p>Absolutely free phone</p> all over Ukraine',
+                            'ua' =>'<p>Абсолютно безкоштовний телефон</p> по всій Україні'
+                        )
+                    
+                ?>
                 <div class="right-menu lineelement right">
-                    <img src="/i/tel.png" alt="telephone"/>
+                    <div class="tel">0 (800) 900 900</div>
+                    <div class="text"><?php echo $translate[$this->lang] ?></div>
                 </div>
                 <?php endif; ?>
                 <div class="clear"></div>

@@ -10,9 +10,17 @@
                     <input type="file" name="preview[]"/>
                 </label>
                 <br/>
-                <label> Описание:
-                    <input class="photo-title" type="text" name="title[]"/>
-                </label>
+            <label> Описание(рус):
+                <input class="photo-title" type="text" name="title_ru[]" value="<?php echo $this->item->title_ru ?>"/>
+            </label>
+            <br/>
+            <label> Описание(англ):
+                <input class="photo-title" type="text" name="title_en[]" value="<?php echo $this->item->title_en ?>"/>
+            </label>
+            <br/>
+            <label> Описание(укр):
+                <input class="photo-title" type="text" name="title_ua[]" value="<?php echo $this->item->title_ua ?>"/>
+            </label>
             </div>
             
             <?php echo $this->render('page-list.phtml') ?>

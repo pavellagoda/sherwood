@@ -76,9 +76,9 @@ class models_NewsMapper extends models_MapperBase {
 
         $select = $db->select();
 
-        $lang = new Zend_Session_Namespace('language');
-        
-        $select->where('seo_url_'.$lang->language.' = ?', $seo);
+        $select->where('seo_url_ru = ?', $seo);
+        $select->orWhere('seo_url_en = ?', $seo);
+        $select->orWhere('seo_url_ua = ?', $seo);
 
         $result = $db->fetchRow($select);
 

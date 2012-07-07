@@ -1,9 +1,17 @@
+<?php 
+    $virual = array(
+        'ru'=>'Виртуальный тур',
+        'en'=>'Virtual tour',
+        'ua'=>'Віртуальний тур'
+    )
+
+?>
 <h3><?php echo $this->item['title_'.$this->lang] ?></h3>
 <div>
     <?php echo $this->item['full_'.$this->lang] ?>
 </div>
 <?php if($this->item['is_tour']) :?>
 <div>
-    <a href="/virtual/view/object/<?php echo $this->item['tour_link']; ?>">Виртуальный тур</a> 
+    <a href="/virtual/view/object/<?php echo $this->item['tour_link']; ?>"><?php echo $virual[$this->lang] ?></a> 
 </div>
 <?php endif; ?>

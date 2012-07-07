@@ -26,8 +26,12 @@ class models_PhotoPageMapper extends models_MapperBase {
             $item->extention = $row->extention;
         if (isset($row->page))
             $item->page = $row->page;
-        if (isset($row->title))
-            $item->title = $row->title;
+        if (isset($row->title_ru))
+            $item->title_ru = $row->title_ru;
+        if (isset($row->title_en))
+            $item->title_en = $row->title_en;
+        if (isset($row->title_ua))
+            $item->title_ua = $row->title_ua;
 
         return $item;
     }
@@ -38,7 +42,13 @@ class models_PhotoPageMapper extends models_MapperBase {
         $select = $db->select('*');
         $select->setIntegrityCheck(false);
 
-        $select->joinInner('photos', 'photos.id = photos_pages.photo_id', array('extention'=>'extention', 'title'=>'title'));
+        $select->joinInner('photos', 'photos.id = photos_pages.photo_id', array(
+                'extention'=>'extention', 
+                'title_ru'=>'title_ru',
+                'title_en'=>'title_en',
+                'title_ua'=>'title_ua'
+            )
+        );
         
         $select->where('photos_pages.page = ?', $page);
         $select->group('photos_pages.photo_id');

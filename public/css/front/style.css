@@ -25,14 +25,14 @@ body {
 
 .logo {
     width: 223px;
-    margin: 40px auto 0;
+    margin: 7px auto 0;
     position: relative;
     z-index: 1001;
 }
 
 .mainmenu {
     position: relative;
-    top: 93px;
+    top: 60px;
     z-index: 1000;
 }
 
@@ -98,6 +98,8 @@ body {
     font-size: 26px;
     text-align: center;
     margin-bottom: 20px;
+    font-family: Geprgia;
+    font-style: italic;
 }
 
 .main-page .page-text {
@@ -115,6 +117,25 @@ body {
     background-image: url('/i/left-menu-separator.png');
     width: 131px;
     height: 1px;
+}
+.right-menu {
+    width: 174px;
+    height: 90px;
+    background-image: url('/i/tel.png');
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #464d55;
+    font-family: 'Times New Roman';
+}
+
+.right-menu .tel {
+    font-size: 24px;
+    margin-top: 21px;
+}
+
+.right-menu .text {
+    font-size: 10px;
 }
 
 .content {
@@ -152,15 +173,18 @@ body {
 
 .logos-list {
     background-image: url('/i/logos-bg.png');
-    width: 926px;
-    height: 80px;
+    width: 958px;
+    height: 88px;
     margin: 40px auto 20px;
-    padding: 0 12px;
     text-align: center;
 }
 
+.logos-list a:hover img{
+    opacity: 0.6;
+}
+
 .logos-list img {
-    margin: 14px 11px;
+    margin: 14px 10px;
     vertical-align: middle;
 }
 
@@ -267,17 +291,40 @@ body {
     display: block;
 }
 
-.news-list span.news-date {
+.news-list span.news-date, .languages-list a.active {
     background: #fcaf39;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
     color:black;
-    padding: 3px 5px;
+    padding: 5px 10px;
     font-family: Verdana;
     font-style: italic;
     font-weight: bolder;
     font-size: 10px;
+}
+
+.languages-list {
+    text-align: right;
+    padding: 20px 25px 0 0;
+}
+
+.languages-list a {
+    color:#fcaf39;
+    padding: 5px 10px;
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.languages-list a.active {
+    font-family: Georgia;
+}
+
+
+.languages-list a:hover {
+    text-decoration: none;
 }
 
 .news-list a:hover {
@@ -286,6 +333,8 @@ body {
 
 .news-short-description {
     margin-bottom: 10px;
+    font-family: 'Georgia';
+    font-size: 13px;
 }
 
 .news-item {

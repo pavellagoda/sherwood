@@ -30,7 +30,8 @@ class LanguageController extends modules_default_controllers_ControllerBase {
             $lang = new Zend_Session_Namespace('language');
             $lang->language = $language;
         }
-        return $this->_helper->redirector('index', 'index');
+        
+        return $this->_redirect($_SERVER['HTTP_REFERER']);
     }
 
 }

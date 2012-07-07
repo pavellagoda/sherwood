@@ -3,8 +3,11 @@
         <div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block; ">
             <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
                 <ul id="slider-inner" class="jcarousel-list jcarousel-list-horizontal" style="width: 1200px; left: 0px; ">
-                    <?php foreach ($this->photos as $photo): ?>
-                        <li><a title="<?php echo $photo->title; ?>" rel="photo" href="/i/galleries/images/<?php echo $photo->photo_id . '.' . $photo->extention; ?>">
+                    <?php 
+                        foreach ($this->photos as $photo): 
+                        $title = 'title_'.$this->lang;
+                    ?>
+                        <li><a title="<?php echo $photo->$title; ?>" rel="photo" href="/i/galleries/images/<?php echo $photo->photo_id . '.' . $photo->extention; ?>">
                                 <img width="150px" height="100px" src="/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"/>
                             </a>
                         </li>

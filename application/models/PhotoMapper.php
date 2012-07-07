@@ -27,8 +27,12 @@ class models_PhotoMapper extends models_MapperBase
                 $item->id = $row->id;
             if (isset($row->extention))
                 $item->extention = $row->extention;
-            if (isset($row->title))
-                $item->title = $row->title;
+            if (isset($row->title_ru))
+                $item->title_ru = $row->title_ru;
+            if (isset($row->title_en))
+                $item->title_en = $row->title_en;
+            if (isset($row->title_ua))
+                $item->title_ua = $row->title_ua;
 
             return $item;
 	}
