@@ -14,23 +14,14 @@ class ObjectsController extends modules_default_controllers_ControllerBase {
 
     public function init() {
 
-        $pagelist = array(
-            'gostinica-aleya-grand'=>'alleya-grand',
-            'kafe-bar-bochka'=>'bochka',
-            'spa-salon-lotos'=>'lotos',
-            'kafe-bar-evropa'=>'evropa',
-            'restoran-bar-poseydon'=>'poseidon',
-            'restoran-kazachka'=>'kazachka',
-            'restorannyy-kompleks-kashtanova-aleya'=>'kasht-alleya',
-            'restoran-raffinato' => 'raffinato',
-            'nega-bar' => 'nega-bar'
-        );
         $this->slider_partial = 'photo-slider.phtml';
         $params = $this->getRequest()->getParams();
         if(isset($params['url']))
-            $this->photoidenter = $pagelist[$params['url']];
+            $this->photoidenter = $params['url'];
         else 
             $this->photoidenter = 'objects';
+        
+        $this->jqueryFile = 'jquery-1.4.2.min.js';
         
         if (!$this->getRequest()->isXmlHttpRequest()) {
             parent::init();

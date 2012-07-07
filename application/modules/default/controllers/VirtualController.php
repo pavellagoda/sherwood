@@ -15,26 +15,15 @@ class VirtualController extends modules_default_controllers_ControllerBase {
     public function init() {
         $this->leftMenuPart = false;
         $this->showRightPart = false;
-        $pagelist = array(
-            'gostinica-aleya-grand'=>'alleya-grand',
-            'kafe-bar-bochka'=>'bochka',
-            'spa-salon-lotos'=>'lotos',
-            'kafe-bar-evropa'=>'evropa',
-            'restoran-bar-poseydon'=>'poseidon',
-            'restoran-kazachka'=>'kazachka',
-            'restorannyy-kompleks-kashtanova-aleya'=>'kasht-alleya',
-            'restoran-raffinato' => 'raffinato',
-            'nega-bar' => 'nega-bar'
-        );
 
         $params = $this->getRequest()->getParams();
         $this->slider_partial = 'photo-slider.phtml';
         if(isset($params['object']))
-            $this->photoidenter = $pagelist[$params['object']];
+            $this->photoidenter = $params['object'];
+        $this->jqueryFile = 'jquery-1.4.2.min.js';
         if (!$this->getRequest()->isXmlHttpRequest()) {
             parent::init();
         }
-
         $this->_helper->AjaxContext()->initContext('json');
     }
 

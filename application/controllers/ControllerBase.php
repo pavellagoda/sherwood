@@ -3,7 +3,7 @@ class controllers_ControllerBase extends Zend_Controller_Action
 {
 
 	public $_contentLayout = 'full';
-        protected $jqueryFile = 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+        protected $jqueryFile = 'jquery-1.7.1.min.js';
 	
 	public function init()
 	{
@@ -20,7 +20,7 @@ class controllers_ControllerBase extends Zend_Controller_Action
 
 		$this->layout->setLayout('layout');
 		
-		$this->view->headScript()->appendFile($this->jqueryFile);
+		$this->view->headScript()->appendFile('/js/lib/'.$this->jqueryFile);
 		$this->view->headScript()->appendFile('/js/lib/swfobject.js');
 		
 		$this->view->headLink()->appendStylesheet('/css/common/reset.css');

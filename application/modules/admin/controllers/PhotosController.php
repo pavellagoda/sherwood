@@ -16,20 +16,16 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
         'vacancies' => 'Вакансии',
         'programs' => 'Программы лояльности',
         'news' => 'Новости',
-        'alleya-grand' => 'Аллея Гранд',
-        'bochka' => 'Бочка',
-        'lotos' => 'Лотос',
-        'evropa' => 'Европа',
-        'poseidon' => 'Посейдон',
-        'kazachka' => 'Казачка',
-        'kasht-alleya' => 'Каштановая Аллея',
-        'raffinato' => 'Раффинато',
-        'nega-bar' => 'Нега Бар',
     );
 
     public function init() {
         /* Initialize action controller here */
         parent::init();
+        
+        $objects = models_ObjectMapper::getAll();
+        foreach ($objects as $object) {
+            $this->pagelist[$object->tourLink] = $object->title_ru;
+        }
         $this->view->pagelist = $this->pagelist;
     }
 
@@ -95,6 +91,7 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
                 }
             }
         }
+        $this->view->page_list = array();
     }
 
     private function createRecords($post, $id, $photo_id) {

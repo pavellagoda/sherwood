@@ -72,7 +72,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->actionName                 = $frontController->getRequest()->getActionName();
 
 		$this->view->headTitle()->setDefaultAttachOrder('PREPEND');
-		$this->view->headTitle()->append('Аллея Гранд');
+		$this->view->headTitle()->append('Алея Смаку');
                 
                 $this->view->lang = $lang->language;
                 
