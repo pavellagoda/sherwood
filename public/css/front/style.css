@@ -149,6 +149,11 @@ body {
     color:#FBB03B;
     font-weight: bolder;
 }
+
+.content div.virtual-link {
+    margin-top: 10px;
+}
+
 .last-news-block {
     margin-top: 40px;
 }
@@ -260,13 +265,6 @@ body {
     text-align: center;
     margin: 10px auto;
     width: 950px
-}
-
-#flashcontent embed{
-    border: 6px solid rgba(83, 44, 47, 1);
-    -moz-box-shadow: 0px 0px 38px rgba(83, 44, 47, 1);
-    -webkit-box-shadow: 0px 0px 38px rgba(83, 44, 47, 1);
-    box-shadow: 0px 0px 38px rgba(83, 44, 47, 1);
 }
 
 .lineelement {

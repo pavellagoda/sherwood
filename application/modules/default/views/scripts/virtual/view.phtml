@@ -3,9 +3,10 @@
 
 </div>
 <script type="text/javascript">
-        var so = new SWFObject("/swf/start.swf", "start", "900px", "540px", "10", "#fff");
+        var so = new SWFObject("/swf/start.swf", "start", "907px", "675px", "10", "#fff");
         so.addVariable('object', "<?php echo $this->object['tour_link'] ?>" );
         so.addParam("menu", "false"); 
+        so.addParam("wmode", "transparent"); 
         so.addParam('allowscriptaccess','always');
         so.allowFullScreen=true;
         so.write("flashcontent");
