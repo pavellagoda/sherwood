@@ -156,6 +156,11 @@ body {
 
 .last-news-block {
     margin-top: 40px;
+    border: 1px dashed #FBB03B;
+    border-left: none;
+    border-right: none;
+    padding: 25px 0;
+    background-image: url('/i/footer-info-bg.png');
 }
 .last-news-block a {
     color: #d3b25f;
