@@ -20,11 +20,11 @@ class controllers_ControllerBase extends Zend_Controller_Action
 
 		$this->layout->setLayout('layout');
 		
-		$this->view->headScript()->appendFile('/js/lib/'.$this->jqueryFile);
-		$this->view->headScript()->appendFile('/js/lib/swfobject.js');
+		$this->view->headScript()->appendFile('/js/lib/'.$this->jqueryFile.'?rand='.rand(1,100000));
+		$this->view->headScript()->appendFile('/js/lib/swfobject.js?rand='.rand(1,100000));
 		
-		$this->view->headLink()->appendStylesheet('/css/common/reset.css');
-		$this->view->headLink()->appendStylesheet('/css/common/960.css');
+		$this->view->headLink()->appendStylesheet('/css/common/reset.css?rand='.rand(1,100000));
+		$this->view->headLink()->appendStylesheet('/css/common/960.css?rand='.rand(1,100000));
 		$this->view->headTitle()->setSeparator(' / ');
                 $this->view->headMeta()->appendHttpEquiv('Content-Type', 'text/html; charset=utf-8');
 		
