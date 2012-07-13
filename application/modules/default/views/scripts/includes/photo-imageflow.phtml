@@ -1,15 +1,18 @@
-<section id="dg-container" class="dg-container">
-    <div class="dg-wrapper">  
-        <?php 
-            foreach ($this->photos as $photo): 
-                $title = 'title_'.$this->lang;
-        ?>
-            <a title="<?php echo $photo->$title; ?>" rel="photo" href="/i/galleries/images/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"><img src="/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"/></a>
+<div class="carousel-container">
+    <div class="carousel" id="carousel"> 
+        <?php
+        foreach ($this->photos as $photo):
+            $title = 'title_' . $this->lang;
+            ?>
+            <div class="carousel-feature">
+                <a title="<?php echo $photo->$title; ?>" rel="photo" href="/i/galleries/images/<?php echo $photo->photo_id . '.' . $photo->extention; ?>">
+                    <img class="carousel-image" src="/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>"/>
+                    <img width="464px" height="314px" class="carousel-image-frame" src="/i/promo-frame.png"/>
+                </a>
+            </div>       
         <?php endforeach; ?>
     </div>
+    <div id="carousel-left"><img src="/i/arrow-left.png" /></div>
+    <div id="carousel-right"><img src="/i/arrow-right.png" /></div>
     <div class="clear"></div>
-    <nav>	
-        <span class="dg-prev">&lt;</span>
-        <span class="dg-next">&gt;</span>
-    </nav>
-</section>
+</div>

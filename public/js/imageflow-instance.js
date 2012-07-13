@@ -1,30 +1,21 @@
 $(function(){
-    $(function() {
-        $('#dg-container').gallery({
-            autoplay : true
+    var carousel = $("#carousel").featureCarousel({
+        // include options like this:
+        // (use quotes only for string values, and no trailing comma after last option)
+        // option: value,
+        // option: value
         });
+
+    $("#but_prev").click(function () {
+        carousel.prev();
     });
-//    var imageflow = new ImageFlow();
-//    imageflow.init({ 
-//        ImageFlowID:'instance_imageflow', 
-//        captions:false, 
-//        slider:false, 
-//        reflections:false, 
-//        imageFocusMax:2,
-//        reflectionP:0.4, 
-//        opacity:true, 
-//        startID:3, 
-//        startAnimation:true, 
-//        imageFocusM:1.5 ,
-//        circular:true,
-//        slideshow:true,
-//        slideshowAutoplay:true,
-//        animationSpeed:100,
-//        slideshowSpeed:3000,
-//        
-//        onClick: function(){
-//            //            imageflow.Slideshow.start();
-//            return false;
-//        }
-//    });
+    $("#but_pause").click(function () {
+        carousel.pause();
+    });
+    $("#but_start").click(function () {
+        carousel.start();
+    });
+    $("#but_next").click(function () {
+        carousel.next();
+    });
 })

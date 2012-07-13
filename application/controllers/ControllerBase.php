@@ -3,7 +3,7 @@ class controllers_ControllerBase extends Zend_Controller_Action
 {
 
 	public $_contentLayout = 'full';
-        protected $jqueryFile = 'jquery-1.7.1.min.js';
+        protected $jqueryFile = 'jquery-1.7.min.js';
 	
 	public function init()
 	{

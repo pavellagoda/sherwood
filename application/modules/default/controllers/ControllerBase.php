@@ -44,15 +44,14 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headLink()->appendStylesheet('/css/fancybox/fancybox.css');
 		$this->view->headLink()->appendStylesheet('/css/slider/slider.css');
 		$this->view->headLink()->appendStylesheet('/css/front/menu_static.css');
-		$this->view->headLink()->appendStylesheet('/css/gallery/style.css');
+		$this->view->headLink()->appendStylesheet('/css/gallery/feature-carousel.css');
 		
 		$this->view->headScript()->appendFile('/js/global.js');
 		$this->view->headScript()->appendFile('/js/menu.js');
 		$this->view->headScript()->appendFile('/js/slider.js');
 		$this->view->headScript()->appendFile('/js/lib/funcybox/jquery.fancybox-1.3.1.js');
 		$this->view->headScript()->appendFile('/js/lib/funcybox/jquery.mousewheel-3.0.2.pack.js');
-		$this->view->headScript()->appendFile('/js/gallery/modernizr.custom.53451.js');
-		$this->view->headScript()->appendFile('/js/gallery/jquery.gallery.js');
+		$this->view->headScript()->appendFile('/js/feature-carousel/jquery.featureCarousel.js');
 //                $this->view->headLink()->appendStylesheet('/css/slider/imageflow.packed.css');
 //                $this->view->headScript()->appendFile('/js/imageflow.js');
                 $this->view->headScript()->appendFile('/js/imageflow-instance.js');
