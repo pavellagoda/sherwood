@@ -14,49 +14,48 @@
         <div class="container">
             <div class="header">
                 <div class="languages-list">
-                    <a <?php if($this->lang=='ru') echo 'class="active"';?> href="/language/ru">рус</a>
-                    <a <?php if($this->lang=='en') echo 'class="active"';?> href="/language/en">eng</a>
-                    <a <?php if($this->lang=='ua') echo 'class="active"';?> href="/language/ua">укр</a>
+                    <a <?php if ($this->lang == 'ru') echo 'class="active"'; ?> href="/language/ru">рус</a>
+                    <a <?php if ($this->lang == 'en') echo 'class="active"'; ?> href="/language/en">eng</a>
+                    <a <?php if ($this->lang == 'ua') echo 'class="active"'; ?> href="/language/ua">укр</a>
                 </div>
                 <?php echo $this->render("includes/mainmenu_static.phtml"); ?>
                 <div class="logo">
                     <a href="/"><img src="/i/logo.png" alt="logo"/></a>
                 </div>
                 <div class="promo">
-                    <?php echo $this->render("includes/".$this->slider_partial); ?>
+                    <?php echo $this->render("includes/" . $this->slider_partial); ?>
                 </div>
             </div>
-            <div class="main-page<?php if($this->controllerName=='index') echo ' index-mainpage' ?>">
-                <?php if($this->leftMenuPart): ?>
-                <div class="left-menu lineelement"><?php echo $this->render("includes/left-menu/" . $this->leftMenuPart); ?></div>
+            <div class="main-page<?php if ($this->controllerName == 'index') echo ' index-mainpage' ?>">
+                <?php if ($this->leftMenuPart): ?>
+                    <div class="left-menu lineelement"><?php echo $this->render("includes/left-menu/" . $this->leftMenuPart); ?></div>
                 <?php endif; ?>
                 <div class="content lineelement">
                     <?php echo $this->layout()->content; ?>
                 </div>
-                <?php 
-                
-                    if($this->showRightPart): 
-                        $translate = array(
-                            'ru' =>'<p>Абсолютно бесплатный телефон</p> по всей Украине',
-                            'en' =>'<p>Absolutely free phone</p> all over Ukraine',
-                            'ua' =>'<p>Абсолютно безкоштовний телефон</p> по всій Україні'
-                        )
-                    
-                ?>
-                <div class="right-menu lineelement right">
-                    <div class="tel">0 (800) 900 900</div>
-                    <div class="text"><?php echo $translate[$this->lang] ?></div>
-                </div>
+                <?php
+                if ($this->showRightPart):
+                    $translate = array(
+                        'ru' => '<p>Абсолютно бесплатный телефон</p> по всей Украине',
+                        'en' => '<p>Absolutely free phone</p> all over Ukraine',
+                        'ua' => '<p>Абсолютно безкоштовний телефон</p> по всій Україні'
+                            )
+                    ?>
+                    <div class="right-menu lineelement right">
+                        <div class="tel">0 (800) 900 900</div>
+                        <div class="text"><?php echo $translate[$this->lang] ?></div>
+                    </div>
                 <?php endif; ?>
                 <div class="clear"></div>
             </div>
-
-            <div class="last-news-block">
-                <?php echo $this->showLastMenuBlock ? $this->render("includes/last-menu-block.phtml") : ''; ?>
-            </div>
+            <?php if ($this->showLastMenuBlock): ?>
+                <div class="last-news-block">
+                    <?php echo $this->render("includes/last-menu-block.phtml"); ?>
+                </div>
+            <?php endif; ?>
         </div>
         <?php
-            echo $this->render("includes/footer.phtml");
+        echo $this->render("includes/footer.phtml");
         ?>
     </body>
 </html>

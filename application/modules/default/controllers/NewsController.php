@@ -12,8 +12,10 @@ class NewsController extends modules_default_controllers_ControllerBase {
         'refresh-captcha' => array('json'),
     );
 
-    public function _init() {
+    public function init() {
         $this->photoidenter = 'news';
+        if($this->getRequest()->getActionName()=='index')
+            $this->showLastMenuBlock = false;
         if (!$this->getRequest()->isXmlHttpRequest()) {
             parent::init();
         }
@@ -21,14 +23,12 @@ class NewsController extends modules_default_controllers_ControllerBase {
     }
 
     public function indexAction() {
-        $this->showLastMenuBlock = false;
-        $this->_init();
+        
         $request = $this->getRequest();
         $this->view->news = models_NewsMapper::getAllPaginator(0, $request->getParam('page', 1), 25);
     }
 
     public function viewAction() {
-        $this->_init();
         $request = $this->getRequest();
         $url = $request->getParam('url', '');
         if (0 === $url) {
