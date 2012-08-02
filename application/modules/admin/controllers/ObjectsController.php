@@ -57,8 +57,10 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
                 models_ObjectMapper::update($item->id, $item->toArray(), models_ObjectMapper::$_dbTable);
                 $this->_redirect($this->_helper->url('index'));
             }
+            $form->populate($form->getValues());
+        } else {
+            $form->populate($item->toArray());
         }
-        $form->populate($item->toArray());
         $this->view->form = $form;
         $this->view->headScript()->appendFile('/js/tiny_mce/tiny_mce.js');
         $this->view->headScript()->appendFile('/js/texteditor.js');
