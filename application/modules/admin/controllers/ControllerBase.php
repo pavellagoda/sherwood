@@ -23,7 +23,7 @@ class modules_admin_controllers_ControllerBase extends controllers_ControllerBas
 		$this->view->headLink()->appendStylesheet('/css/common/reset.css');
 		$this->view->headLink()->appendStylesheet('/css/common/960.css');
 		$this->view->headLink()->appendStylesheet('/css/common/sexybuttons.css');
-		$this->view->headLink()->appendStylesheet('/css/admin/main.css');
+		$this->view->headLink()->appendStylesheet('/css/admin/main.css?r='.rand(1,100000));
 		$this->view->headLink()->appendStylesheet('/css/datapicker.css');
 		
 		$this->view->headScript()->appendFile('/js/global.js');
