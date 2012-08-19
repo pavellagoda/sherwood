@@ -1,3 +1,4 @@
+<?php /*?>
 <div class="carousel-container">
     <div class="carousel" id="carousel"> 
         <?php
@@ -16,3 +17,22 @@
     <div id="carousel-right"><img src="/i/arrow-right.png" /></div>
     <div class="clear"></div>
 </div>
+<?php */ ?>
+
+<div id="flashcontent">
+
+</div>
+<script type="text/javascript">
+        var so = new SWFObject("/swf/gallery/gallery.swf?r=<?php echo rand(1, 10000)?>", "start", "899px", "314px", "10", "#fff");
+        var images = new Array();
+        <?php foreach($this->photos  as $photo): ?>
+            images.push("/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>")
+        <?php endforeach; ?>
+        so.addVariable('images', images);
+        so.addParam("menu", "false"); 
+        so.addParam("wmode", "transparent"); 
+        so.addParam('allowscriptaccess','always');
+        so.allowFullScreen=true;
+        so.write("flashcontent");
+</script>
+ 
