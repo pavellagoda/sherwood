@@ -10,7 +10,8 @@
 
 	public class Main extends MovieClip
 	{
-		public static var hostName = 'http://sherwood.dev.com';
+		//public static var hostName = 'http://sherwood.dev.com';
+		public static var hostName = '';
 		private static var imageList = new Array("/i/galleries/previews/15.jpg","/i/galleries/previews/18.jpg","/i/galleries/previews/19.jpg","/i/galleries/previews/20.jpg","/i/galleries/previews/23.jpg","/i/galleries/previews/26.jpg");
 		private static var currentItems = new Array();
 		private static var itemsList:Array = new Array();
@@ -27,7 +28,7 @@
 		{
 			defaultWidth = stage.stageWidth;
 			defaultHeight = stage.stageHeight;
-			//imageContainer.visible = false;
+			imageContainer.visible = false;
 			arrow_left.buttonMode = arrow_right.buttonMode = true;
 			leftArrow = arrow_left;
 			rightArrow = arrow_right;
