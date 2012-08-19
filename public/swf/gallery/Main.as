@@ -10,8 +10,8 @@
 
 	public class Main extends MovieClip
 	{
-		//public static var hostName = 'http://sherwood.dev.com';
-		public static var hostName = '';
+		public static var hostName = 'http://sherwood.dev.com';
+		//public static var hostName = '';
 		private static var imageList = new Array("/i/galleries/previews/15.jpg","/i/galleries/previews/18.jpg","/i/galleries/previews/19.jpg","/i/galleries/previews/20.jpg","/i/galleries/previews/23.jpg","/i/galleries/previews/26.jpg");
 		private static var currentItems = new Array();
 		private static var itemsList:Array = new Array();
@@ -23,6 +23,8 @@
 		private static var currentImage = 2;
 		private static var leftArrow;
 		private static var rightArrow;
+		private static var imageScaling = new Array(0.25, 0.5, 1, 0.5, 0.25)
+		private static var imageX = new Array()
 
 		public function Main()
 		{
@@ -43,8 +45,6 @@
 
 		private function onAmfData(res)
 		{
-			ExternalInterface.call('console.log', res);
-			
 			for (var i = 0; i<res.length; i++) {
 				var item = new Image(hostName+res[i]);
 				imageContainer.addChild(item);
@@ -57,6 +57,13 @@
 		{
 			loadedImage++;
 			if (loadedImage == imageList.length) {
+				
+				imageX[0] = 0;
+				imageX[1] = 116;
+				imageX[2] = 348;
+				imageX[3] = 638;
+				imageX[4] = 783;
+				
 				imageContainer.visible = true;
 				imageContainer.x = itemsList[0].width * 0.25 / 2;
 				imageContainer.y = defaultHeight / 2;
@@ -110,18 +117,18 @@
 			TweenNano.to(currentItems[3], 0.3, {scaleX:0.5, scaleY:0.5});
 			TweenNano.to(currentItems[2], 0.3, {scaleX:1, scaleY:1});*/
 
-			currentItems[0].scaleX = currentItems[0].scaleY = currentItems[4].scaleX = currentItems[4].scaleY = 0.25;
+			/*currentItems[0].scaleX = currentItems[0].scaleY = currentItems[4].scaleX = currentItems[4].scaleY = 0.25;
 			currentItems[1].scaleX = currentItems[1].scaleY = currentItems[3].scaleX = currentItems[3].scaleY = 0.5;
-			currentItems[2].scaleX = currentItems[2].scaleY = 1;
-			currentItems[0].x = 0;
-			for (var i = 1; i< imageOnStage; i++) {
-				var _x = currentItems[i - 1].x + 0.5 * currentItems[i - 1].width + 0.5 * currentItems[i].width / 2;
-				currentItems[i].x = _x;
+			currentItems[2].scaleX = currentItems[2].scaleY = 1;*/
+			//currentItems[0].x = 0;
+			for (var i = 0; i< imageOnStage; i++) {
+				//var _x = currentItems[i - 1].x + 0.5 * currentItems[i - 1].width + 0.5 * currentItems[i].width / 2;
+				TweenNano.to(currentItems[i], 0.5, {x : imageX[i], scaleX:imageScaling[i], scaleY:imageScaling[i]});
 			}
 
-			setDefaultDepth();
-			TweenNano.delayedCall(0.3, function(){
 			
+			TweenNano.delayedCall(0.25, function(){
+				setDefaultDepth();
 			});
 		}
 
