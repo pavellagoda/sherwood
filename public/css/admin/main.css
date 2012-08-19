@@ -20,3 +20,9 @@
 input.photo-title {
     width: 350px;
 }
+
+ul.errors li {
+    color: red;
+    list-style: circle;
+    margin: 0 0 10px 
+}
