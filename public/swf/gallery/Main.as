@@ -10,8 +10,8 @@
 
 	public class Main extends MovieClip
 	{
-		public static var hostName = 'http://sherwood.dev.com';
-		//public static var hostName = '';
+		//public static var hostName = 'http://sherwood.dev.com';
+		public static var hostName = '';
 		private static var imageList = new Array("/i/galleries/previews/15.jpg","/i/galleries/previews/18.jpg","/i/galleries/previews/19.jpg","/i/galleries/previews/20.jpg","/i/galleries/previews/23.jpg","/i/galleries/previews/26.jpg");
 		private static var currentItems = new Array();
 		private static var itemsList:Array = new Array();
@@ -39,6 +39,8 @@
 			var flashvars = this.loaderInfo.parameters;
 			if (flashvars.images != undefined) {
 				imageList = flashvars.images.split(',');
+			} else {
+				hostName = 'http://sherwood.dev.com';
 			}
 			onAmfData(imageList);
 		}
