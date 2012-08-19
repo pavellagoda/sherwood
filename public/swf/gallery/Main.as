@@ -42,6 +42,8 @@
 
 		private function onAmfData(res)
 		{
+			ExternalInterface.call('console.log', res);
+			
 			for (var i = 0; i<res.length; i++) {
 				var item = new Image(hostName+res[i]);
 				imageContainer.addChild(item);
