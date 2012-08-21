@@ -1,0 +1,24 @@
+<table>
+    <tr>
+        <th>#</th>
+        <th>блок</th>
+        <th>&nbsp;</th>
+    </tr>
+    <?php
+    foreach ($this->blocks as $item) {
+        ?>
+        <tr>
+            <td><?php echo $item->id; ?></td>
+            <td style="padding:0 30px"><?php echo $item->text_ru; ?></td>
+            <td>
+                <div class="table_actions">
+                    <a href="<?php echo $this->url(array('action' => 'edit', 'id' => $item->id), null); ?>" class="sexybutton sexysimple"><span class="edit">Править</span></a>
+                    <a href="<?php echo $this->url(array('action'=>'delete', 'id'=>$item->id), null);?>" class="sexybutton sexysimple"><span class="delete">Удалить</span></a>
+                </div>
+            </td>
+        </tr>
+        <?php
+    }
+    ?>
+</table>
+<a href="<?php echo $this->url(array('action' => 'add'), null); ?>" class="sexybutton sexysimple"><span class="add">Добавить блок</span></a>

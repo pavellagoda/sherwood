@@ -7,7 +7,7 @@
  */
 class models_InfoBlockMapper extends models_MapperBase {
 
-    public static $_dbTable = 'models_DbTable_InfoBlockMapper';
+    public static $_dbTable = 'models_DbTable_InfoBlocks';
 
     /**
      * Init object from db row
