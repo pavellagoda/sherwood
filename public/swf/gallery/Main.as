@@ -22,7 +22,7 @@
 		private static var defaultWidth;
 		private static var defaultHeight;
 		private static var imageOnStage = 5;
-		private static var currentImage = 0;
+		public static var currentImage = 0;
 		private static var leftArrow;
 		private static var rightArrow;
 		private static var imageScaling = new Array(0.56,0.76,1,0.76,0.56);

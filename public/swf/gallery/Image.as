@@ -39,7 +39,7 @@
 				} else {
 					number = Main.imageList.length + tmp;
 				}
-								  
+				Main.currentImage = number;	  
 				ExternalInterface.call('showFancybox', number)
 				Main.defaultImageSetup(number)
 			});
