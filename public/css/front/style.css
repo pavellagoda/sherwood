@@ -334,3 +334,16 @@ body {
 .news-item {
     margin-bottom: 30px;
 }
+
+.venzel {
+    width: 148px;
+    height: 18px;
+    margin-left: -20px
+}
+
+.top-venzel {
+    background-image: url('/i/venzel-top.png')
+}
+.bottom-venzel {
+    background-image: url('/i/venzel-bottom.png')
+}
