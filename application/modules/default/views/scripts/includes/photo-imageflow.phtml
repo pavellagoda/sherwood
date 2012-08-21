@@ -23,7 +23,7 @@
 
 </div>
 <script type="text/javascript">
-        var so = new SWFObject("/swf/gallery/gallery.swf?r=<?php echo rand(1, 10000)?>", "start", "899px", "314px", "10", "#fff");
+        var so = new SWFObject("/swf/gallery/gallery.swf?r=<?php echo rand(1, 10000)?>", "start", "866px", "334px", "10", "#fff");
         var images = new Array();
         <?php foreach($this->photos  as $photo): ?>
             images.push("/i/galleries/previews/<?php echo $photo->photo_id . '.' . $photo->extention; ?>")
@@ -34,5 +34,8 @@
         so.addParam('allowscriptaccess','always');
         so.allowFullScreen=true;
         so.write("flashcontent");
+        function showFancybox(num) {
+            console.log(num)
+        }
 </script>
  

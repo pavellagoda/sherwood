@@ -7,12 +7,14 @@
 	import flash.events.MouseEvent;
 	import flash.external.ExternalInterface;
 	import com.greensock.TweenNano;
+	import flash.utils.Timer;
+	import flash.events.TimerEvent;
 
 	public class Main extends MovieClip
 	{
 		//public static var hostName = 'http://sherwood.dev.com';
 		public static var hostName = '';
-		private static var imageList = new Array("/i/galleries/previews/15.jpg","/i/galleries/previews/18.jpg","/i/galleries/previews/19.jpg","/i/galleries/previews/20.jpg","/i/galleries/previews/23.jpg","/i/galleries/previews/26.jpg");
+		public static var imageList = new Array("/i/galleries/previews/15.jpg","/i/galleries/previews/18.jpg","/i/galleries/previews/19.jpg","/i/galleries/previews/20.jpg","/i/galleries/previews/23.jpg","/i/galleries/previews/26.jpg");
 		private static var currentItems = new Array();
 		private static var itemsList:Array = new Array();
 		private static var loadedImage = 0;
@@ -20,11 +22,12 @@
 		private static var defaultWidth;
 		private static var defaultHeight;
 		private static var imageOnStage = 5;
-		private static var currentImage = 2;
+		private static var currentImage = 0;
 		private static var leftArrow;
 		private static var rightArrow;
-		private static var imageScaling = new Array(0.25, 0.5, 1, 0.5, 0.25)
-		private static var imageX = new Array()
+		private static var imageScaling = new Array(0.56,0.76,1,0.76,0.56);
+		private static var imageX = new Array();
+		private static var timer:Timer = new Timer(5000);
 
 		public function Main()
 		{
@@ -48,7 +51,7 @@
 		private function onAmfData(res)
 		{
 			for (var i = 0; i<res.length; i++) {
-				var item = new Image(hostName+res[i]);
+				var item = new Image(hostName+res[i], i);
 				imageContainer.addChild(item);
 				itemsList.push(item);
 			}
@@ -59,36 +62,45 @@
 		{
 			loadedImage++;
 			if (loadedImage == imageList.length) {
-				
+
+				timer.addEventListener(TimerEvent.TIMER, incrementView);
+
 				imageX[0] = 0;
-				imageX[1] = 116;
-				imageX[2] = 348;
-				imageX[3] = 638;
-				imageX[4] = 783;
-				
+				imageX[1] = 258 - 450 * 0.56 / 2;
+				imageX[2] = 425 - 450 * 0.56 / 2;
+				imageX[3] = 592 - 450 * 0.56 / 2;
+				imageX[4] = 730 - 450 * 0.56 / 2;
+
 				imageContainer.visible = true;
-				imageContainer.x = itemsList[0].width * 0.25 / 2;
+				imageContainer.x = itemsList[0].width * 0.56 / 2;
 				imageContainer.y = defaultHeight / 2;
 				defaultImageSetup(currentImage);
-
-				leftArrow.addEventListener(MouseEvent.CLICK, function(){
-				if(currentImage == 1) {
-				currentImage = itemsList.length
-				} else {
-				currentImage--
-				}
-				defaultImageSetup(currentImage%itemsList.length)
-				
-				});
-				rightArrow.addEventListener(MouseEvent.CLICK, function(){
-				defaultImageSetup(currentImage%itemsList.length+1)
-				currentImage++
-				});
+				leftArrow.addEventListener(MouseEvent.CLICK, decrementView);
+				rightArrow.addEventListener(MouseEvent.CLICK, incrementView);
 			}
 		}
 
-		private static function defaultImageSetup(first)
+		private static function decrementView(evt)
 		{
+			
+			if (currentImage == 1) {
+				currentImage = itemsList.length;
+			} else {
+				currentImage--;
+			}
+			defaultImageSetup(currentImage%itemsList.length);
+		}
+
+		private static function incrementView(evt)
+		{
+			defaultImageSetup(currentImage%itemsList.length+1);
+			currentImage++;
+		}
+
+		public static function defaultImageSetup(first)
+		{
+			timer.reset();
+			timer.start()
 			for (var j = 0; j< itemsList.length; j++) {
 				itemsList[j].visible = false;
 			}
@@ -128,9 +140,8 @@
 				TweenNano.to(currentItems[i], 0.5, {x : imageX[i], scaleX:imageScaling[i], scaleY:imageScaling[i]});
 			}
 
-			
 			TweenNano.delayedCall(0.25, function(){
-				setDefaultDepth();
+			setDefaultDepth();
 			});
 		}
 
