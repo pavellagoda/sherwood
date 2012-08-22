@@ -31,7 +31,8 @@ class Admin_PhotosController extends modules_admin_controllers_ControllerBase {
 
     public function indexAction() {
 
-        $items = models_PhotoMapper::getAll();
+        $page = $this->getRequest()->getParam('page', 1);
+        $items = models_PhotoMapper::getAllPaginator($page, 14);
         $this->view->items = $items;
     }
 

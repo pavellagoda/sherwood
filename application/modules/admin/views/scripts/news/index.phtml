@@ -1,28 +1,27 @@
-<table>
-	<tr>
-		<th>#</th>
-		<th>Заголовок новости</th>
-		<th>Дата</th>
-		<th>&nbsp;</th>
-	</tr>
-	<?php
-	foreach ($this->news as $id=>$item)
-	{
-		?>
-		<tr>
-			<td><?php echo $id+1;?></td>
-			<td><?php echo $this->escape($item['title_ru']);?></td>
-			<td><?php echo FW_Date::convert($item['created_ts'], FW_Date::MYSQL_DATETIME, FW_Date::SITE_DATE);?></td>
-			<td>
-				<div class="table_actions">
-					<a href="<?php echo $this->url(array('action'=>'edit', 'id'=>$item['id']), null);?>" class="sexybutton sexysimple"><span class="edit">Править</span></a>
-					<a href="<?php echo $this->url(array('action'=>'delete', 'id'=>$item['id']), null);?>" class="sexybutton sexysimple delete-button"><span class="delete">Удалить</span></a>
-				</div>
-			</td>
-		</tr>
-		<?php
-	}
-	?>
+<table class="table table-striped">
+    <tr>
+        <th>#</th>
+        <th>Заголовок новости</th>
+        <th>Дата</th>
+        <th>&nbsp;</th>
+    </tr>
+    <?php
+    foreach ($this->news as $id => $item) {
+        ?>
+        <tr>
+            <td><?php echo $id + 1; ?></td>
+            <td><?php echo $this->escape($item['title_ru']); ?></td>
+            <td><?php echo FW_Date::convert($item['created_ts'], FW_Date::MYSQL_DATETIME, FW_Date::SITE_DATE); ?></td>
+            <td>
+                <div class="table_actions">
+                    <a href="<?php echo $this->url(array('action' => 'edit', 'id' => $item['id']), null); ?>" class="btn btn-success"><i class="icon-pencil icon-white"></i>Править</a>
+                    <a href="<?php echo $this->url(array('action' => 'delete', 'id' => $item['id']), null); ?>" class="btn btn-danger delete-button"><i class="icon-trash icon-white"></i>Удалить</a>
+                </div>
+            </td>
+        </tr>
+        <?php
+    }
+    ?>
 </table>
 <?php echo $this->paginationControl($this->news, 'Sliding', 'pagination.phtml'); ?>
-<a href="<?php echo $this->url(array('action'=>'create'), null);?>" class="sexybutton sexysimple"><span class="add">Добавить новость</span></a>
+<a href="<?php echo $this->url(array('action' => 'create'), null); ?>" class="sexybutton sexysimple"><span class="add">Добавить новость</span></a>

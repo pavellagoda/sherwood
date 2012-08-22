@@ -26,3 +26,23 @@ ul.errors li {
     list-style: circle;
     margin: 0 0 10px 
 }
+
+h4.title a {
+    padding: 9px 10px 11px;
+    color: white;
+    display: block;
+}
+
+.pagination a, .pagination span {
+    float: left;
+    padding: 0 14px;
+    line-height: 34px;
+    text-decoration: none;
+    border: 1px solid #DDD;
+    border-left-width: 0;
+}
+
+.pagination span.no-border {
+    border: none;
+    border-right: 1px solid #DDD;
+}

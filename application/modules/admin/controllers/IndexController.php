@@ -18,8 +18,7 @@ class Admin_IndexController extends modules_admin_controllers_ControllerBase
 
     public function indexAction()
     {
-    	
-//    	throw new Exception();
+    	$this->_redirect('/admin/news');
     }
 
 

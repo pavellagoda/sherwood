@@ -1,4 +1,4 @@
-<table>
+<table class="table table-striped">
     <tr>
         <th>#</th>
         <th>Имя файла</th>
@@ -6,15 +6,14 @@
     </tr>
     <?php
     foreach ($this->items as $id => $item) {
-        $item = $item->toArray();
         ?>
         <tr>
             <td><?php echo $id + 1; ?></td>
-            <td><img width="150px" height="100px" src="/i/galleries/previews/<?php echo $item['id'].'.'.$item['extention'] ?>"/></td>
+            <td><img width="150px" height="100px" src="/i/galleries/previews/<?php echo $item['id'] . '.' . $item['extention'] ?>"/></td>
             <td>
                 <div class="table_actions">
-                    <a href="<?php echo $this->url(array('action' => 'edit', 'id' => $item['id']), null); ?>" class="sexybutton sexysimple"><span class="edit">Править</span></a>
-                    <a href="<?php echo $this->url(array('action' => 'delete', 'id' => $item['id']), null); ?>" class="sexybutton sexysimple delete-button"><span class="delete">Удалить</span></a>
+                    <a href="<?php echo $this->url(array('action' => 'edit', 'id' => $item['id']), null); ?>" class="btn btn-success"><i class="icon-pencil icon-white"></i>Править</a>
+                    <a href="<?php echo $this->url(array('action' => 'delete', 'id' => $item['id']), null); ?>" class="btn btn-danger delete-button"><i class="icon-trash icon-white"></i>Удалить</a>
                 </div>
             </td>
         </tr>
@@ -22,4 +21,7 @@
     }
     ?>
 </table>
+
+<?php echo $this->paginationControl($this->items, 'Sliding', 'pagination.phtml'); ?>
+
 <a href="<?php echo $this->url(array('action' => 'add'), null); ?>" class="sexybutton sexysimple"><span class="add">Добавить фото</span></a>
