@@ -41,27 +41,26 @@ class models_InfoBlockMapper extends models_MapperBase {
      * @param int $idNews
      * @return models_News
      */
-    public static function findById($idNews) {
+    public static function findById($id) {
         $db = self::_getDbTable(self::$_dbTable);
 
         $select = $db->select();
 
-        $select->where('id = ?', $idNews);
+        $select->where('id = ?', $id);
 
         $result = $db->fetchRow($select);
 
         return self::_initItem($result);
     }
 
-
     public static function getAll($onlyActive = true) {
         $db = self::_getDbTable(self::$_dbTable);
 
         $select = $db->select();
-        
-        if($onlyActive)
+
+        if ($onlyActive)
             $select->where('status = ?', 'active');
-        
+
         $resultSet = $db->fetchAll($select);
 
         return self::_createArrayFromResultSet($resultSet, array(__CLASS__, '_initItem'));
@@ -91,6 +90,16 @@ class models_InfoBlockMapper extends models_MapperBase {
 
         return $paginator;
     }
+
+    public static function update($id, $data) {
+        $db = self::_getDbTable(self::$_dbTable);
+
+        $where['id = ?'] = (int) $id;
+        $update = $db->update($data, $where);
+
+        return $update;
+    }
+
     /**
      * Save object to database
      * @param models_News $model

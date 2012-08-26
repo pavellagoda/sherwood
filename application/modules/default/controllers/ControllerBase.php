@@ -61,6 +61,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
                 $this->view->showLastMenuBlock = $this->showLastMenuBlock;
                 $this->view->showRightPart = $this->showRightPart;
                 $this->view->slider_partial = $this->slider_partial;
+                $this->view->info_blocks = models_InfoBlockMapper::getAll(true);
                 
 		$frontController 			= Zend_Controller_Front::getInstance();
 		$this->view->controllerName             = $frontController->getRequest()->getControllerName();

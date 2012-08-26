@@ -347,3 +347,17 @@ body {
 .bottom-venzel {
     background-image: url('/i/venzel-bottom.png')
 }
+
+.infoblock {
+    width: 176px;
+    height: 92px;
+    overflow: hidden;
+}
+
+.infoblock div {
+    margin-top: -92px;
+}
+.infoblock img {
+    width: 176px;
+    height: 92px;
+}

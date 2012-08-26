@@ -29,6 +29,14 @@ class modules_admin_forms_InfoEditForm extends Zend_Form
         $oEl->setRequired(true);
         $this->addElement($oEl);
 
+        $oEl = new Zend_Form_Element_Select('status');
+        $oEl->setMultiOptions(array(
+            'active' => 'Активен',
+            'disabled' => 'Отключен'
+        ));
+        $oEl->setRequired(true);
+        $this->addElement($oEl);
+        
         $element = new Zend_Form_Element_File('bg');
         $element->setLabel('Фон:');
         $element->setAttrib('size', '51');

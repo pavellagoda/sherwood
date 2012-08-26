@@ -38,4 +38,12 @@ $(function(){
             $('div.files').append('<div class="div-for-clone">'+html_to_add+'</div>');
         }
     })
+    
+    $('.infoblock').each(function() {
+        var margin = 0 - $(this).height();
+        var diff = $(this).height()/2 - $(this).find('div').height()/2 
+        console.log(margin + diff)
+        $(this).find('div').css('margin-top', margin + diff);
+    })
+    
 });

@@ -1,4 +1,4 @@
-<table>
+<table class="table table-striped">
     <tr>
         <th>#</th>
         <th>блок</th>
@@ -12,8 +12,8 @@
             <td style="padding:0 30px"><?php echo $item->text_ru; ?></td>
             <td>
                 <div class="table_actions">
-                    <a href="<?php echo $this->url(array('action' => 'edit', 'id' => $item->id), null); ?>" class="sexybutton sexysimple"><span class="edit">Править</span></a>
-                    <a href="<?php echo $this->url(array('action'=>'delete', 'id'=>$item->id), null);?>" class="sexybutton sexysimple"><span class="delete">Удалить</span></a>
+                    <a href="<?php echo $this->url(array('action' => 'edit', 'id' => $item->id), null); ?>" class="btn btn-success"><i class="icon-pencil icon-white"></i>Править</a>
+                    <a href="<?php echo $this->url(array('action'=>'delete', 'id'=>$item->id), null);?>" class="btn btn-danger delete-button"><i class="icon-trash icon-white"></i>Удалить</a>
                 </div>
             </td>
         </tr>
