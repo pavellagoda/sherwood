@@ -49,7 +49,7 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
                 $item->full_ru = $form->getValue('full_ru');
                 $item->full_en = $form->getValue('full_en');
                 $item->full_ua = $form->getValue('full_ua');
-//                $item->tourLink = FW_Strings::titleToSeo($item->title);
+                $item->tourLink = FW_Strings::titleToSeo($item->title_ru);
                 $item->isTour = $form->getValue('is_tour');
                 $item->headDescription = $form->getValue('head_description');
                 $item->headTitle = $form->getValue('head_title');
@@ -80,7 +80,7 @@ class Admin_ObjectsController extends modules_admin_controllers_ControllerBase {
                 $item->full_ru = $form->getValue('full_ru');
                 $item->full_en = $form->getValue('full_en');
                 $item->full_ua = $form->getValue('full_ua');
-                $item->tourLink = FW_Strings::titleToSeo($item->title);
+                $item->tourLink = FW_Strings::titleToSeo($item->title_ru);
                 $item->isTour = $form->getValue('is_tour');
                 $item->headDescription = $form->getValue('head_description');
                 $item->headTitle = $form->getValue('head_title');

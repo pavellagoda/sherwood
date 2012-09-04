@@ -358,6 +358,6 @@ body {
     margin-top: -92px;
 }
 .infoblock img {
-    width: 176px;
-    height: 92px;
+    max-width: 176px;
+    max-height: 92px;
 }
