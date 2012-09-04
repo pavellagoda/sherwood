@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Georgia; 
-    src: url(fonts/georgia.ttf);
+/*    font-family: Georgia; 
+    src: url(fonts/georgia.ttf);*/
 }
 
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
@@ -37,7 +37,7 @@ body {
 }
 
 .mainmenu a, .left-menu a, .last-news-block a {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-size: 20px;
     font-style: italic;
     text-decoration: none;
@@ -89,8 +89,9 @@ body {
     font-size: 26px;
     text-align: center;
     margin-bottom: 20px;
-    font-family: Geprgia;
+    font-family: 'TimesNewRoman', serif;
     font-style: italic;
+    line-height: 100%
 }
 
 .main-page .page-text {
@@ -143,6 +144,7 @@ body {
 
 .content div.virtual-link {
     margin-top: 10px;
+    text-align: center;
 }
 
 .last-news-block {

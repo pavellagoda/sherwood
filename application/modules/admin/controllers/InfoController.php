@@ -78,5 +78,21 @@ class Admin_InfoController extends modules_admin_controllers_ControllerBase {
         $this->view->headScript()->appendFile('/js/tiny_mce/tiny_mce.js');
         $this->view->headScript()->appendFile('/js/texteditor_small.js');
     }
+    
+    public function deleteAction() {
+        $this->_helper->viewRenderer->setNoRender(true);
+        $this->_helper->layout()->disableLayout();
+        $request = $this->getRequest();
+
+        $id = (int) $request->getParam('id', 0);
+
+        $item = models_InfoBlockMapper::findById($id);
+
+        if (null != $item) {
+            models_InfoBlockMapper::deleteFromBase($id, models_InfoBlockMapper::$_dbTable);
+        }
+
+        $this->_redirect($this->_helper->url('index'));
+    }
 
 }
