@@ -49,10 +49,15 @@ $(function(){
     
     $('#logo-inner').width(0);
     $('#logo-inner li img').each(function(){
-        $(this).load(function(){
-           var w = $(this).parent().parent().width() +3
-           $('#logo-inner').width($('#logo-inner').width() + w);
-        })
+        if($(this).width() > 0){
+            var w = $(this).parent().parent().width() +3
+            $('#logo-inner').width($('#logo-inner').width() + w);
+        } else {
+            $(this).load(function(){
+                var w = $(this).parent().parent().width() +3
+                $('#logo-inner').width($('#logo-inner').width() + w);
+            })
+        }
     });
     
 });
