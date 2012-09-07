@@ -153,25 +153,25 @@
    top: 30px;
 }
 
-#jquery_image_carousel {
+.jquery_image_carousel {
     text-align: center; 
     margin: 0 auto;
 
     position: relative; 
 }
 
-#jquery_image_carousel li {
+.jquery_image_carousel li {
     cursor: pointer;
 }
 
-#jquery_image_carousel p {
+.jquery_image_carousel p {
     margin: 0; 
     padding: 10px;
     text-align: left;
 
 }
 
-#jquery_image_carousel ul {
+.jquery_image_carousel ul {
     margin: 0; 
     padding: 0; 
     list-style: none;
@@ -202,7 +202,7 @@
     height: 30px;
 }
 
-#slider-inner {
+#slider-inner, #logo-inner {
     overflow: hidden;
     position: relative;
     top: 0px;
@@ -212,11 +212,34 @@
     left: 0px;
 }
 
-#slider-inner li {
+#slider-inner li, #logo-inner li {
     float: left;
     display: inline;
 }
-.jcarousel-clip-horizontal {
+
+#logo-inner li {
+    float: none;
+}
+
+.jcarousel-clip-horizontal, .logos-container {
     overflow: hidden;
     width: 885px;
+}
+
+
+.logo-slider-arrow {
+    position: inherit;
+    margin-top: -55px;
+}
+.jcarousel-prev-horizontal.logo-slider-arrow {
+    float: left;
+    margin-left: 11px;
+}
+.jcarousel-next-horizontal.logo-slider-arrow {
+    float: right;
+    margin-right: 11px;
+}
+
+.logos-list .jquery_image_carousel {
+    text-align: left;
 }

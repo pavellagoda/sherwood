@@ -51,10 +51,12 @@
                         <?php foreach ($this->info_blocks as $block) : ?>
                             <div class="infoblock">
                                 <img src ="/i/infoblocks/<?php echo $block->id . '.' . $block->background_extention ?>"/>
-                                <div><?php
-                    $prop = 'text_' . $this->lang;
-                    echo $block->$prop;
-                            ?></div>
+                                <div>
+                                    <?php
+                                    $prop = 'text_' . $this->lang;
+                                    echo $block->$prop;
+                                    ?>
+                                </div>
                             </div>
                         <?php endforeach; ?>
                     </div>

@@ -1,21 +1,5 @@
 $(function(){
-//    $('ul.menu ul').css('opacity', 0)
-//    $('ul.menu li').mouseover(function(){
-//        $('ul.menu ul').animate(
-//        {
-//            opacity:"1"
-//        }, 
-//        300
-//        );
-//    })
-//    $('ul.menu li').mouseout(function(){
-//        $('ul.menu ul').animate(
-//        {
-//            opacity:"0"
-//        }, 
-//        300
-//        );
-//    })
+    var interval = null;
     $('a.delete-button').click(function(){
         if(confirm('Вы действительно хотите удалить эту запись?')) {
             return true
@@ -42,8 +26,49 @@ $(function(){
     $('.infoblock').each(function() {
         var margin = 0 - $(this).height();
         var diff = $(this).height()/2 - $(this).find('div').height()/2 
-        console.log(margin + diff)
         $(this).find('div').css('margin-top', margin + diff);
     })
     
+    $('.jcarousel-next-horizontal.logo-slider-arrow').mouseover(function() {
+        interval = setInterval(function(){
+            moveLogos('forward')
+        }, 0.1)
+    })
+    $('.jcarousel-next-horizontal.logo-slider-arrow').mouseout(function() {
+        clearInterval(interval);
+    })
+    
+    $('.jcarousel-prev-horizontal.logo-slider-arrow').mouseover(function() {
+        interval = setInterval(function(){
+            moveLogos('back')
+        }, 0.1)
+    })
+    $('.jcarousel-prev-horizontal.logo-slider-arrow').mouseout(function() {
+        clearInterval(interval);
+    })
+    
+    $('#logo-inner').width(0);
+    $('#logo-inner li img').each(function(){
+        $(this).load(function(){
+           var w = $(this).parent().parent().width() +3
+           $('#logo-inner').width($('#logo-inner').width() + w);
+        })
+    });
+    
 });
+
+function moveLogos(direction) {
+    var pos = $('#logo-inner').position().left;
+    if(direction == 'back') {
+        $('#logo-inner').css('left', (pos + 0.5)+'px')
+    } else {
+        $('#logo-inner').css('left', (pos - 0.5)+'px')
+    }
+    if($('#logo-inner').position().left>0) {
+        $('#logo-inner').css('left', 0)
+    }
+    var maxLeft = $('.logos-container').width() - $('#logo-inner').width();
+    if($('#logo-inner').position().left<maxLeft) {
+        $('#logo-inner').css('left', maxLeft+'px');
+    }
+}

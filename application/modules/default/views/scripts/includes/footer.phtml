@@ -6,18 +6,9 @@ $translate = array(
         )
 ?>
 <div class="logos-list">
-    <a href="/"><img src="/i/logos/smak.png"/></a>
-    <?php
-    foreach ($this->objects as $object):
-        if (is_file($_SERVER['DOCUMENT_ROOT'] . '/i/logos/' . $object->id . '.png')):
-            $title = 'title_'.$this->lang;
-            ?>
-            <a title='<?php echo $object->$title; ?>' href="/objects/view/url/<?php echo $object->tourLink ?>"><img src="/i/logos/<?php echo $object->id ?>.png"/></a>
-            <?php
-        endif;
-    endforeach;
-    ?>
-    <a href="/objects/view/url/kafe-bar-evropa"><img src="/i/logos/bouling.png"/></a>
+    
+    <?php // echo $this->render("includes/logos_list.phtml"); ?>
+    <?php echo $this->render("includes/logos_list_simple.phtml"); ?>
 </div>
 <div class="footer-info">
     <div class="container">
