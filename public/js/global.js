@@ -63,11 +63,12 @@ $(function(){
 });
 
 function moveLogos(direction) {
+    
     var pos = $('#logo-inner').position().left;
     if(direction == 'back') {
-        $('#logo-inner').css('left', (pos + 0.5)+'px')
+        $('#logo-inner').css('left', (pos + 1)+'px')
     } else {
-        $('#logo-inner').css('left', (pos - 0.5)+'px')
+        $('#logo-inner').css('left', (pos - 1)+'px')
     }
     if($('#logo-inner').position().left>0) {
         $('#logo-inner').css('left', 0)
