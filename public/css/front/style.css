@@ -193,7 +193,7 @@ body {
 
 .footer-info {
     background-image: url('/i/footer-info-bg.png');
-    height: 81px;
+    -height: 81px;
     width: 1020px;
     margin: 0 auto;
 }
@@ -362,4 +362,16 @@ body {
 .infoblock img {
     max-width: 176px;
     max-height: 92px;
+}
+
+.art {
+    padding: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+.art a {
+    color:#fff;
+    margin-left: 5px;
 }

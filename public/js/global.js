@@ -7,6 +7,11 @@ $(function(){
             return false;
         }
     })
+    
+    $('a.new-window').click(function(){
+        window.open(this.href); 
+        return false;
+    })
 
     $('div.files input[type="file"]').live('change', function(){
         console.log('change')

@@ -3,7 +3,12 @@ $translate = array(
     'ru' => array('Корпорация “Аллея смаку”', 'Украина, 36000, г. Полтава'),
     'ua' => array('Корпорація “Алея смаку”', 'Україна, 36000, м. Полтава'),
     'en' => array('Aleya Smaku korporation', '36000, Ukraine, Poltava'),
-        )
+        );
+$translate_art = array(
+    'ru' => 'Разработано',
+    'ua' => 'Розроблено',
+    'en' => 'Created By'
+)
 ?>
 <div class="logos-list">
     
@@ -28,5 +33,9 @@ $translate = array(
         <div class="lineelement right visa-block">
             <img src="/i/visa.png" alt="logo"/>
         </div>
+    </div>
+    <div class="clear"></div>
+    <div class="art">
+        <?php echo $translate_art[$this->lang] ?> <a class="new-window" href="http://artvision.net.ua" title="ArtVision Studio">ArtVision Studio</a>
     </div>
 </div>
