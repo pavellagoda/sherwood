@@ -57,15 +57,27 @@ $(function(){
         if($(this).width() > 0){
             var w = $(this).parent().parent().width() +3
             $('#logo-inner').width($('#logo-inner').width() + w);
+            testArrows();
         } else {
             $(this).load(function(){
                 var w = $(this).parent().parent().width() +3
                 $('#logo-inner').width($('#logo-inner').width() + w);
+                testArrows();
             })
         }
     });
     
 });
+
+function testArrows() {
+    if($('#logo-inner').width() <= $('.logos-container').width()) {
+        $('.jcarousel-prev-horizontal.logo-slider-arrow').hide();
+        $('.jcarousel-next-horizontal.logo-slider-arrow').hide();
+    } else {
+        $('.jcarousel-prev-horizontal.logo-slider-arrow').show();
+        $('.jcarousel-next-horizontal.logo-slider-arrow').show();
+    }
+}
 
 function moveLogos(direction) {
     
