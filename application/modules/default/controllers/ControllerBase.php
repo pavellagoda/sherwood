@@ -42,6 +42,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headLink()->appendStylesheet('/css/slider/slider.css?rand='.rand(1,100000));
 		$this->view->headLink()->appendStylesheet('/css/front/menu_static.css?rand='.rand(1,100000));
 		$this->view->headLink()->appendStylesheet('/css/gallery/feature-carousel.css?rand='.rand(1,100000));
+                $this->view->headLink()->headLink(array('rel' => 'favicon', 'href' => '/i/favicon.ico'), 'PREPEND');
 		
 		$this->view->headScript()->appendFile('/js/global.js?rand='.rand(1,100000));
 		$this->view->headScript()->appendFile('/js/menu.js?rand='.rand(1,100000));
@@ -51,6 +52,7 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
 		$this->view->headScript()->appendFile('/js/feature-carousel/jquery.featureCarousel.js?rand='.rand(1,100000));
                 $this->view->headScript()->appendFile('/js/imageflow-instance.js?rand='.rand(1,100000));
 		$this->view->headTitle()->setSeparator(' / ');
+                
                 
                 $this->view->objects = models_ObjectMapper::getAll();
                 $this->view->photos = models_PhotoPageMapper::findAllByPage($this->photoidenter);
