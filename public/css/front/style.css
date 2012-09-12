@@ -378,10 +378,10 @@ body {
 
 .top-information {
     position: absolute;
-    width: 570px;
+    width: 660px;
     text-align: center;
     top: 25px;
-    margin-left: 195px;
+    margin-left: 150px;
     font-style: italic;
     font-weight: bold;
 }
