@@ -301,7 +301,7 @@ body {
 }
 
 .languages-list {
-    text-align: right;
+    float: right;
     padding: 20px 25px 0 0;
 }
 
@@ -374,4 +374,13 @@ body {
 .art a {
     color:#fff;
     margin-left: 5px;
+}
+
+.top-information {
+    position: absolute;
+    width: 960px;
+    text-align: center;
+    top:25px;
+    font-style: italic;
+    font-weight: bold;
 }
