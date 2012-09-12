@@ -13,7 +13,7 @@ class ErrorController extends modules_default_controllers_ControllerBase
         public function init()
         {
         	parent::init();
-        	$this->layout->setLayout('error');
+//        	$this->layout->setLayout('error');
         }
         
         public function errorAction()
@@ -38,9 +38,6 @@ class ErrorController extends modules_default_controllers_ControllerBase
                 $this->view->env = APPLICATION_ENV;
                 
                 $this->view->title = 'Error';
-                
-                //$this->_helper->viewRenderer->setNoRender();
-//                $this->_helper->layout->disableLayout();
         }
         
         public function projectnotfoundAction() {
