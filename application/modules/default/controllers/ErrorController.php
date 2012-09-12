@@ -38,6 +38,7 @@ class ErrorController extends modules_default_controllers_ControllerBase
                 $this->view->env = APPLICATION_ENV;
                 
                 $this->view->title = 'Error';
+		$this->view->headScript()->appendFile('/js/error.js?rand='.rand(1,100000));
         }
         
         public function projectnotfoundAction() {
