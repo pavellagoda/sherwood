@@ -13,13 +13,13 @@
     <body>
         <div class="container">
             <div class="header">
+                <div class="top-information">
+                    <?php echo $this->render("includes/top_information.phtml"); ?>
+                </div>
                 <div class="languages-list">
                     <a <?php if ($this->lang == 'ru') echo 'class="active"'; ?> href="/language/ru">рус</a>
                     <a <?php if ($this->lang == 'en') echo 'class="active"'; ?> href="/language/en">eng</a>
                     <a <?php if ($this->lang == 'ua') echo 'class="active"'; ?> href="/language/ua">укр</a>
-                </div>
-                <div class="top-information">
-                    <?php echo $this->render("includes/top_information.phtml"); ?>
                 </div>
                 <div class="clear"></div>
                 <?php echo $this->render("includes/mainmenu_static.phtml"); ?>

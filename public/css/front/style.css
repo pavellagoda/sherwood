@@ -1,6 +1,6 @@
 @font-face {
-/*    font-family: Georgia; 
-    src: url(fonts/georgia.ttf);*/
+    /*    font-family: Georgia; 
+        src: url(fonts/georgia.ttf);*/
 }
 
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
@@ -378,9 +378,10 @@ body {
 
 .top-information {
     position: absolute;
-    width: 960px;
+    width: 570px;
     text-align: center;
-    top:25px;
+    top: 25px;
+    margin-left: 195px;
     font-style: italic;
     font-weight: bold;
 }
