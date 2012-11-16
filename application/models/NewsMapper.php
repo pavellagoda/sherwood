@@ -139,7 +139,7 @@ class models_NewsMapper extends models_MapperBase {
         $db = self::_getDbTable(self::$_dbTable);
 
         $select = $db->select('*');
-        $select->order('news.id DESC');
+        $select->order('news.created_ts DESC');
         $select->group('news.id');
         $select->limit($num);
         $resultSet = $db->fetchAll($select);
