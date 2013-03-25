@@ -12,7 +12,7 @@
 		private var num:String;
 		private var startX:Number;
 		private var startY:Number;
-		private var titleText:String;
+		private var titleText:Array = new Array();
 		private var is_go:Boolean;
 
 		public function Note() {
@@ -40,7 +40,12 @@
 				Main.openDoor(this.parent["door"+num+"_mc"]);
 			}
 			if (evt.target.name=="circle_mc") {
-				Main.showNote(this.titleText);
+				
+				if(this.titleText is Array) {
+					Main.showNote(this.titleText[Main.language]);
+				} else {
+					Main.showNote(this.titleText);
+				}
 			}
 		}
 		private function rollOuted(evt:MouseEvent) {

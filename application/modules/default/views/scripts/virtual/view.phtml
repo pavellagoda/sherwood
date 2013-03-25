@@ -5,6 +5,7 @@
 <script type="text/javascript">
         var so = new SWFObject("/swf/start.swf", "start", "907px", "675px", "10", "#fff");
         so.addVariable('object', "<?php echo $this->object['tour_link'] ?>" );
+        so.addVariable('language', "<?php echo $this->lang ?>" );
         so.addParam("menu", "false"); 
         so.addParam("wmode", "transparent"); 
         so.addParam('allowscriptaccess','always');
