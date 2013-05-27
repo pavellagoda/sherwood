@@ -566,8 +566,8 @@ body {
     color: red;
 }
 
-.contact-form {
-    -display: none;
+.comment-form {
+    margin-left: 30px;
 }
 
 .contact-form-block {
@@ -605,4 +605,25 @@ body {
     margin-bottom: 10px;
     font-style: italic;
     font-size: 16px;
+}
+
+.paginator {
+    margin-top: 10px;
+}
+
+
+#comments-block {
+    margin-top: 40px; 
+}
+#comments-block .comment {
+    margin-top: 10px; 
+}
+
+#comments-block .comment a.add-comment{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#comments-block .comment .subcomments {
+    margin-left: 30px;
 }

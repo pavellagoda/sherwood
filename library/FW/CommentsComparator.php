@@ -9,17 +9,17 @@ class FW_CommentsComparator {
     public static function getCommentsRecursive($page = 1) {
         $result = array();
         $responces = models_CommentMapper::getAllByParentIdPaginator(0, $page);
-        foreach ($responces as $responce) {
-            $tmp = array();
-            $tmp['responce'] = $responce;
-            $tmp['comments'] = self::getComments($responce['id']);
-            $result[] = $tmp;
-        }
+//        foreach ($responces as $responce) {
+//            $tmp = array();
+//            $tmp['model'] = $responce;
+//            $tmp['comments'] = self::getComments($responce['id']);
+//            $result[] = $tmp;
+//        }
         
-        echo '<pre>';
-        print_r($result); die;
+//        echo '<pre>';
+//        print_r($result); die;
         
-        return $result;
+        return $responces;
     }
     
     private static function getComments($id, $result = array()) {

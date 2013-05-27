@@ -66,12 +66,15 @@ class models_CommentMapper extends models_MapperBase
             return self::_createArrayFromResultSet($resultSet, array(__CLASS__, '_initItem'));
 	}
         
-	public static function getAllByParentId ($parent_id = 0)
+	public static function getAllByParentId ($parent_id = 0, $only_moderated = true)
 	{
             $db = self::_getDbTable(self::$_dbTable);
 
             $select = $db->select();
             $select->where('parent_id = ?', $parent_id);
+            
+            if($only_moderated)
+                $select->where('moderated = ?', 1);
 
             $resultSet = $db->fetchAll($select);
 
@@ -91,15 +94,18 @@ class models_CommentMapper extends models_MapperBase
             return $paginator;
 	}
         
-	public static function getAllByParentIdPaginator ($parent_id = 0, $page = 1, $count = 10)
+	public static function getAllByParentIdPaginator ($parent_id = 0, $page = 1, $count = 10, $only_moderated = true)
 	{
             $db = self::_getDbTable(self::$_dbTable);
 
             $select = $db->select();
             $select->where('parent_id = ?', $parent_id);
             
-//            if(!$parent_id)
-//                $select->order('id DESC');
+            if($only_moderated)
+                $select->where('moderated = ?', 1);
+            
+            if(!$parent_id)
+                $select->order('created_ts DESC');
 
             $paginator = new Zend_Paginator(new Zend_Paginator_Adapter_DbSelect($select));
             $paginator->setItemCountPerPage($count);

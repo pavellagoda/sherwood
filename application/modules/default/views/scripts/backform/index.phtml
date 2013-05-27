@@ -5,6 +5,11 @@ $translates = array(
         'ua' => 'Додати відгук',
         'en' => 'Add Responce',
     ),
+    'comment' => array(
+        'ru' => 'Добавить комментарий',
+        'ua' => 'Додати комментар',
+        'en' => 'Add Comment',
+    ),
     'name' => array(
         'ru' => 'Имя',
         'ua' => 'Им`я',
@@ -30,6 +35,11 @@ $translates = array(
         'ua' => 'Ваш коментарий додано',
         'en' => 'Your comment has been added',
     ),
+    'add_comment' => array(
+        'ru' => 'прокоментровать',
+        'ua' => 'прокоментувати',
+        'en' => 'add comment',
+    ),
 );
 ?>
 <div class="full-form-content">
@@ -53,10 +63,12 @@ $translates = array(
             <div class="clear"></div>
             <div class="errors">
                 <?php
-                $errors = $this->form->getElement('name')->getMessages();
-                if (count($errors)) {
-                    foreach ($errors as $error) {
-                        echo '<p>' . $error . '</p>';
+                if ($this->real_parent_id == 0) {
+                    $errors = $this->form->getElement('name')->getMessages();
+                    if (count($errors)) {
+                        foreach ($errors as $error) {
+                            echo '<p>' . $error . '</p>';
+                        }
                     }
                 }
                 ?>
@@ -72,11 +84,13 @@ $translates = array(
             <div class="clear"></div>
             <div class="errors">
                 <?php
-                $errors = $this->form->getElement('email')->getMessages();
-                if (count($errors)) {
-                    foreach ($errors as $error) {
-                        echo '<p>' . $error . '</p>';
-                        break;
+                if ($this->real_parent_id == 0) {
+                    $errors = $this->form->getElement('email')->getMessages();
+                    if (count($errors)) {
+                        foreach ($errors as $error) {
+                            echo '<p>' . $error . '</p>';
+                            break;
+                        }
                     }
                 }
                 ?>
@@ -92,10 +106,12 @@ $translates = array(
             <div class="clear"></div>
             <div class="errors">
                 <?php
-                $errors = $this->form->getElement('text')->getMessages();
-                if (count($errors)) {
-                    foreach ($errors as $error) {
-                        echo '<p>' . $error . '</p>';
+                if ($this->real_parent_id == 0) {
+                    $errors = $this->form->getElement('text')->getMessages();
+                    if (count($errors)) {
+                        foreach ($errors as $error) {
+                            echo '<p>' . $error . '</p>';
+                        }
                     }
                 }
                 ?>
@@ -113,10 +129,12 @@ $translates = array(
             <div class="clear"></div>
             <div class="errors">
                 <?php
-                $errors = $this->form->getElement('captcha')->getMessages();
-                if (count($errors)) {
-                    foreach ($errors as $error) {
-                        echo '<p>' . $error . '</p>';
+                if ($this->real_parent_id == 0) {
+                    $errors = $this->form->getElement('captcha')->getMessages();
+                    if (count($errors)) {
+                        foreach ($errors as $error) {
+                            echo '<p>' . $error . '</p>';
+                        }
                     }
                 }
                 ?>
@@ -127,4 +145,37 @@ $translates = array(
         </div>
         <div class="clear"></div>
     </form>
+
+    <?php
+    if ($this->real_parent_id == 0) {
+        echo $this->render('includes/comment-form.phtml');
+    }
+    ?>
+
+</div>
+
+<div id="comments-block">
+    <?php foreach ($this->comments as $comment): ?>
+        <div class="comment">
+            <h4><?php echo $comment['name'] . '(' . date('d-m-Y H:i', strtotime($comment['created_ts'])) . ')'; ?>:</h4>
+            <div><?php echo $comment['message']; ?></div>
+            <a href="#" post_id="<?php echo $comment['id'] ?>" class="add-comment"><?php echo $translates['add_comment'][$this->lang] ?></a>
+            <?php
+            if ($comment['id'] == $this->real_parent_id) {
+                echo $this->render('includes/comment-form.phtml');
+            }
+            ?>
+            <div class="subcomments">
+                <?php foreach (models_CommentMapper::getAllByParentId($comment['id']) as $subcomment): ?>
+                    <div class="comment">
+                        <h4><?php echo $subcomment->name . '(' . date('d-m-Y H:i', strtotime($subcomment->created_ts)) . ')'; ?>:</h4>
+                        <div><?php echo $subcomment->message; ?></div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <div class="clear"></div>
+        </div>
+    <?php endforeach; ?>
+
+    <?php echo $this->paginationControl($this->comments, 'Sliding', 'pagination_' . $this->lang . '.phtml'); ?>
 </div>

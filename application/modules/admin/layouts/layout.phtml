@@ -19,7 +19,9 @@
                     <div class="header_right">
                         <div class="navbar">
                             <div class="navbar-inner">
+                                <?php if(false) : ?>
                                 <h4 class="pull-left username title"><a href="<?php echo $this->url(array('module' => 'admin', 'controller' => 'index'), 'default', true); ?>">ADMIN AREA</a></h4>
+                                <?php endif; ?>
                                 <?php if ($this->loggedUser): ?>
                                     <ul class="pull-right nav">
                                         <li></li>
@@ -37,6 +39,7 @@
                                                 <li><a href="<?php echo $this->url(array('module' => 'admin', 'controller' => 'objects', 'action' => 'create'), 'default', true); ?>">Добавить объект</a></li>
                                             </ul>
                                         </li>
+                                        <li><a href="<?php echo $this->url(array('module' => 'admin', 'controller' => 'comments'), 'default', true); ?>">Комментарии</a></li>
                                         <li><a href="<?php echo $this->url(array('module' => 'admin', 'controller' => 'staticpages'), 'default', true); ?>">Управление статическими страницами</a></li>
                                         
                                         <li class="dropdown">

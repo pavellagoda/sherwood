@@ -35,6 +35,7 @@ class BackformController extends modules_default_controllers_ControllerBase {
 
         $showSuccessMessage = false;
         $parent_id = 0;
+        $real_parent_id = 0;
 
         if ($request->isPost()) {
             if ($form->isValid($request->getParams())) {
@@ -44,7 +45,7 @@ class BackformController extends modules_default_controllers_ControllerBase {
                 $model->email = $request->getParam('email');
                 $model->message = $request->getParam('text');
                 $model->moderated = 0;
-                $model->created_ts = time();
+                $model->created_ts = new Zend_Db_Expr('NOW()');
                 models_CommentMapper::save($model);
                 $showSuccessMessage = true;
                 if($model->parent_id > 0) {
@@ -53,13 +54,17 @@ class BackformController extends modules_default_controllers_ControllerBase {
             } else {
                 $form->populate($request->getParams());
             }
+            
+            $real_parent_id = $request->getParam('parent_id');
         }
         
         
-        $this->view->comments = FW_CommentsComparator::getCommentsRecursive();
+        $this->view->comments = FW_CommentsComparator::getCommentsRecursive($request->getParam('page', 1));
         $this->view->parent_id = $parent_id;
+        $this->view->real_parent_id = $real_parent_id;
         $this->view->showSuccessMessage = $showSuccessMessage;
 
+        $this->view->headScript()->appendFile('/js/lib/jquery.scrollTo-min.js');
         $this->view->headScript()->appendFile('/js/backform.js?rand=' . rand(1, 100000));
 
         $this->view->form = $form;

@@ -1,0 +1,138 @@
+<?php
+$translates = array(
+    'resp' => array(
+        'ru' => 'Добавить отзыв',
+        'ua' => 'Додати відгук',
+        'en' => 'Add Responce',
+    ),
+    'comment' => array(
+        'ru' => 'Добавить комментарий',
+        'ua' => 'Додати комментар',
+        'en' => 'Add Comment',
+    ),
+    'name' => array(
+        'ru' => 'Имя',
+        'ua' => 'Им`я',
+        'en' => 'Name',
+    ),
+    'mess' => array(
+        'ru' => 'Сообщение',
+        'ua' => 'Повідомлення',
+        'en' => 'Message',
+    ),
+    'sym' => array(
+        'ru' => 'Введите символы',
+        'ua' => 'Введіть символи',
+        'en' => 'Enter Symbols',
+    ),
+    'success_0' => array(
+        'ru' => 'Ваш отзыв добавлен',
+        'ua' => 'Ваш відгук додано',
+        'en' => 'Your responce has been added',
+    ),
+    'success_1' => array(
+        'ru' => 'Ваш коментарий добавлен',
+        'ua' => 'Ваш коментарий додано',
+        'en' => 'Your comment has been added',
+    ),
+    'add_comment' => array(
+        'ru' => 'прокоментровать',
+        'ua' => 'прокоментувати',
+        'en' => 'add comment',
+    ),
+);
+?>
+<form method="post" action="" class="comment-form">
+    <input type="hidden" name="parent_id" value="0" id="parent_id">
+    <div class="contact-form-block">
+        <div class="lineelement label">
+            <label for="name"><?php echo $translates['name'][$this->lang] ?>:</label>
+        </div>
+        <div class="lineelement">
+            <?php echo $this->form->getElement('name'); ?>
+        </div>
+        <div class="clear"></div>
+        <div class="errors">
+            <?php
+            if ($this->real_parent_id > 0) {
+                $errors = $this->form->getElement('name')->getMessages();
+                if (count($errors)) {
+                    foreach ($errors as $error) {
+                        echo '<p>' . $error . '</p>';
+                    }
+                }
+            }
+            ?>
+        </div>
+    </div>
+    <div class="contact-form-block">
+        <div class="lineelement label">
+            <label for="email">E-mail:</label>
+        </div>
+        <div class="lineelement">
+            <?php echo $this->form->getElement('email'); ?>
+        </div>
+        <div class="clear"></div>
+        <div class="errors">
+            <?php
+            if ($this->real_parent_id > 0) {
+                $errors = $this->form->getElement('email')->getMessages();
+                if (count($errors)) {
+                    foreach ($errors as $error) {
+                        echo '<p>' . $error . '</p>';
+                        break;
+                    }
+                }
+            }
+            ?>
+        </div>
+    </div>
+    <div class="contact-form-block">
+        <div class="lineelement label">
+            <label for="text"><?php echo $translates['mess'][$this->lang] ?>:</label>
+        </div>
+        <div class="lineelement">
+            <?php echo $this->form->getElement('text'); ?>
+        </div>
+        <div class="clear"></div>
+        <div class="errors">
+            <?php
+            if ($this->real_parent_id > 0) {
+                $errors = $this->form->getElement('text')->getMessages();
+                if (count($errors)) {
+                    foreach ($errors as $error) {
+                        echo '<p>' . $error . '</p>';
+                    }
+                }
+            }
+            ?>
+        </div>
+    </div>
+    <div class="contact-form-block">
+
+        <div class="lineelement label">
+            <label for="text"><?php echo $translates['sym'][$this->lang] ?>:</label>
+        </div>
+
+        <div class="lineelement captcha">
+            <?php echo $this->form->captcha; ?>
+        </div>
+        <div class="clear"></div>
+        <div class="errors">
+            <?php
+            if ($this->real_parent_id > 0) {
+                $errors = $this->form->getElement('captcha')->getMessages();
+                if (count($errors)) {
+                    foreach ($errors as $error) {
+                        echo '<p>' . $error . '</p>';
+                    }
+                }
+            }
+            ?>
+        </div>
+    </div>
+    <div class="lineelement right add-comment-button contact-form-block">
+        <button class="btn"><?php echo $translates['comment'][$this->lang] ?></button>
+    </div>
+    <div class="clear"></div>
+</form>
