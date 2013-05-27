@@ -26,9 +26,11 @@
                 <div class="logo">
                     <a href="/"><img src="/i/logo.png" alt="logo"/></a>
                 </div>
-                <div class="promo">
-                    <?php echo $this->render("includes/" . $this->slider_partial); ?>
-                </div>
+                <?php if (!is_null($this->slider_partial)): ?>
+                    <div class="promo">
+                        <?php echo $this->render("includes/" . $this->slider_partial); ?>
+                    </div>
+                <?php endif; ?>
             </div>
             <div class="main-page<?php if ($this->controllerName == 'index') echo ' index-mainpage' ?>">
                 <?php if ($this->leftMenuPart): ?>

@@ -31,36 +31,36 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
         $this->bootstrap('db');
         $names = models_StaticpageMapper::getPages();
         $resultNamesArray = array();
-        foreach ($names as $name)
-        {
+        foreach ($names as $name) {
             $resultNamesArray[] = $name->name;
         }
         $nameString = implode('|', $resultNamesArray);
+
+        $router->addRoute('staticpages', new Zend_Controller_Router_Route_Regex(
+                        '(' . $nameString . ')$',
+                        array(
+                            'controller' => 'staticpages',
+                            'action' => 'index'
+                        ),
+                        array(
+                            1 => 'page',
+                        )
+                )
+        );
+        $router->addRoute('language', new Zend_Controller_Router_Route_Regex(
+                        'language/(ru|en|ua)$',
+                        array(
+                            'controller' => 'language',
+                            'action' => 'index'
+                        ),
+                        array(
+                            1 => 'lang',
+                        )
+                )
+        );
         
-        $router->addRoute('staticpages',
-                        new Zend_Controller_Router_Route_Regex(
-                                        '('.$nameString.')$',
-                                        array(
-                                                        'controller' => 'staticpages',
-                                                        'action' => 'index'
-                                        ),
-                                        array(
-                                                        1 => 'page',
-                                        )
-                        )
-        );
-        $router->addRoute('language',
-                        new Zend_Controller_Router_Route_Regex(
-                                        'language/(ru|en|ua)$',
-                                        array(
-                                                        'controller' => 'language',
-                                                        'action' => 'index'
-                                        ),
-                                        array(
-                                                        1 => 'lang',
-                                        )
-                        )
-        );
+        $front->registerPlugin(new modules_default_controllers_plugins_LangSelector());
+        
         return $front;
     }
 
@@ -77,10 +77,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
     }
 
     protected function _initTranslation() {
-        $translate = new Zend_Translate('array', APPLICATION_PATH . '/languages');
-        Zend_Registry::set('Zend_Translate', $translate);
-        Zend_Validate_Abstract::setDefaultTranslator($translate);
-        Zend_Form::setDefaultTranslator($translate);
+        
+//        $translate = new Zend_Translate('array', APPLICATION_PATH . '/languages');
+//        $translate->addTranslation(
+//                array(
+//                    'content' => APPLICATION_PATH . '/languages/front_en.php',
+//                    'locale' => 'en'
+//                )
+//        );
+//        $translate->setLocale('ru_RU');
+//        Zend_Registry::set('Zend_Translate', $translate);
+//        Zend_Validate_Abstract::setDefaultTranslator($translate);
+//        Zend_Form::setDefaultTranslator($translate);
     }
 
     protected function _initSession() {

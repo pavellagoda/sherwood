@@ -14,7 +14,6 @@ $(function(){
     })
 
     $('div.files input[type="file"]').live('change', function(){
-        console.log('change')
         var addfile = true;
         var filelist = $('div.files input[type="file"]');
         for(var i = 0; i<filelist.length; i++ ) {
