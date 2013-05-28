@@ -46,7 +46,14 @@ class BackformController extends modules_default_controllers_ControllerBase {
                 $model->message = $request->getParam('text');
                 $model->moderated = 0;
                 $model->created_ts = new Zend_Db_Expr('NOW()');
-                models_CommentMapper::save($model);
+                if(models_CommentMapper::save($model)) {
+                    $template = $model->parent_id?'комментарий':'отзыв';
+                    $message = '<p>На сайт добавлен новый '.$template.'</p>';
+                    $message .= '<p>Отправитель: '.$model->name.'</p>';
+                    $message .= '<p>E-mail: '.$model->email.'</p>';
+                    $message .= '<p>Текст: '.$model->message.'</p>';
+                    FW_Mailer::sendToSite('Алея Смаку', $model->email, $message);
+                }
                 $showSuccessMessage = true;
                 if($model->parent_id > 0) {
                     $parent_id = 1;

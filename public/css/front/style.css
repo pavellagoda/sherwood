@@ -620,17 +620,19 @@ body {
     margin-top: 40px; 
 }
 #comments-block .comment {
-    margin-top: 20px; 
+    margin-top: 5px; 
+    background-image: url('/i/footer-info-bg.png');
+    padding: 5px 10px;
 }
 
 #comments-block .subcomments .comment {
     margin-top: 10px;
+    background: none;
 }
 
 #comments-block .comment a.add-comment{
     font-size: 12px;
     text-decoration: none;
-    margin-left: 10px;
 }
 
 #comments-block .comment .subcomments {
@@ -638,27 +640,15 @@ body {
 }
 
 .comment h4 {
-    background: #fcaf39;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
-    color: black;
-    padding: 5px 10px;
-    font-family: Verdana;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 10px;
-    float: left;
-    text-decoration: underline;
-    /*border-bottom: 1px solid grey;*/
+    color: #FBB03B;
 }
 
 .comment h4 span {
     font-weight: normal;
+    color: #FAC493;
+    margin-left: 3px;
 }
 
 .comment .comment-content {
-    padding-left: 10px;
     margin-top: 7px;
-
 }
