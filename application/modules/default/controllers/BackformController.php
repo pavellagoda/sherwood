@@ -64,7 +64,6 @@ class BackformController extends modules_default_controllers_ControllerBase {
         $this->view->real_parent_id = $real_parent_id;
         $this->view->showSuccessMessage = $showSuccessMessage;
 
-        $this->view->headScript()->appendFile('/js/lib/jquery.scrollTo-min.js');
         $this->view->headScript()->appendFile('/js/backform.js?rand=' . rand(1, 100000));
 
         $this->view->form = $form;
