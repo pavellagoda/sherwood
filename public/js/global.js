@@ -12,6 +12,15 @@ $(function(){
         window.open(this.href); 
         return false;
     })
+    
+    $('input[type="checkbox"].moderate-comment').change(function() {
+        var comment_id = $(this).attr('post_id');
+        var moderate_val = !!$(this).attr('checked') * 1;
+        $.post('/admin/comments/moderate', {
+            comment_id:comment_id,
+            moderate_val:moderate_val
+        })
+    })
 
     $('div.files input[type="file"]').live('change', function(){
         var addfile = true;

@@ -1,0 +1,42 @@
+<table class="table table-striped">
+    <tr>
+        <th>#</th>
+        <th>Имя</th>
+        <th>E-mail</th>
+        <th>Текст</th>
+        <th>Дата создания</th>
+        <th>Отображать</th>
+        <th>&nbsp;</th>
+    </tr>
+    <?php foreach ($this->comments as $id => $item) : ?>
+        <tr>
+            <td><?php echo $id + 1; ?></td>
+            <td><?php echo $this->escape($item['name']); ?></td>
+            <td><?php echo $this->escape($item['email']); ?></td>
+            <td><?php echo $this->escape($item['message']); ?></td>
+            <td><?php echo $this->escape(date('d-m-Y H:i', strtotime($item['created_ts']))); ?></td>
+            <td><input class="moderate-comment" post_id="<?php echo $item['id'] ?>" type="checkbox"<?php echo $item['moderated'] ? ' checked="checked"' : '' ?>/></td>
+            <td>
+                <div class="table_actions">
+                    <a href="<?php echo $this->url(array('action' => 'delete', 'id' => $item['id']), null); ?>" class="btn btn-danger delete-button"><i class="icon-trash icon-white"></i>Удалить</a>
+                </div>
+            </td>
+        </tr>
+        <?php foreach (models_CommentMapper::getAllByParentId($item['id'], false) as $n => $subcomment) : ?>
+            <tr>    
+                <td>&nbsp;</td>
+                <td class="subcomments"><?php echo $this->escape($subcomment->name); ?></td>
+                <td><?php echo $this->escape($subcomment->email); ?></td>
+                <td><?php echo $this->escape($subcomment->message); ?></td>
+                <td><?php echo $this->escape(date('d-m-Y H:i', strtotime($subcomment->created_ts))); ?></td>
+                <td><input class="moderate-comment" post_id="<?php echo $subcomment->id ?>" type="checkbox"<?php echo $subcomment->moderated ? ' checked="checked"' : '' ?>/></td>
+                <td>
+                    <div class="table_actions">
+                        <a href="<?php echo $this->url(array('action' => 'delete', 'id' => $subcomment->id), null); ?>" class="btn btn-danger delete-button"><i class="icon-trash icon-white"></i>Удалить</a>
+                    </div>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+</table>
+<?php echo $this->paginationControl($this->comments, 'Sliding', 'pagination.phtml'); ?>

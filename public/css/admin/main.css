@@ -46,3 +46,7 @@ h4.title a {
     border: none;
     border-right: 1px solid #DDD;
 }
+
+.table td.subcomments {
+    padding-left: 50px;
+}
