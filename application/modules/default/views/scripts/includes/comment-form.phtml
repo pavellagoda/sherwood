@@ -43,7 +43,7 @@ $translates = array(
 );
 ?>
 <form method="post" action="" class="comment-form">
-    <input type="hidden" name="parent_id" value="0" id="parent_id">
+    <input type="hidden" name="parent_id" value="<?php echo $this->real_parent_id ?>" id="parent_id">
     <div class="contact-form-block">
         <div class="lineelement label">
             <label for="name"><?php echo $translates['name'][$this->lang] ?>:</label>
