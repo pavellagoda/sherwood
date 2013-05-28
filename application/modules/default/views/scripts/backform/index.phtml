@@ -3,7 +3,7 @@ $translates = array(
     'resp' => array(
         'ru' => 'Добавить отзыв',
         'ua' => 'Додати відгук',
-        'en' => 'Add Responce',
+        'en' => 'Add Feedback',
     ),
     'comment' => array(
         'ru' => 'Добавить комментарий',
@@ -28,7 +28,7 @@ $translates = array(
     'success_0' => array(
         'ru' => 'Ваш отзыв добавлен',
         'ua' => 'Ваш відгук додано',
-        'en' => 'Your responce has been added',
+        'en' => 'Your feedback has been added',
     ),
     'success_1' => array(
         'ru' => 'Ваш коментарий добавлен',
@@ -157,8 +157,9 @@ $translates = array(
 <div id="comments-block">
     <?php foreach ($this->comments as $comment): ?>
         <div class="comment">
-            <h4><?php echo $comment['name'] . '(' . date('d-m-Y H:i', strtotime($comment['created_ts'])) . ')'; ?>:</h4>
-            <div><?php echo $comment['message']; ?></div>
+            <h4><?php echo $comment['name'] . '<span>(' . date('d-m-Y H:i', strtotime($comment['created_ts'])) . ')</span>'; ?>:</h4>
+            <div class="clear"></div>
+            <div class="comment-content"><?php echo $comment['message']; ?></div>
             <a href="#" post_id="<?php echo $comment['id'] ?>" class="add-comment"><?php echo $translates['add_comment'][$this->lang] ?></a>
             <?php
             if ($comment['id'] == $this->real_parent_id) {
@@ -168,8 +169,9 @@ $translates = array(
             <div class="subcomments">
                 <?php foreach (models_CommentMapper::getAllByParentId($comment['id']) as $subcomment): ?>
                     <div class="comment">
-                        <h4><?php echo $subcomment->name . '(' . date('d-m-Y H:i', strtotime($subcomment->created_ts)) . ')'; ?>:</h4>
-                        <div><?php echo $subcomment->message; ?></div>
+                        <h4><?php echo $subcomment->name . '<span>(' . date('d-m-Y H:i', strtotime($subcomment->created_ts)) . ')</span>'; ?>:</h4>
+                        <div class="clear"></div>
+                        <div class="comment-content"><?php echo $subcomment->message; ?></div>
                     </div>
                 <?php endforeach; ?>
             </div>
