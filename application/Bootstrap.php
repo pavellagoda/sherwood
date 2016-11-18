@@ -1,15 +1,20 @@
 <?php
 
-class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
+class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
+{
 
-    protected function _initDoctype() {
+    protected function _initDoctype()
+    {
         $this->bootstrap('view');
         $view = $this->getResource('view');
         $view->doctype('XHTML1_STRICT');
     }
 
-    protected function _initFrontController() {
+    protected function _initFrontController()
+    {
         $front = Zend_Controller_Front::getInstance();
+
+        $this->bootstrap('autoload');
 
         $front->setControllerDirectory(
                 array(
@@ -27,7 +32,19 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
         $front->setDefaultModule('default');
 
         $router = $front->getRouter();
-        $this->bootstrap('autoload');
+
+        $router->removeDefaultRoutes();
+
+        $router->addRoute('default', new FW_MultilingualModule(
+                        array(
+                            'lang' => 'ru',
+                            'module' => 'default',
+                            'controller' => 'index',
+                            'action' => 'index',
+                        )
+                )
+        );
+        
         $this->bootstrap('db');
         $names = models_StaticpageMapper::getPages();
         $resultNamesArray = array();
@@ -35,49 +52,56 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
             $resultNamesArray[] = $name->name;
         }
         $nameString = implode('|', $resultNamesArray);
-
+//        var_dump($nameString); die;
         $router->addRoute('staticpages', new Zend_Controller_Router_Route_Regex(
-                        '(' . $nameString . ')$',
+                        '((?:ru|en|ua)/)?(' . $nameString . ')$',
                         array(
                             'controller' => 'staticpages',
-                            'action' => 'index'
-                        ),
-                        array(
-                            1 => 'page',
-                        )
-                )
-        );
-        $router->addRoute('language', new Zend_Controller_Router_Route_Regex(
-                        'language/(ru|en|ua)$',
-                        array(
-                            'controller' => 'language',
-                            'action' => 'index'
+                            'action' => 'index',
+                            'lang' => 'ru'
                         ),
                         array(
                             1 => 'lang',
+                            2 => 'page',
                         )
                 )
         );
-        
+
+
+//        $router->addRoute('language', new Zend_Controller_Router_Route_Regex(
+//                        'language/(ru|en|ua)$',
+//                        array(
+//                            'controller' => 'language',
+//                            'action' => 'index'
+//                        ),
+//                        array(
+//                            1 => 'lang',
+//                        )
+//                )
+//        );
+
         $front->registerPlugin(new modules_default_controllers_plugins_LangSelector());
-        
+
         return $front;
     }
 
-    protected function _initAutoload() {
+    protected function _initAutoload()
+    {
         $autoloader = Zend_Loader_Autoloader::getInstance();
         $autoloader->setFallbackAutoloader(true);
         return $autoloader;
     }
 
-    protected function _initConfig() {
+    protected function _initConfig()
+    {
         $oConfig = new Zend_Config_Ini(APPLICATION_PATH . '/configs/application.ini');
         $oRegistry = Zend_Registry::getInstance();
         $oRegistry->set('config', $oConfig);
     }
 
-    protected function _initTranslation() {
-        
+    protected function _initTranslation()
+    {
+
 //        $translate = new Zend_Translate('array', APPLICATION_PATH . '/languages');
 //        $translate->addTranslation(
 //                array(
@@ -91,14 +115,16 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
 //        Zend_Form::setDefaultTranslator($translate);
     }
 
-    protected function _initSession() {
+    protected function _initSession()
+    {
         $oRegistry = Zend_Registry::getInstance();
         $oConfig = $oRegistry->get('config')->session;
         Zend_Session::setOptions($oConfig->toArray());
         $oRegistry->set('Zend_Session_Namespace', new Zend_Session_Namespace());
     }
 
-    protected function _initLayout() {
+    protected function _initLayout()
+    {
         Zend_Layout::startMvc();
     }
 

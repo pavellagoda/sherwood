@@ -17,14 +17,14 @@
                     <?php echo $this->render("includes/top_information.phtml"); ?>
                 </div>
                 <div class="languages-list">
-                    <a <?php if ($this->lang == 'ru') echo 'class="active"'; ?> href="/language/ru">рус</a>
-                    <a <?php if ($this->lang == 'en') echo 'class="active"'; ?> href="/language/en">eng</a>
-                    <a <?php if ($this->lang == 'ua') echo 'class="active"'; ?> href="/language/ua">укр</a>
+                    <a <?php if ($this->lang == 'ru') echo 'class="active"'; ?> href="<?php echo $this->languageHelper('ru') ?>">рус</a>
+                    <a <?php if ($this->lang == 'en') echo 'class="active"'; ?> href="<?php echo $this->languageHelper('en') ?>">eng</a>
+                    <a <?php if ($this->lang == 'ua') echo 'class="active"'; ?> href="<?php echo $this->languageHelper('ua') ?>">укр</a>
                 </div>
                 <div class="clear"></div>
                 <?php echo $this->render("includes/mainmenu_static.phtml"); ?>
                 <div class="logo">
-                    <a href="/"><img src="/i/logo.png" alt="logo"/></a>
+                    <a href="<?php echo $this->urlMaker('') ?>"><img src="/i/logo.png" alt="logo"/></a>
                 </div>
                 <?php if (!is_null($this->slider_partial)): ?>
                     <div class="promo">

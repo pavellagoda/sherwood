@@ -18,9 +18,9 @@
     )
 ?>
 <div class="top-venzel venzel"></div>
-<a href="/programs"><?php echo $translate[$this->lang]['Программа лояльности'] ?></a>
+<a href="<?php echo $this->urlMaker('/programs') ?>"><?php echo $translate[$this->lang]['Программа лояльности'] ?></a>
 <div class="left-menu-separator"></div>
-<a href="/vacancies"><?php echo $translate[$this->lang]['Вакансии'] ?></a>
+<a href="<?php echo $this->urlMaker('/vacancies') ?>"><?php echo $translate[$this->lang]['Вакансии'] ?></a>
 <div class="left-menu-separator"></div>
-<a href="/backform"><?php echo $translate[$this->lang]['Отзывы'] ?></a>
+<a href="<?php echo $this->urlMaker('/backform') ?>"><?php echo $translate[$this->lang]['Отзывы'] ?></a>
 <div class="bottom-venzel venzel"></div>

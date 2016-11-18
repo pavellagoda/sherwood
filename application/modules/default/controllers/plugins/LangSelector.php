@@ -10,14 +10,18 @@
  *
  * @author Pasha
  */
-class modules_default_controllers_plugins_LangSelector extends Zend_Controller_Plugin_Abstract {
+class modules_default_controllers_plugins_LangSelector extends Zend_Controller_Plugin_Abstract
+{
 
-    public function preDispatch(Zend_Controller_Request_Abstract $request) {
+    public function preDispatch(Zend_Controller_Request_Abstract $request)
+    {
+
         $lang = new Zend_Session_Namespace('language');
 
-        if (!isset($lang->language))
-            $lang->language = 'ru';
-        
+        $lang->language = $request->getParam('lang');
+        $lang->language = $lang->language ? $lang->language : 'ru';
+        $lang->language = trim($lang->language, '/');
+
         $translate = new Zend_Translate('array', APPLICATION_PATH . '/languages');
         $translate->addTranslation(
                 array(

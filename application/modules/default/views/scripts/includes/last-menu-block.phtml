@@ -5,7 +5,7 @@
     
     ?>
     <div class="last-news-block-item lineelement">
-        <a href="/news/view/url/<?php echo $news->$seo ?>"><?php echo FW_Date::convert($news->created_ts, FW_Date::MYSQL_DATETIME, FW_Date::DATE) ?></a>
+        <a href="<?php echo $this->urlMaker('/news/view/url/'.$news->$seo)  ?>"><?php echo FW_Date::convert($news->created_ts, FW_Date::MYSQL_DATETIME, FW_Date::DATE) ?></a>
         <div><?php echo $news->$short ?></div>
     </div>
 <?php endforeach; ?>

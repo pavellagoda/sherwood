@@ -1,6 +1,7 @@
 <?php
 
-class modules_default_controllers_ControllerBase extends controllers_ControllerBase {
+class modules_default_controllers_ControllerBase extends controllers_ControllerBase
+{
 
     /**
      * Set content layout (full, short)
@@ -15,8 +16,17 @@ class modules_default_controllers_ControllerBase extends controllers_ControllerB
     protected $slider_partial = 'photo-imageflow.phtml';
     protected $language;
 
-    public function init() {
+    public function init()
+    {
         parent::init();
+
+
+        $url_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+        if ($url_parts[0] == 'ru') {
+            $this->_redirect('/error');
+        }
+
+
         $lang = new Zend_Session_Namespace('language');
         if (!isset($lang->language))
             $lang->language = 'ru';

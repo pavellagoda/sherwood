@@ -23,8 +23,8 @@ $translate = array(
 <div class="mainmenu">
     <div class="lineelement">
         <ul class="menu">
-            <li<?php if($this->controllerName=='news') echo ' class="active"' ?>><a href="/news"><?php echo $translate[$this->lang]['Новости'] ?></a></li>
-            <li<?php if(in_array('about', $this->request)) echo ' class="active"' ?>><a href="/about"><?php echo $translate[$this->lang]['О компании'] ?></a></li>
+            <li<?php if($this->controllerName=='news') echo ' class="active"' ?>><a href="<?php echo $this->urlMaker('/news') ?>"><?php echo $translate[$this->lang]['Новости'] ?></a></li>
+            <li<?php if(in_array('about', $this->request)) echo ' class="active"' ?>><a href="<?php echo $this->urlMaker('/about') ?>"><?php echo $translate[$this->lang]['О компании'] ?></a></li>
         </ul>
     </div>
     <div class="lineelement right ddsmoothmenu" id="smoothmenu1">
@@ -35,11 +35,11 @@ $translate = array(
                     <?php foreach ($this->objects as $object): 
                         $title = 'title_'.$this->lang;
                     ?>
-                        <li><a href="/objects/view/url/<?php echo $object->tourLink ?>"><?php echo $object->$title ?></a></li>
+                        <li><a href="<?php echo $this->urlMaker('/objects/view/url/'.$object->tourLink) ?>"><?php echo $object->$title ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </li>
-            <li<?php if(in_array('contacts', $this->request)) echo ' class="active"' ?>><a href="/contacts"><?php echo $translate[$this->lang]['Контакты'] ?></a></li>
+            <li<?php if(in_array('contacts', $this->request)) echo ' class="active"' ?>><a href="<?php echo $this->urlMaker('/contacts') ?>"><?php echo $translate[$this->lang]['Контакты'] ?></a></li>
         </ul>
     </div>
     <div class="clear"></div>

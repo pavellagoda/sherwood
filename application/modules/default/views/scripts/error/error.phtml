@@ -8,6 +8,6 @@
 <div><?php echo $translate[$this->lang] ?></div>
 <script>
 	setTimeout(function(){
-		window.location.href = '/'
+		window.location.href = '/'+'<?php echo $this->lang=='ru'?'':$this->lang ?>'
 	},5000); 
 </script>
